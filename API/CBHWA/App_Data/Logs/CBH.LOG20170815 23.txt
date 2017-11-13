@@ -1,0 +1,16 @@
+INICIO: 15/08/2017 23:34:57
+23:34:57: ERROR:
+	METHOD = ConnManager.OpenConn	MESSAGE = Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: Named Pipes Provider, error: 40 - No se pudo abrir una conexión con SQL Server)
+23:34:57: ERROR:
+	METHOD = CBHWA.Models.UserRepository.ValidLogon
+	MESSAGE = Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: Named Pipes Provider, error: 40 - No se pudo abrir una conexión con SQL Server)
+23:39:46: ERROR:
+	METHOD = ConnManager.OpenConn	MESSAGE = Error de inicio de sesión del usuario 'CBHWA'.
+23:39:46: ERROR:
+	METHOD = CBHWA.Models.UserRepository.ValidLogon
+	MESSAGE = Error de inicio de sesión del usuario 'CBHWA'.
+23:42:27: ERROR:
+	METHOD = ConnManager.OpenConn	MESSAGE = Error de inicio de sesión del usuario 'CBHWA'.
+23:42:27: ERROR:
+	METHOD = CBHWA.Models.UserRepository.ValidLogon
+	MESSAGE = Error de inicio de sesión del usuario 'CBHWA'.

@@ -1,0 +1,45 @@
+.loadmask {
+    z-index: 100;
+    position: absolute;
+    top:0;
+    left:0;
+    -moz-opacity: 0.20;
+    opacity: .20;
+    filter: alpha(opacity=20);
+    background-color: #CCC;
+    width: 100%;
+    height: 100%;
+    zoom: 1;
+}
+.loadmask-msg {
+    z-index: 20001;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*border:1px solid #6593cf;
+    background: #c3daf9;*/
+    /*background: white;*/
+    padding:2px;
+}
+.loadmask-msg div {
+    padding:5px 10px 5px 25px;
+    padding-left: 38px;
+    /*background: #fbfbfb url('images/loading.gif') no-repeat 5px 5px;*/
+    background: white url('../images/loading-gray.gif') no-repeat 5px 5px;
+    line-height: 24px;
+	/*border:1px solid #a3bad9;*/
+    border:2px solid rgba(128, 128, 128, 0.25);
+    box-shadow: 5px 5px 2px #888888;
+    /*color:#222;*/
+    /*font:normal 11px tahoma, arial, helvetica, sans-serif;*/
+    cursor:wait;
+}
+.masked {
+    overflow: hidden !important;
+}
+.masked-relative {
+    position: relative !important;
+}
+.masked-hidden {
+    visibility: hidden !important;
+}

@@ -1,0 +1,422 @@
+/*[class*="icon-"] {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url(sprites.svg);
+    background-repeat: no-repeat;
+    }*/
+
+
+/* Message Success on Save*/
+
+#app-popup-success-div {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    width: 350px;
+    margin-left: -200px;
+    z-index: 20000;
+}
+
+#app-popup-success-div .msgSuccess {
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    background-color: #208F20;
+    /*background-color: blue;*/
+    border: 2px solid #88cc88;
+    margin-top: 2px;
+    padding: 10px;
+}
+
+#app-popup-success-div .msgSuccess h3 {
+    /*margin-left: 3em;
+        vertical-align: bottom;*/
+    color: white;
+    text-align: center;
+}
+
+
+/* Message Success on Save*/
+
+
+/* Message Error on Save */
+
+#app-popup-error-div {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    width: 350px;
+    margin-left: -150px;
+    z-index: 20000;
+}
+
+#app-popup-error-div .msgError {
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    border: 2px solid #FF5B5B;
+    margin-top: 2px;
+    padding: 10px;
+    background-color: #FF2E2E;
+}
+
+#app-popup-error-div .msgError h3 {
+    vertical-align: bottom;
+    color: white;
+    text-align: center;
+}
+
+
+/* Message Error on SAVE */
+
+
+/* override: sencha theme */
+
+.custom-grid .x-grid-cell {
+    background-color: #ffa;
+    border-bottom-color: #ffc;
+    border-top-color: #ff5;
+    color: #000;
+}
+
+.custom-grid .x-grid-row-alt {
+    background-color: #fafafa;
+    border-bottom-color: #ffc;
+    border-top-color: #ff5;
+    color: #000;
+}
+
+
+/* Grid cells when the mouse cursor is over the row */
+
+.custom-grid .x-grid-row-over .x-grid-cell {
+    background-color: #3892d3;
+    border-bottom-color: #999;
+    border-bottom-style: dashed;
+    border-top-color: #999;
+    border-top-style: dashed;
+}
+
+
+/* Grid cells in the selected row */
+
+.custom-grid .x-grid-row-selected .x-grid-cell {
+    background-color: #3892d3;
+    border-bottom-color: #999;
+    border-bottom-style: solid;
+    border-top-color: #999;
+    border-top-style: solid;
+}
+
+.ux-row-expander-comment p {
+    font-size: x-small;
+}
+
+.custom-viewport {
+    /*background-color: #3892d3;*/
+    background-color: white;
+}
+
+.custom-grid .x-grid-row .x-grid-cell-inner {
+    white-space: normal;
+}
+
+.custom-grid .x-grid-row-over .x-grid-cell-inner {
+    font-weight: bold;
+    white-space: normal;
+}
+
+.x-grid-cell-inner {
+    font-size: 11px;
+}
+
+.x-column-header-inner {
+    font-size: 11px;
+}
+
+.x-form-text {
+    font-size: 11px;
+}
+
+.x-form-item-label {
+    font-size: 11px;
+}
+
+.x-boundlist-item {
+    font-size: 11px;
+}
+
+.x-form-field {
+    font-size: 11px;
+}
+
+.x-grid-row-summary td.x-grid-td .x-grid-cell-inner {
+    font-size: 11px;
+    font-weight: bold;
+    color: green;
+    text-align: right !important;
+}
+
+.app-check {
+    background-image: url(images/check.gif);
+    width: 24px;
+    height: 24px;
+}
+
+.app-cross {
+    background-image: url(images/cross.gif);
+    width: 24px;
+    height: 24px;
+}
+
+.app-page-save {
+    background-image: url(images/page-save.png)
+}
+
+.app-page-edit {
+    background-image: url(images/page-edit.png)
+}
+
+.app-page-undo {
+    background-image: url(images/page-undo.png)
+}
+
+.app-page-delete {
+    background-image: url(images/page-delete.png)
+}
+
+.app-page-add {
+    background-image: url(images/page-add.png)
+}
+
+.app-page-first {
+    background-image: url(images/page-first.png)
+}
+
+.app-page-prev {
+    background-image: url(images/page-prev.png)
+}
+
+.app-page-next {
+    background-image: url(images/page-next.png)
+}
+
+.app-page-last {
+    background-image: url(images/page-last.png)
+}
+
+.app-page-refresh {
+    background-image: url(images/page-refresh.png)
+}
+
+.app-find {
+    background-image: url(images/find.png);
+}
+
+.app-find:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.app-search {
+    background-image: url(images/search.png);
+}
+
+.app-search:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.app-user {
+    background-image: url(images/user.png);
+}
+
+.app-user:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.app-logout {
+    background-image: url(images/logout.png);
+}
+
+.app-logout:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.app-grid-edit {
+    background-image: url(images/grid-edit.png);
+}
+
+.app-grid-edit:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.app-print {
+    background-image: url(images/print.png);
+}
+
+.app-print:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.x-btn-toolbar-small-cus {
+    background: transparent;
+    border: none!important;
+    color:#003C7E; 
+    font-size: 17px !important;
+}
+
+.x-btn-toolbar-small-cus:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.x-body {
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #333;
+}
+
+.x-form-type-text textarea.x-form-invalid-field,
+.x-form-type-text input.x-form-invalid-field,
+.x-form-type-password textarea.x-form-invalid-field,
+.x-form-type-password input.x-form-invalid-field,
+.x-form-type-number textarea.x-form-invalid-field,
+.x-form-type-number input.x-form-invalid-field,
+.x-form-type-email textarea.x-form-invalid-field,
+.x-form-type-email input.x-form-invalid-field,
+.x-form-type-search textarea.x-form-invalid-field,
+.x-form-type-search input.x-form-invalid-field,
+.x-form-type-tel textarea.x-form-invalid-field,
+.x-form-type-tel input.x-form-invalid-field {
+    background-color: rgb(255, 234, 234);
+    /*background-image: url(images/grid/invalid_line.gif);*/
+    background-repeat: repeat-x;
+    background-position: bottom;
+    border-color: #c30;
+}
+
+
+/* CSS */
+
+.x-mask-loading {
+    background-color: white;
+    /*url(images/loading.gif);*/
+}
+
+.x-form-cb-label {
+    margin-top: 4px;
+    margin-left: 4px;
+    font: 12px/17px helvetica, arial, verdana, sans-serif;
+}
+
+.x-form-cb-label-override {
+    color: red;
+    margin-top: 4px;
+    margin-left: 4px;
+    font: bold 13px/17px helvetica, arial, verdana, sans-serif;
+}
+
+.x-form-cb-label-override {
+    display: inline-block;
+    zoom: 1;
+}
+
+.x-btn-default-small {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    padding: 3px 3px 3px 3px;
+    border-width: 1px;
+    border-style: solid;
+    background-image: none !important;
+    /*background-color: #004A9C;
+    background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#4b9cd7),color-stop(50%,#004A9C),color-stop(51%,#358ac8),color-stop(100%,#004A9C));
+    background-image: -webkit-linear-gradient(top,#4b9cd7,#004A9C 50%,#358ac8 51%,#004A9C);
+    background-image: -moz-linear-gradient(top,#4b9cd7,#004A9C 50%,#358ac8 51%,#004A9C);
+    background-image: -o-linear-gradient(top,#4b9cd7,#004A9C 50%,#358ac8 51%,#004A9C);
+    background-image: linear-gradient(top,#4b9cd7,#004A9C 50%,#358ac8 51%,#004A9C);*/
+}
+
+.x-tree-view {
+    top: 10px !important;
+}
+
+.x-tab-default-over {
+    background-color: none !important;
+}
+
+/*.x-tab-default-top {
+    background-color: #63707E;
+}*/
+
+.fa {
+    color:#003C7E;
+}
+
+.x-override-action:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.x-btn-default-small-focus {
+    border-color: #dd5503;
+    background-color: #f58d37;
+}
+
+.x-btn-default-small-over {
+    background-color: #f58d37;
+    border-color: #dd5503;
+}
+
+.x-menu-item-glyph {
+    font-size: 16px;
+    line-height: 16px;
+    color:#003C7E;
+    opacity: 1;
+}
+
+.x-btn-default-medium {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    padding: 3px 3px 3px 3px;
+    border-width: 1px;
+    border-style: solid;
+    background-image: none;
+    background-color: #004A9C;
+    color: white;
+    /*background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#0A6FB7),color-stop(50%,#004A9C),color-stop(51%,#358ac8),color-stop(100%,#004A9C));*/
+}
+
+.x-form-cb-label {
+    font-size: 11px !important; 
+}
+
+.custom-app-btn {
+    background:#004A9C; /*#003C7E;*/
+    color: white;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.app-custom-panel-background .x-panel-body{
+    background:whitesmoke;
+}

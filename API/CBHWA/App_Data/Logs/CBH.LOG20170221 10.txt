@@ -1,0 +1,13 @@
+INICIO: 21-02-2017 10:03:55 a.m.
+10:05:04 a.m.: ERROR:
+	METHOD = CBHWA.Areas.Reports.Controllers.rptExcelExportJobProfitReportController.WriteDocumentExcel
+	MESSAGE = El filtro de mensaje indicó que la aplicación está ocupada. (Excepción de HRESULT: 0x8001010A (RPC_E_SERVERCALL_RETRYLATER))
+10:05:47 a.m.: No se pudo encontrar el archivo 'C:\Users\Rony\Google Drive\DEV\Projects\CBHWA\CBHWA\App_Data\Excel\ExcelExportJobProfitReport201702211045.xls'.
+10:10:18 a.m.: ERROR:
+	METHOD = CBHWA.Areas.Reports.Controllers.rptExcelExportJobProfitReportController.WriteDocumentExcel
+	MESSAGE = El filtro de mensaje indicó que la aplicación está ocupada. (Excepción de HRESULT: 0x8001010A (RPC_E_SERVERCALL_RETRYLATER))
+10:10:18 a.m.: File C:\Users\Rony\Google Drive\DEV\Projects\CBHWA\CBHWA\App_Data\Excel\ExcelExportJobProfitReport201702211051.xls doesn't exists
+10:12:43 a.m.: ERROR:
+	METHOD = CBHWA.Areas.Reports.Controllers.rptExcelExportJobProfitReportController.WriteDocumentExcel
+	MESSAGE = El filtro de mensaje indicó que la aplicación está ocupada. (Excepción de HRESULT: 0x8001010A (RPC_E_SERVERCALL_RETRYLATER))
+10:12:43 a.m.: File C:\Users\Rony\Google Drive\DEV\Projects\CBHWA\CBHWA\App_Data\Excel\ExcelExportJobProfitReport201702211047.xls doesn't exists

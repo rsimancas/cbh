@@ -1,0 +1,17 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        Hola
+        <script type="text/javascript">
+            var cadena = 'var HI@LO = "ras";alert(HI@LO);';
+            try {
+            /*@cc_on @*/
+            eval(cadena);
+            } catch(ex) {
+                alert(ex.message);
+            }
+        </script>
+    </body>
+</html>

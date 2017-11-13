@@ -1,0 +1,7 @@
+INICIO: 01-03-2017 01:27:54 p.m.
+01:27:54 p.m.: ERROR:
+	METHOD = CBHWA.Models.JobsRepository.GetJobExemptFromProfitReport
+	MESSAGE = El nombre de columna 'Reference' no es válido.
+01:27:55 p.m.: ERROR:
+	METHOD = CBHWA.Controllers.qfrmJobExemptFromProfitReportController.GetAll
+	MESSAGE = No se puede encontrar la tabla 0.
