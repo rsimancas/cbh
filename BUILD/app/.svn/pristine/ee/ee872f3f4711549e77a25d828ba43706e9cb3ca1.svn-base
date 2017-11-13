@@ -1,4 +1,0 @@
-Ext.define('CBH.AppEvents', {
-    singleton: true,
-    broadcast: new Ext.util.Observable()
-});
