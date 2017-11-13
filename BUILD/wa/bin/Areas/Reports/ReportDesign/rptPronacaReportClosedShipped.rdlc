@@ -76,6 +76,7 @@
                       </Style>
                     </Textbox>
                     <ColSpan>10</ColSpan>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell />
@@ -124,6 +125,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -459,6 +461,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -792,6 +795,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -1126,6 +1130,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -1457,6 +1462,12 @@
               <SortExpressions>
                 <SortExpression>
                   <Value>=Fields!CustKey.Value</Value>
+                </SortExpression>
+                <SortExpression>
+                  <Value>=Fields!rptDate.Value</Value>
+                </SortExpression>
+                <SortExpression>
+                  <Value>=Fields!FileNum.Value</Value>
                 </SortExpression>
               </SortExpressions>
               <TablixMembers>
