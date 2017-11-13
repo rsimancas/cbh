@@ -1,0 +1,3409 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tool",
+				"toolbar"
+			],
+			[
+				"save",
+				"savedRecord"
+			],
+			[
+				"tb",
+				"tbLastOpt"
+			],
+			[
+				"las",
+				"lastOptions"
+			],
+			[
+				"do",
+				"doRefresh"
+			],
+			[
+				"lastO",
+				"lastOpt"
+			],
+			[
+				"Sch",
+				"SchBNum"
+			],
+			[
+				"record",
+				"records"
+			],
+			[
+				"Origin",
+				"OriginName"
+			],
+			[
+				"job",
+				"jobOverview"
+			],
+			[
+				"PO",
+				"POKey"
+			],
+			[
+				"load",
+				"loadPurchaseOrder"
+			],
+			[
+				"cus",
+				"custContainer"
+			],
+			[
+				"Ex",
+				"Exempt"
+			],
+			[
+				"store",
+				"storeExempt"
+			],
+			[
+				"form",
+				"formData"
+			],
+			[
+				"stor",
+				"storeContacts"
+			],
+			[
+				"view",
+				"viewConfig"
+			],
+			[
+				"re",
+				"reportName"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"str",
+				"strWhere"
+			],
+			[
+				"new",
+				"newValue"
+			],
+			[
+				"set",
+				"setValue"
+			],
+			[
+				"Jo",
+				"JobStatus"
+			],
+			[
+				"Opn",
+				"OpenQuotes"
+			],
+			[
+				"colu",
+				"columnWidth"
+			],
+			[
+				"Gr",
+				"GroupByContact"
+			],
+			[
+				"onClickP",
+				"onClickPrintStatusReport"
+			],
+			[
+				"pri",
+				"printEnabled"
+			],
+			[
+				"text",
+				"textfield"
+			],
+			[
+				"on",
+				"onClickViewDetails"
+			],
+			[
+				"lis",
+				"listeners"
+			],
+			[
+				"list",
+				"List"
+			],
+			[
+				"led",
+				"leftPad"
+			],
+			[
+				"Qh",
+				"QHdrModifiedBy"
+			],
+			[
+				"QHdrM",
+				"QHdrModifiedBy"
+			],
+			[
+				"QH",
+				"QHdrMemo"
+			],
+			[
+				"QHd",
+				"QHdrRevision"
+			],
+			[
+				"string",
+				"stringLen"
+			],
+			[
+				"quote",
+				"quotekey"
+			],
+			[
+				"date",
+				"Date"
+			],
+			[
+				"exe",
+				"executeReport"
+			],
+			[
+				"ex",
+				"executeReport"
+			],
+			[
+				"em",
+				"employeeKey"
+			],
+			[
+				"report",
+				"reportName"
+			],
+			[
+				"JobRo",
+				"JobRoleKey"
+			],
+			[
+				"com",
+				"comboDateRange"
+			],
+			[
+				"l",
+				"length"
+			],
+			[
+				"jo",
+				"jobStatusExpression"
+			],
+			[
+				"Job",
+				"JobStatusExpression"
+			],
+			[
+				"JobS",
+				"JobStatus"
+			],
+			[
+				"clos",
+				"closedQuotes"
+			],
+			[
+				"open",
+				"openQuotes"
+			],
+			[
+				"Repo",
+				"reportName"
+			],
+			[
+				"emp",
+				"employees"
+			],
+			[
+				"us",
+				"userKey"
+			],
+			[
+				"index",
+				"indexOf"
+			],
+			[
+				"co",
+				"comboDateRange"
+			],
+			[
+				"Ran",
+				"DateRange"
+			],
+			[
+				"st",
+				"storeCriteria"
+			],
+			[
+				"V",
+				"VendorName"
+			],
+			[
+				"x",
+				"x_EmployeeFullName"
+			],
+			[
+				"Coun",
+				"CountryKey"
+			],
+			[
+				"Repor",
+				"ReportCriteria"
+			],
+			[
+				"grid",
+				"gridcustomers"
+			],
+			[
+				"item",
+				"itemId"
+			],
+			[
+				"Close",
+				"ClosedQuotes"
+			],
+			[
+				"Ope",
+				"OpenQuotes"
+			],
+			[
+				"Creat",
+				"CreatedDate"
+			],
+			[
+				"colum",
+				"column"
+			],
+			[
+				"col",
+				"columnWidth"
+			],
+			[
+				"Cu",
+				"CustKey"
+			],
+			[
+				"Cue",
+				"CustKey"
+			],
+			[
+				"gridconta",
+				"gridcontacts"
+			],
+			[
+				"fiel",
+				"fieldValue"
+			],
+			[
+				"fi",
+				"fieldValue"
+			],
+			[
+				"JobRole",
+				"JobRoleSort"
+			],
+			[
+				"onClickE",
+				"onClickEditJobRolesList"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"ran",
+				"DateRange"
+			],
+			[
+				"start",
+				"startDate"
+			],
+			[
+				"field",
+				"fieldEnd"
+			],
+			[
+				"star",
+				"startDate"
+			],
+			[
+				"End",
+				"EndDate"
+			],
+			[
+				"Star",
+				"StartDate"
+			],
+			[
+				"m",
+				"month"
+			],
+			[
+				"to",
+				"today"
+			],
+			[
+				"storeCu",
+				"storeCustomers"
+			],
+			[
+				"gridco",
+				"gridcountries"
+			],
+			[
+				"sel",
+				"selModel"
+			],
+			[
+				"da",
+				"date"
+			],
+			[
+				"t",
+				"title"
+			],
+			[
+				"remove",
+				"removeAll"
+			],
+			[
+				"Cust",
+				"CustKey"
+			],
+			[
+				"JobEM",
+				"JobEmployeeEmployeeKey"
+			],
+			[
+				"JobE",
+				"JobEmployeeEmployeeKey"
+			],
+			[
+				"dis",
+				"disabled"
+			],
+			[
+				"edi",
+				"editable"
+			],
+			[
+				"Fi",
+				"FileDefaultCurrencySymbol"
+			],
+			[
+				"par",
+				"parentRecord"
+			],
+			[
+				"sum",
+				"summaryData"
+			],
+			[
+				"return",
+				"returnValue"
+			],
+			[
+				"Form",
+				"FormToolbar"
+			],
+			[
+				"retu",
+				"returnValue"
+			],
+			[
+				"def",
+				"defaultValue"
+			],
+			[
+				"Cur",
+				"CurrencySymbol"
+			],
+			[
+				"QuoteItem",
+				"QuoteItemCurrencyCode"
+			],
+			[
+				"Curren",
+				"CurrencyCode"
+			],
+			[
+				"QuoteItemC",
+				"QuoteItemCurrencyCode"
+			],
+			[
+				"get",
+				"getValue"
+			],
+			[
+				"QuoteItemL",
+				"QuoteItemLineCost"
+			],
+			[
+				"ItemCurr",
+				"ItemCurrencyRate"
+			],
+			[
+				"curr",
+				"currencySymbol"
+			],
+			[
+				"de",
+				"defaultValue"
+			],
+			[
+				"Quote",
+				"QuoteItemCost"
+			],
+			[
+				"Btn",
+				"PrintInternalQuoteBtn"
+			],
+			[
+				"onGr",
+				"onGridQuotesSelectChange"
+			],
+			[
+				"Ite",
+				"ItemVolume"
+			],
+			[
+				"selec",
+				"selectedItem"
+			],
+			[
+				"Item",
+				"ItemWeight"
+			],
+			[
+				"se",
+				"selectedItem"
+			],
+			[
+				"po",
+				"POItemsQty"
+			],
+			[
+				"POItems",
+				"POItemsQty"
+			],
+			[
+				"row",
+				"rowCount"
+			],
+			[
+				"ro",
+				"rowCount"
+			],
+			[
+				"FV",
+				"FVTotalVolume"
+			],
+			[
+				"cur",
+				"currentRecord"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/GlobalSettings.js",
+			"settings":
+			{
+				"buffer_size": 2145,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/AppEvents.js",
+			"settings":
+			{
+				"buffer_size": 95,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/controller/Home.js",
+			"settings":
+			{
+				"buffer_size": 5922,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app.js",
+			"settings":
+			{
+				"buffer_size": 11297,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/view/sales/SalesMenu.js",
+			"settings":
+			{
+				"buffer_size": 47638,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/view/common/FormReportCriteria.js",
+			"settings":
+			{
+				"buffer_size": 44301,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/resources/css/app.css",
+			"settings":
+			{
+				"buffer_size": 8518,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/view/manager/ManagerMenu.js",
+			"settings":
+			{
+				"buffer_size": 16166,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/view/jobs/InvoiceMaintenance.js",
+			"settings":
+			{
+				"buffer_size": 97569,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/view/vendors/Items.js",
+			"settings":
+			{
+				"buffer_size": 50442,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 1657,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 358 files for \"tabs\" (case sensitive)\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\cbh.sublime-workspace:\n  735  		\"show_minimap\": false,\n  736  		\"show_open_files\": false,\n  737: 		\"show_tabs\": false,\n  738  		\"side_bar_visible\": false,\n  739  		\"status_bar_visible\": false\n  ...\n  992  			\"me.getEl().mask\",\n  993  			\"onSelectChange\",\n  994: 			\"iconCls: 'tabs',\",\n  995  			\"FileQuoteEntry\",\n  996  			\"quoteentry\",\n  997: 			\"iconCls: 'tabs'\",\n  998  			\"next\",\n  999  			\"x_ItemName\",\n ....\n 1183  							\"syntax\": \"Packages/JavaScript/JavaScript.tmLanguage\",\n 1184  							\"tab_size\": 4,\n 1185: 							\"translate_tabs_to_spaces\": true\n 1186  						},\n 1187  						\"translation.x\": 0.0,\n ....\n 1211  							\"syntax\": \"Packages/JavaScript/JavaScript.tmLanguage\",\n 1212  							\"tab_size\": 4,\n 1213: 							\"translate_tabs_to_spaces\": true\n 1214  						},\n 1215  						\"translation.x\": 0.0,\n ....\n 1239  							\"syntax\": \"Packages/JavaScript/JavaScript.tmLanguage\",\n 1240  							\"tab_size\": 4,\n 1241: 							\"translate_tabs_to_spaces\": true\n 1242  						},\n 1243  						\"translation.x\": 0.0,\n ....\n 1267  							\"syntax\": \"Packages/JavaScript/JavaScript.tmLanguage\",\n 1268  							\"tab_size\": 4,\n 1269: 							\"translate_tabs_to_spaces\": true\n 1270  						},\n 1271  						\"translation.x\": 0.0,\n ....\n 1295  							\"syntax\": \"Packages/JavaScript/JavaScript.tmLanguage\",\n 1296  							\"tab_size\": 4,\n 1297: 							\"translate_tabs_to_spaces\": true\n 1298  						},\n 1299  						\"translation.x\": 0.0,\n ....\n 1323  							\"syntax\": \"Packages/CSS/CSS.tmLanguage\",\n 1324  							\"tab_size\": 4,\n 1325: 							\"translate_tabs_to_spaces\": true\n 1326  						},\n 1327  						\"translation.x\": 0.0,\n ....\n 1351  							\"syntax\": \"Packages/JavaScript/JavaScript.tmLanguage\",\n 1352  							\"tab_size\": 4,\n 1353: 							\"translate_tabs_to_spaces\": true\n 1354  						},\n 1355  						\"translation.x\": 0.0,\n ....\n 1379  							\"syntax\": \"Packages/JavaScript/JavaScript.tmLanguage\",\n 1380  							\"tab_size\": 4,\n 1381: 							\"translate_tabs_to_spaces\": true\n 1382  						},\n 1383  						\"translation.x\": 0.0,\n ....\n 1407  							\"syntax\": \"Packages/JavaScript/JavaScript.tmLanguage\",\n 1408  							\"tab_size\": 4,\n 1409: 							\"translate_tabs_to_spaces\": true\n 1410  						},\n 1411  						\"translation.x\": 0.0,\n ....\n 1435  							\"syntax\": \"Packages/JavaScript/JavaScript.tmLanguage\",\n 1436  							\"tab_size\": 4,\n 1437: 							\"translate_tabs_to_spaces\": true\n 1438  						},\n 1439  						\"translation.x\": 0.0,\n ....\n 1463  							\"syntax\": \"Packages/HTML/HTML.tmLanguage\",\n 1464  							\"tab_size\": 4,\n 1465: 							\"translate_tabs_to_spaces\": true\n 1466  						},\n 1467  						\"translation.x\": 0.0,\n ....\n 1491  							\"syntax\": \"Packages/JavaScript/JavaScript.tmLanguage\",\n 1492  							\"tab_size\": 4,\n 1493: 							\"translate_tabs_to_spaces\": true\n 1494  						},\n 1495  						\"translation.x\": 0.0,\n ....\n 1519  							\"syntax\": \"Packages/JavaScript/JavaScript.tmLanguage\",\n 1520  							\"tab_size\": 4,\n 1521: 							\"translate_tabs_to_spaces\": true\n 1522  						},\n 1523  						\"translation.x\": 0.0,\n ....\n 1547  							\"syntax\": \"Packages/JavaScript/JavaScript.tmLanguage\",\n 1548  							\"tab_size\": 4,\n 1549: 							\"translate_tabs_to_spaces\": true\n 1550  						},\n 1551  						\"translation.x\": 0.0,\n ....\n 1575  							\"syntax\": \"Packages/JavaScript/JavaScript.tmLanguage\",\n 1576  							\"tab_size\": 4,\n 1577: 							\"translate_tabs_to_spaces\": true\n 1578  						},\n 1579  						\"translation.x\": 0.0,\n ....\n 1629  							\"syntax\": \"Packages/JavaScript/JavaScript.tmLanguage\",\n 1630  							\"tab_size\": 4,\n 1631: 							\"translate_tabs_to_spaces\": true\n 1632  						},\n 1633  						\"translation.x\": 0.0,\n ....\n 1657  							\"syntax\": \"Packages/JavaScript/JavaScript.tmLanguage\",\n 1658  							\"tab_size\": 4,\n 1659: 							\"translate_tabs_to_spaces\": true\n 1660  						},\n 1661  						\"translation.x\": 0.0,\n ....\n 1726  	\"show_minimap\": false,\n 1727  	\"show_open_files\": true,\n 1728: 	\"show_tabs\": true,\n 1729  	\"side_bar_visible\": true,\n 1730  	\"side_bar_width\": 314.0,\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\common\\CurrencyList.js:\n   56                      items: [{\n   57                          handler: function(view, rowIndex, colIndex, item, e, record, row) {\n   58:                             var tabs = this.up('app_pageframe');\n   59  \n   60                              storeToNavigate = new CBH.store.common.CurrencyRates().load({\n   ..\n   67                                      });\n   68  \n   69:                                     var tab = tabs.add({\n   70                                          closable: true,\n   71:                                         iconCls: 'tabs',\n   72                                          title: 'Currency Rate',\n   73                                          items: [form]\n   ..\n  105                          itemId: 'additem',\n  106                          handler: function() {\n  107:                             var tabs = this.up('app_pageframe');\n  108  \n  109                              var storeToNavigate = new CBH.store.common.CurrencyRates();\n  ...\n  113                              });\n  114  \n  115:                             var tab = tabs.add({\n  116                                  closable: true,\n  117:                                 iconCls: 'tabs',\n  118                                  title: 'New Currency',\n  119                                  items: [form]\n  ...\n  167                      },\n  168                      celldblclick: function(view, td, cellIndex, record, tr, rowIndex, e, eOpts) {\n  169:                         var tabs = this.up('app_pageframe');\n  170  \n  171                          var storeToNavigate = new CBH.store.common.CurrencyRates().load({\n  ...\n  178                                  });\n  179  \n  180:                                 var tab = tabs.add({\n  181                                      closable: true,\n  182:                                     iconCls: 'tabs',\n  183                                      title: 'Currency Rate',\n  184                                      items: [form]\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\common\\MainMenu.js:\n  122          tab = pageframe.add({\n  123              closable: true,\n  124:             iconCls: 'tabs',\n  125              autoScroll: true,\n  126              title: record.data.MenuDesc,\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\common\\PaymentTermsList.js:\n   54                      items: [{\n   55                          handler: function(view, rowIndex, colIndex, item, e, record, row) {\n   56:                             var tabs = this.up('app_pageframe');\n   57  \n   58                              storeToNavigate = new CBH.store.common.PaymentTerms().load({\n   ..\n   64                                          storeNavigator: storeToNavigate\n   65                                      });\n   66:                                     var tab = tabs.add({\n   67                                          closable: true,\n   68:                                         iconCls: 'tabs',\n   69                                          autoScroll: true,\n   70                                          title: 'Payment Terms',\n   ..\n  100                      itemId: 'additem',\n  101                      handler: function() {\n  102:                         var tabs = this.up('app_pageframe');\n  103  \n  104                          storeToNavigate = new CBH.store.common.PaymentTerms();\n  ...\n  108                          });\n  109  \n  110:                         var tab = tabs.add({\n  111                              closable: true,\n  112:                             iconCls: 'tabs',\n  113                              autoScroll: true,\n  114                              title: 'New Payment Term',\n  ...\n  162                      },\n  163                      celldblclick: function(view, td, cellIndex, record, tr, rowIndex, e, eOpts) {\n  164:                         var tabs = this.up('app_pageframe');\n  165  \n  166                          storeToNavigate = new CBH.store.common.PaymentTerms().load({\n  ...\n  173                                  });\n  174  \n  175:                                 var tab = tabs.add({\n  176                                      closable: true,\n  177:                                     iconCls: 'tabs',\n  178                                      autoScroll: true,\n  179                                      title: 'Payment Terms',\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\common\\ScheduleBList.js:\n   51                      items: [{\n   52                          handler: function(view, rowIndex, colIndex, item, e, record, row) {\n   53:                             var tabs = this.up('app_pageframe');\n   54  \n   55                              storeToNavigate = new CBH.store.common.ScheduleB().load({\n   ..\n   61                                          storeNavigator: storeToNavigate\n   62                                      });\n   63:                                     var tab = tabs.add({\n   64                                          closable: true,\n   65:                                         iconCls: 'tabs',\n   66                                          autoScroll: true,\n   67                                          title: 'Schedule B Maintenance',\n   ..\n   97                      itemId: 'additem',\n   98                      handler: function() {\n   99:                         var tabs = this.up('app_pageframe');\n  100  \n  101                          storeToNavigate = new CBH.store.common.ScheduleB({autoLoad:false});\n  ...\n  105                          });\n  106  \n  107:                         var tab = tabs.add({\n  108                              closable: true,\n  109:                             iconCls: 'tabs',\n  110                              autoScroll: true,\n  111                              title: 'New Schedule B',\n  ...\n  159                      },\n  160                      celldblclick: function(view, td, cellIndex, record, tr, rowIndex, e, eOpts) {\n  161:                         var tabs = this.up('app_pageframe');\n  162  \n  163                          storeToNavigate = new CBH.store.common.ScheduleB().load({\n  ...\n  170                                  });\n  171  \n  172:                                 var tab = tabs.add({\n  173                                      closable: true,\n  174:                                     iconCls: 'tabs',\n  175                                      autoScroll: true,\n  176                                      title: 'Schedule B Maintenance',\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\common\\TreeViewMain.js:\n   45              tab = pageframe.add({\n   46                  closable: true,\n   47:                 iconCls: 'tabs',\n   48                  autoScroll: true,\n   49                  title: record.data.text.trim(),\n   ..\n   64              tab = pageframe.add({\n   65                  closable: true,\n   66:                 iconCls: 'tabs',\n   67                  autoScroll: true,\n   68                  title: record.data.text.trim(),\n   ..\n   89              tab = pageframe.add({\n   90                  closable: true,\n   91:                 iconCls: 'tabs',\n   92                  autoScroll: true,\n   93                  title: record.data.text.trim(),\n   ..\n  115              tab = pageframe.add({\n  116                  closable: true,\n  117:                 iconCls: 'tabs',\n  118                  autoScroll: true,\n  119                  title: record.data.text.trim(),\n  ...\n  139              tab = pageframe.add({\n  140                  closable: true,\n  141:                 iconCls: 'tabs',\n  142                  autoScroll: true,\n  143                  title: record.data.text.trim(),\n  ...\n  163              tab = pageframe.add({\n  164                  closable: true,\n  165:                 iconCls: 'tabs',\n  166                  autoScroll: true,\n  167                  title: record.data.text.trim(),\n  ...\n  187              tab = pageframe.add({\n  188                  closable: true,\n  189:                 iconCls: 'tabs',\n  190                  autoScroll: true,\n  191                  title: record.data.text.trim(),\n  ...\n  211              tab = pageframe.add({\n  212                  closable: true,\n  213:                 iconCls: 'tabs',\n  214                  title: record.data.text.trim(),\n  215                  items: [{\n  ...\n  234              tab = pageframe.add({\n  235                  closable: true,\n  236:                 iconCls: 'tabs',\n  237                  autoScroll: true,\n  238                  title: record.data.text.trim(),\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\customers\\CustomersList.js:\n   64                          handler: function(view, rowIndex, colIndex, item, e, record, row) {\n   65                              var me = this.up('form'),\n   66:                                 tabs = me.up('app_pageframe'),\n   67                                  grid = me.down('#gridcustomers');\n   68  \n   ..\n   77                                      });\n   78  \n   79:                                     var tab = tabs.add({\n   80                                          closable: true,\n   81:                                         iconCls: 'tabs',\n   82                                          autoScroll: true,\n   83                                          title: 'Customer Maintenance',\n   ..\n  112                          text: 'Create New Customer',\n  113                          handler: function() {\n  114:                             var tabs = this.up('app_pageframe');\n  115  \n  116                              storeCust = new CBH.store.customers.Customers();\n  ...\n  119                              });\n  120  \n  121:                             var tab = tabs.add({\n  122                                  closable: true,\n  123:                                 iconCls: 'tabs',\n  124                                  autoScroll: true,\n  125                                  title: 'Customer Maintenance',\n  ...\n  144                      celldblclick: function(view, td, cellIndex, record, tr, rowIndex, e, eOpts) {\n  145                          var me = this.up('form'),\n  146:                             tabs = me.up('app_pageframe'),\n  147                              grid = me.down('#gridcustomers');\n  148  \n  ...\n  157                                  });\n  158  \n  159:                                 var tab = tabs.add({\n  160                                      closable: true,\n  161:                                     iconCls: 'tabs',\n  162                                      autoScroll: true,\n  163                                      title: 'Customer Maintenance',\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\jobs\\JobFindJob.js:\n  234          var me = this;\n  235  \n  236:         var tabs = me.callerForm.up('app_pageframe');\n  237  \n  238          curJob = record; //grid.getSelectionModel().getSelection()[0];\n  ...\n  243              },\n  244              callback: function(records, operation, success) {\n  245:                 //var tabs = me.up('app_pageframe');\n  246  \n  247                  var form = Ext.widget('joboverview', {\n  ...\n  251                  form.loadRecord(this.getAt(0));\n  252  \n  253:                 var tab = tabs.add({\n  254                      closable: true,\n  255                      autoScroll: true,\n  256:                     iconCls: 'tabs',\n  257                      autoScroll: true,\n  258                      title: 'Job Overview: ' + curJob.data.JobNum,\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\jobs\\JobFindJobInvoice.js:\n  182      onClickEdit: function(record) {\n  183          var me = this,\n  184:             tabs = me.callerForm.up('app_pageframe');\n  185  \n  186          var invoice = record;\n  ...\n  212                          form.loadRecord(jobOverview);\n  213  \n  214:                         var tab = tabs.add({\n  215                              closable: true,\n  216:                             iconCls: 'tabs',\n  217                              autoScroll: true,\n  218                              title: 'Job Overview: ' + invoice.data.JobNum,\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\jobs\\JobFindPO.js:\n  170          var me = this;\n  171  \n  172:         var tabs = me.callerForm.up('app_pageframe');\n  173  \n  174          var purchaseOrder = record;\n  ...\n  200                          form.loadRecord(jobOverview);\n  201  \n  202:                         var tab = tabs.add({\n  203                              closable: true,\n  204:                             iconCls: 'tabs',\n  205                              autoScroll: true,\n  206                              title: 'Job Overview: ' + purchaseOrder.data.JobNum,\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\jobs\\JobInformation.js:\n  891  \n  892      onGoToEntryClick: function() {\n  893:         var tabs = this.up('app_pageframe');\n  894  \n  895          var me = this;\n  ...\n  920  \n  921                  // create tab panel\n  922:                 var tab = tabs.add({\n  923                      closable: true,\n  924:                     iconCls: 'tabs',\n  925                      autoScroll: true,\n  926                      title: 'Line Entry',\n  ...\n 1219      onClickCreatePO: function() {\n 1220          var me = this,\n 1221:             tabs = me.up('app_pageframe'),\n 1222              toolbar = me.down('#FormToolbar');\n 1223  \n ....\n 1240                  });\n 1241  \n 1242:                 var tab = tabs.add({\n 1243                      layout: {\n 1244                          type: 'vbox',\n ....\n 1247                      },\n 1248                      closable: true,\n 1249:                     iconCls: 'tabs',\n 1250                      autoScroll: true,\n 1251                      title: 'Add / Edit PO',\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\jobs\\JobMenu.js:\n  441          var form = this.up('panel');\n  442  \n  443:         var tabs = this.up('app_pageframe');\n  444  \n  445          var grid = form.down('#gridjobs');\n  ...\n  468                  });\n  469  \n  470:                 var tab = tabs.add({\n  471                      closable: true,\n  472:                     iconCls: 'tabs',\n  473                      autoScroll: true,\n  474                      title: 'Job: ' + curJob.data.JobNum,\n  ...\n  492          var me = this;\n  493  \n  494:         var tabs = me.up('app_pageframe');\n  495  \n  496          var storeToNavigate = new CBH.store.jobs.JobHeader();\n  ...\n  500          });\n  501  \n  502:         var tab = tabs.add({\n  503              closable: true,\n  504:             iconCls: 'tabs',\n  505              autoScroll: true,\n  506              title: 'New Job',\n  ...\n  519          var me = this.up('panel');\n  520  \n  521:         var tabs = this.up('app_pageframe');\n  522  \n  523          var grid = me.down('#gridjobs');\n  ...\n  536          var customer = selection.get('Customer');\n  537  \n  538:         var tab = tabs.add({\n  539              closable: true,\n  540:             iconCls: 'tabs',\n  541              autoScroll: true,\n  542              title: 'Job Status History',\n  ...\n  568          });\n  569  \n  570:         tabs.setActiveTab(tab.getId());\n  571      },\n  572  \n  ...\n  574          var me = this.up('panel');\n  575  \n  576:         var tabs = this.up('app_pageframe');\n  577  \n  578          var grid = me.down('#gridjobs');\n  ...\n  593              },\n  594              callback: function(records, operation, success) {\n  595:                 var tabs = me.up('app_pageframe');\n  596  \n  597                  var form = Ext.widget('joboverview', {\n  ...\n  604                  form.loadRecord(this.getAt(0));\n  605  \n  606:                 var tab = tabs.add({\n  607                      closable: true,\n  608:                     iconCls: 'tabs',\n  609                      autoScroll: true,\n  610                      title: 'Job Overview: ' + curJob.data.JobNum,\n  ...\n  722      onClickAddEditPO: function() {\n  723          var me = this,\n  724:             tabs = me.up('app_pageframe'),\n  725              grid = me.down('#gridjobs');\n  726  \n  ...\n  751                  });\n  752  \n  753:                 var tab = tabs.add({\n  754                      layout: {\n  755                          type: 'vbox',\n  ...\n  758                      },\n  759                      closable: true,\n  760:                     iconCls: 'tabs',\n  761                      autoScroll: true,\n  762                      title: 'Add / Edit PO',\n  ...\n  793      onClickEditCustomerQuote: function() {\n  794          var me = this,\n  795:             tabs = me.up('app_pageframe'),\n  796              grid = me.down('#gridjobs');\n  797  \n  ...\n  826                  });\n  827  \n  828:                 var tab = tabs.add({\n  829                      closable: true,\n  830:                     iconCls: 'tabs',\n  831                      autoScroll: true,\n  832                      title: 'Quote Maintenance',\n  ...\n  846          tab = pageframe.add({\n  847              closable: true,\n  848:             iconCls: 'tabs',\n  849              autoScroll: true,\n  850              title: 'Open Job Summary Report',\n  ...\n  872          var me = this,\n  873              userKey = CBH.GlobalSettings.getCurrentUserEmployeeKey(),\n  874:             tabs = me.up('app_pageframe'),\n  875              grid = me.down('#gridjobs');\n  876  \n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\jobs\\JobOverview.js:\n  596  \n  597      onClickLineDetails: function() {\n  598:         var tabs = this.up('app_pageframe');\n  599  \n  600          var existsTab = Ext.getCmp('lineentry');\n  601  \n  602          if (existsTab) {\n  603:             tabs.remove(existsTab, true);\n  604          }\n  605  \n  606          var jobdetails;\n  607  \n  608:         var tab = tabs.add({\n  609              closable: true,\n  610:             iconCls: 'tabs',\n  611              autoScroll: true,\n  612              title: 'Line Entry',\n  ...\n  623          });\n  624  \n  625:         tabs.setActiveTab(tab.getId());\n  626      },\n  627  \n  628      onClickOrderDetails: function() {\n  629          var me = this,\n  630:             tabs = Ext.getCmp('cbh_pageframe'),\n  631              grid = me.down('#gridvendors');\n  632  \n  ...\n  646          });\n  647  \n  648:         var tab = tabs.add({\n  649              closable: true,\n  650:             iconCls: 'tabs',\n  651              autoScroll: true,\n  652              title: 'Order Entry',\n  ...\n  665          });\n  666  \n  667:         tabs.setActiveTab(tab.getId());\n  668      },\n  669  \n  670      onClickEditSupplierQuotes: function() {\n  671          var me = this,\n  672:             tabs = Ext.getCmp('cbh_pageframe'),\n  673              grid = me.down('#gridvendors');\n  674  \n  ...\n  703                  });\n  704  \n  705:                 var tab = tabs.add({\n  706                      closable: true,\n  707:                     iconCls: 'tabs',\n  708                      autoScroll: true,\n  709                      title: 'Quote Entry',\n  ...\n  854      onClickEditPurchaseOrder: function() {\n  855          var me = this,\n  856:             tabs = me.up('app_pageframe'),\n  857              grid = me.down('#gridvendors');\n  858  \n  ...\n  884                  });\n  885  \n  886:                 var tab = tabs.add({\n  887                      layout: {\n  888                          type: 'vbox',\n  ...\n  891                      },\n  892                      closable: true,\n  893:                     iconCls: 'tabs',\n  894                      autoScroll: true,\n  895                      title: 'Purchase Order Maintenance',\n  ...\n  907      onClickEditInvoice: function() {\n  908          var me = this,\n  909:             tabs = me.up('viewport').down('app_pageframe'),\n  910              grid = me.down('#gridInvoices');\n  911  \n  ...\n  936                  });\n  937  \n  938:                 var tab = tabs.add({\n  939                      layout: {\n  940                          type: 'vbox',\n  ...\n  943                      },\n  944                      closable: true,\n  945:                     iconCls: 'tabs',\n  946                      autoScroll: true,\n  947                      title: 'Invoice Maintenance',\n  ...\n  960          var me = this;\n  961  \n  962:         var tabs = this.up('app_pageframe');\n  963  \n  964          var grid = me.down('#gridjobs');\n  ...\n  970          var customer = selection.data.CustName;\n  971  \n  972:         var tab = tabs.add({\n  973              closable: true,\n  974:             iconCls: 'tabs',\n  975              autoScroll: true,\n  976              title: 'Job Status History',\n  ...\n 1002          });\n 1003  \n 1004:         tabs.setActiveTab(tab.getId());\n 1005      },\n 1006  \n ....\n 1008          var me = this.up(\"form\");\n 1009  \n 1010:         var tabs = this.up('app_pageframe');\n 1011  \n 1012          var grid = me.down('#gridvendors');\n ....\n 1034              callback: function(records, success, eOpts) {\n 1035                  \n 1036:                 var tab = tabs.add({\n 1037                      closable: true,\n 1038:                     iconCls: 'tabs',\n 1039                      autoScroll: true,\n 1040                      title: 'Job Purchase Order Status History',\n ....\n 1071                  });\n 1072  \n 1073:                 tabs.setActiveTab(tab.getId());\n 1074              }\n 1075          });\n ....\n 1078      onClickNewPurchaseOrder: function() {\n 1079          var me = this,\n 1080:             tabs = me.up('app_pageframe');\n 1081  \n 1082          selection = me.currentJob;\n ....\n 1098                  });\n 1099  \n 1100:                 var tab = tabs.add({\n 1101                      layout: {\n 1102                          type: 'vbox',\n ....\n 1105                      },\n 1106                      closable: true,\n 1107:                     iconCls: 'tabs',\n 1108                      autoScroll: true,\n 1109                      title: 'New Purchase Order',\n ....\n 1184      onClickEditCustomerQuote: function() {\n 1185          var me = this,\n 1186:             tabs = me.up('app_pageframe');\n 1187  \n 1188          selection = me.currentJob;\n ....\n 1208                  });\n 1209  \n 1210:                 var tab = tabs.add({\n 1211                      closable: true,\n 1212:                     iconCls: 'tabs',\n 1213                      autoScroll: true,\n 1214                      title: 'Quote Maintenance',\n ....\n 1227          var me = this;\n 1228  \n 1229:         var tabs = this.up('app_pageframe');\n 1230  \n 1231          curJob = me.currentRecord;\n ....\n 1244                  });\n 1245  \n 1246:                 var tab = tabs.add({\n 1247                      closable: true,\n 1248:                     iconCls: 'tabs',\n 1249                      autoScroll: true,\n 1250                      title: 'Job: ' + curJob.data.JobNum,\n ....\n 1309          var me = this,\n 1310              userKey = CBH.GlobalSettings.getCurrentUserEmployeeKey(),\n 1311:             tabs = me.up('app_pageframe');\n 1312  \n 1313          var jobkey = me.currentRecord.get('JobKey');\n ....\n 1355          var me = this,\n 1356              userKey = CBH.GlobalSettings.getCurrentUserEmployeeKey(),\n 1357:             tabs = me.up('app_pageframe'),\n 1358              grid = me.down('#gridvendors');\n 1359  \n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\jobs\\JobPurchaseOrderMaintenance.js:\n 1922              toolbar = me.down(\"#FormToolbar\");\n 1923  \n 1924:         var tabs = this.up('app_pageframe');\n 1925  \n 1926          var selection = toolbar.getCurrentRecord();\n ....\n 1939              callback: function(records, success, eOpts) {\n 1940  \n 1941:                 var tab = tabs.add({\n 1942                      closable: true,\n 1943:                     iconCls: 'tabs',\n 1944                      autoScroll: true,\n 1945                      title: 'Job Purchase Order Status History',\n ....\n 1976                  });\n 1977  \n 1978:                 tabs.setActiveTab(tab.getId());\n 1979              }\n 1980          });\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\manager\\EmployeeList.js:\n   45                      items: [{\n   46                          handler: function(view, rowIndex, colIndex, item, e, record, row) {\n   47:                             var tabs = this.up('app_pageframe');\n   48  \n   49                              storeToNavigate = new CBH.store.common.Employees().load({\n   ..\n   56                                      });\n   57  \n   58:                                     var tab = tabs.add({\n   59                                          closable: true,\n   60:                                         iconCls: 'tabs',\n   61                                          autoScroll: true,\n   62                                          title: 'Employee Maintenance',\n   ..\n   95                          itemId: 'additem',\n   96                          handler: function() {\n   97:                             var tabs = this.up('app_pageframe');\n   98  \n   99                              var storeToNavigate = new CBH.store.common.Employees();\n  ...\n  103                              });\n  104  \n  105:                             var tab = tabs.add({\n  106                                  closable: true,\n  107:                                 iconCls: 'tabs',\n  108                                  autoScroll: true,\n  109                                  title: 'New Employee',\n  ...\n  158                      },\n  159                      celldblclick: function(view, td, cellIndex, record, tr, rowIndex, e, eOpts) {\n  160:                         var tabs = this.up('app_pageframe');\n  161  \n  162                          var storeToNavigate = new CBH.store.common.Employees().load({\n  ...\n  169                                  });\n  170  \n  171:                                 var tab = tabs.add({\n  172                                      closable: true,\n  173:                                     iconCls: 'tabs',\n  174                                      autoScroll: true,\n  175                                      title: 'Employee Maintenance',\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\manager\\ManagerMenu.js:\n  261          tab = pageframe.add({\n  262              closable: true,\n  263:             iconCls: 'tabs',\n  264              autoScroll: true,\n  265              title: 'Customers',\n  ...\n  282          tab = pageframe.add({\n  283              closable: true,\n  284:             iconCls: 'tabs',\n  285              autoScroll: true,\n  286              title: 'Employee List',\n  ...\n  301          tab = pageframe.add({\n  302              closable: true,\n  303:             iconCls: 'tabs',\n  304              autoScroll: true,\n  305              title: 'Vendors',\n  ...\n  326          tab = pageframe.add({\n  327              closable: true,\n  328:             iconCls: 'tabs',\n  329              autoScroll: true,\n  330              title: 'Items',\n  ...\n  351          tab = pageframe.add({\n  352              closable: true,\n  353:             iconCls: 'tabs',\n  354              autoScroll: true,\n  355              title: 'Payment Terms',\n  ...\n  378          tab = pageframe.add({\n  379              closable: true,\n  380:             iconCls: 'tabs',\n  381              autoScroll: true,\n  382              title: 'Job Roles Maintenance',\n  ...\n  397          tab = pageframe.add({\n  398              closable: true,\n  399:             iconCls: 'tabs',\n  400              autoScroll: true,\n  401              title: 'Form Criteria',\n  ...\n  422          tab = pageframe.add({\n  423              closable: true,\n  424:             iconCls: 'tabs',\n  425              autoScroll: true,\n  426              title: 'Open Quote Report....',\n  ...\n  451          tab = pageframe.add({\n  452              closable: true,\n  453:             iconCls: 'tabs',\n  454              autoScroll: true,\n  455              title: 'Exempt Job from Profit Report',\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\sales\\FileFindFile.js:\n  218      onClickView: function(record) {\n  219          var me = this,\n  220:             tabs = me.callerForm.up('app_pageframe'); \n  221              \n  222          selection = record;\n  ...\n  239                  var form;\n  240  \n  241:                 var tab = tabs.add({\n  242                      closable: true,\n  243:                     iconCls: 'tabs',\n  244                      autoScroll: true,\n  245                      title: 'File Overview',\n  ...\n  267                  me.destroy();\n  268                  form.loadRecord(curModel);\n  269:                 tabs.setActiveTab(tab.getId());\n  270              },\n  271              scope: this\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\sales\\FileFindQuote.js:\n  260      onClickEditCustomerQuote: function(record) {\n  261          var me = this,\n  262:             tabs = me.callerForm.up('app_pageframe');\n  263  \n  264          selection = record;\n  ...\n  284                  });\n  285  \n  286:                 var tab = tabs.add({\n  287                      closable: true,\n  288:                     iconCls: 'tabs',\n  289                      autoScroll: true,\n  290                      title: 'Quote Maintenance',\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\sales\\FileForm.js:\n  795  \n  796      onGoToEntryClick: function() {\n  797:         var tabs = this.up('app_pageframe');\n  798  \n  799          var me = this;\n  ...\n  824  \n  825                  // create tab panel\n  826:                 var tab = tabs.add({\n  827                      closable: true,\n  828:                     iconCls: 'tabs',\n  829                      autoScroll: true,\n  830                      title: 'Line Entry',\n  ...\n 1129      onGoToOrderEntryClick: function() {\n 1130          var me = this,\n 1131:             tabs = me.up('app_pageframe');\n 1132  \n 1133          var fileKey = me.down('field[name=FileKey]').getValue();\n ....\n 1137          var form;\n 1138  \n 1139:         var tab = tabs.add({\n 1140              closable: true,\n 1141:             iconCls: 'tabs',\n 1142              autoScroll: true,\n 1143              title: 'Order Entry',\n ....\n 1164          });\n 1165  \n 1166:         tabs.setActiveTab(tab.getId());\n 1167      }\n 1168  });\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\sales\\FileLineEntry.js:\n 1520      addVendorItem: function(value) {\n 1521          var me = this,\n 1522:             tabs = me.up('app_pageframe');\n 1523  \n 1524          var vendorkey = me.down('field[name=QuoteVendorKey]').getValue();\n ....\n 1554      onViewVendorClick: function(VendorKey) {\n 1555          var me = this,\n 1556:             tabs = me.up('app_pageframe');\n 1557  \n 1558          me.getEl().mask(\"Loading Vendor...\");\n ....\n 1567                  });\n 1568  \n 1569:                 var tab = tabs.add({\n 1570                      closable: true,\n 1571:                     iconCls: 'tabs',\n 1572                      autoScroll: true,\n 1573                      title: 'Vendor Maintenance',\n ....\n 1590      onViewItemClick: function(ItemKey) {\n 1591          var me = this;\n 1592:         var tabs = this.up('app_pageframe');\n 1593  \n 1594          me.getEl().mask(\"Loading Item...\");\n ....\n 1604                  });\n 1605  \n 1606:                 var tab = tabs.add({\n 1607                      closable: true,\n 1608:                     iconCls: 'tabs',\n 1609                      autoScroll: true,\n 1610                      title: 'Item Maintenance',\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\sales\\FileOrderEntry.js:\n  203                      items: [{\n  204                          handler: function(view, rowIndex, colIndex, item, e, record, row) {\n  205:                             var tabs = this.up('app_pageframe');\n  206  \n  207                              var storeToNavigate = new CBH.store.sales.FileQuoteDetail().load({\n  ...\n  219                                      });\n  220  \n  221:                                     var tab = tabs.add({\n  222                                          closable: true,\n  223:                                         iconCls: 'tabs',\n  224                                          autoScroll: true,\n  225                                          title: 'Line Entry',\n  ...\n  242                      handler: function() {\n  243                          var me = this.up('form'),\n  244:                             tabs = me.up('app_pageframe'),\n  245                              grid = me.down('gridpanel'),\n  246                              rowCount = grid.store.max(\"QuoteSort\");\n  ...\n  263                          });\n  264  \n  265:                         var tab = tabs.add({\n  266                              closable: true,\n  267:                             iconCls: 'tabs',\n  268                              autoScroll: true,\n  269                              title: 'New Line Entry',\n  ...\n  317                      celldblclick: function(view, td, cellIndex, record, tr, rowIndex, e, eOpts) {\n  318                          var me = this.up('panel'),\n  319:                             tabs = this.up('app_pageframe'),\n  320                              grid = view.up('gridpanel');\n  321  \n  ...\n  338                                      });\n  339  \n  340:                                     var tab = tabs.add({\n  341                                          closable: true,\n  342:                                         iconCls: 'tabs',\n  343                                          autoScroll: true,\n  344                                          title: 'Line Entry',\n  ...\n  504          var me = this;\n  505  \n  506:         var tabs = this.up('app_pageframe');\n  507  \n  508          var storeToNavigate = new CBH.store.sales.FileHeader().load({\n  ...\n  518                  });\n  519  \n  520:                 var tab = tabs.add({\n  521                      closable: true,\n  522:                     iconCls: 'tabs',\n  523                      autoScroll: true,\n  524                      title: 'File: ' + this.getAt(0).data.x_FileNumFormatted,\n  ...\n  596      onViewVendor: function(VendorKey) {\n  597          var me = this,\n  598:             tabs = me.up('app_pageframe');\n  599  \n  600          me.getEl().mask(\"Loading Vendor...\");\n  ...\n  609                  });\n  610  \n  611:                 var tab = tabs.add({\n  612                      closable: true,\n  613:                     iconCls: 'tabs',\n  614                      autoScroll: true,\n  615                      title: 'Vendor Maintenance',\n  ...\n  632      onViewItem: function(ItemKey) {\n  633          var me = this;\n  634:         var tabs = this.up('app_pageframe');\n  635  \n  636          me.getEl().mask(\"Loading Item...\");\n  ...\n  645                  });\n  646  \n  647:                 var tab = tabs.add({\n  648                      closable: true,\n  649:                     iconCls: 'tabs',\n  650                      autoScroll: true,\n  651                      title: 'Item Maintenance',\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\sales\\FileOverview.js:\n  566  \n  567      onClickLineDetails: function() {\n  568:         var tabs = this.up('app_pageframe');\n  569  \n  570          var existsTab = Ext.getCmp('lineentry');\n  571  \n  572          if (existsTab) {\n  573:             tabs.remove(existsTab, true);\n  574          }\n  575  \n  576          var filedetails;\n  577  \n  578:         var tab = tabs.add({\n  579              closable: true,\n  580:             iconCls: 'tabs',\n  581              autoScroll: true,\n  582              title: 'Line Entry',\n  ...\n  593          });\n  594  \n  595:         tabs.setActiveTab(tab.getId());\n  596      },\n  597  \n  598      onClickOrderDetails: function() {\n  599          var me = this,\n  600:             tabs = me.up('viewport').down('app_pageframe'),\n  601              grid = me.down('#gridvendors');\n  602  \n  ...\n  613          });\n  614  \n  615:         var tab = tabs.add({\n  616              closable: true,\n  617:             iconCls: 'tabs',\n  618              autoScroll: true,\n  619              title: 'Order Entry',\n  ...\n  632          });\n  633  \n  634:         tabs.setActiveTab(tab.getId());\n  635      },\n  636  \n  637      onClickEditSupplierQuotes: function() {\n  638          var me = this,\n  639:             tabs = me.up('viewport').down('app_pageframe'),\n  640              grid = me.down('#gridvendors');\n  641  \n  ...\n  672                  });\n  673  \n  674:                 var tab = tabs.add({\n  675                      closable: true,\n  676:                     iconCls: 'tabs',\n  677                      autoScroll: true,\n  678                      title: 'Quote Entry',\n  ...\n  803      onClickEditCustomerQuote: function() {\n  804          var me = this,\n  805:             tabs = me.up('app_pageframe'),\n  806              grid = me.down('#gridquotes');\n  807  \n  ...\n  836                  });\n  837  \n  838:                 var tab = tabs.add({\n  839                      closable: true,\n  840:                     iconCls: 'tabs',\n  841                      autoScroll: true,\n  842                      title: 'Quote Maintenance',\n  ...\n  882          var me = this;\n  883  \n  884:         var tabs = this.up('app_pageframe');\n  885  \n  886          var storeToNavigate = new CBH.store.sales.FileHeader().load({\n  ...\n  896                  });\n  897  \n  898:                 var tab = tabs.add({\n  899                      closable: true,\n  900:                     iconCls: 'tabs',\n  901                      autoScroll: true,\n  902                      title: 'File: ' + this.getAt(0).data.x_FileNumFormatted,\n  ...\n  944          var me = this;\n  945  \n  946:         var tabs = this.up('app_pageframe');\n  947  \n  948          var fileKey = me.FileKey;\n  ...\n  953          var form;\n  954  \n  955:         var tab = tabs.add({\n  956              closable: true,\n  957              forceFit: true,\n  958:             iconCls: 'tabs',\n  959              autoScroll: true,\n  960              title: 'Status History',\n  ...\n  986          });\n  987  \n  988:         tabs.setActiveTab(tab.getId());\n  989      },\n  990  \n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\sales\\FileQuoteConfirmation.js:\n  722          var me = this;\n  723  \n  724:         var tabs = me.up('app_pageframe'),\n  725:             currentTab = tabs.getActiveTab();\n  726  \n  727          Ext.Msg.wait('Loading....', 'Wait');\n  ...\n  749                          form.loadRecord(jobOverview);\n  750  \n  751:                         var tab = tabs.add({\n  752                              closable: true,\n  753:                             iconCls: 'tabs',\n  754                              autoScroll: true,\n  755                              title: 'Job Overview: ' + jobOverview.data.JobNum,\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\sales\\FileQuoteEntry.js:\n  592                      items: [{\n  593                          handler: function(view, rowIndex, colIndex, item, e, record, row) {\n  594:                             var tabs = this.up('app_pageframe');\n  595  \n  596                              var storeToNavigate = new CBH.store.sales.FileQuoteDetail().load({\n  ...\n  607  \n  608  \n  609:                                     var tab = tabs.add({\n  610                                          closable: true,\n  611:                                         iconCls: 'tabs',\n  612                                          autoScroll: true,\n  613                                          title: 'Line Entry',\n  ...\n  629                      hidden: true,\n  630                      handler: function() {\n  631:                         var tabs = Ext.getCmp('cbh_pageframe'),\n  632                              grid = me.down('gridpanel');\n  633  \n  ...\n  646                          });\n  647  \n  648:                         var tab = tabs.add({\n  649                              closable: true,\n  650:                             iconCls: 'tabs',\n  651                              autoScroll: true,\n  652                              title: 'New Line Entry',\n  ...\n  700                      },*/\n  701                      celldblclick: function(view, td, cellIndex, record, tr, rowIndex, e, eOpts) {\n  702:                         var tabs = this.up('app_pageframe');\n  703  \n  704                          var storeToNavigate = new CBH.store.sales.FileQuoteDetail().load({\n  ...\n  714  \n  715  \n  716:                                 var tab = tabs.add({\n  717                                      closable: true,\n  718:                                     iconCls: 'tabs',\n  719                                      autoScroll: true,\n  720                                      title: 'Line Entry',\n  ...\n  989      onViewVendorClick: function(VendorKey) {\n  990          var me = this,\n  991:             tabs = me.up('app_pageframe');\n  992  \n  993          me.getEl().mask(\"Loading Vendor...\");\n  ...\n 1002                  });\n 1003  \n 1004:                 var tab = tabs.add({\n 1005                      closable: true,\n 1006:                     iconCls: 'tabs',\n 1007                      autoScroll: true,\n 1008                      title: 'Vendor Maintenance',\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\sales\\FileQuoteMaintenance.js:\n 1833      onClickOrderingForm: function() {\n 1834          var me = this,\n 1835:             tabs = me.up('app_pageframe');\n 1836  \n 1837          var quotekey = me.down('field[name=QHdrKey]').getValue();\n ....\n 1850                  });\n 1851  \n 1852:                 var tab = tabs.add({\n 1853                      closable: true,\n 1854:                     iconCls: 'tabs',\n 1855                      autoScroll: true,\n 1856                      title: 'Quote Confirmation',\n ....\n 1870      onClickQuoteStatusHistory: function() {\n 1871          var me = this,\n 1872:             tabs = me.up('app_pageframe'),\n 1873              curRec = me.down('#FormToolbar').getCurrentRecord();\n 1874  \n ....\n 1879          var form;\n 1880  \n 1881:         var tab = tabs.add({\n 1882              closable: true,\n 1883:             iconCls: 'tabs',\n 1884              autoScroll: true,\n 1885              title: 'Quote Status History',\n ....\n 1913          });\n 1914  \n 1915:         tabs.setActiveTab(tab.getId());\n 1916      },\n 1917  \n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\sales\\FileQuoteOrderEntryQuickAdd.js:\n  213      onSaveChanges: function() {\n  214          var me = this,\n  215:             tabs = me.down('#mainPanel'),\n  216:             activeTab = tabs.getActiveTab();\n  217  \n  218          if (activeTab.itemId === \"panelFile\") {\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\sales\\SalesMenu.js:\n  119                              text: 'Create New File',\n  120                              handler: function() {\n  121:                                 var tabs = this.up('app_pageframe');\n  122  \n  123                                  var storeToNavigate = new CBH.store.sales.FileHeader();\n  ...\n  126                                  });\n  127  \n  128:                                 var tab = tabs.add({\n  129                                      closable: true,\n  130:                                     iconCls: 'tabs',\n  131                                      autoScroll: true,\n  132                                      title: 'New File',\n  ...\n  589      onClickViewDetails: function(view, rowIndex, colIndex, item, e, record) {\n  590          var form = this;\n  591:         var tabs = this.up('app_pageframe');\n  592  \n  593          var grid = form.down('#gridsales');\n  ...\n  619                  var form;\n  620  \n  621:                 var tab = tabs.add({\n  622                      closable: true,\n  623:                     iconCls: 'tabs',\n  624                      autoScroll: true,\n  625                      title: 'File Overview',\n  ...\n  648  \n  649                  form.loadRecord(curModel);\n  650:                 tabs.setActiveTab(tab.getId());\n  651              },\n  652              scope: this\n  ...\n  656      onClickLineDetails: function() {\n  657          var me = this.up('panel');\n  658:         var tabs = this.up('app_pageframe');\n  659          var grid = me.down('#gridsales');\n  660  \n  ...\n  701                  });\n  702  \n  703:                 var tab = tabs.add({\n  704                      closable: true,\n  705:                     iconCls: 'tabs',\n  706                      autoScroll: true,\n  707                      title: 'Line Entry',\n  ...\n  732  \n  733      onClickOrderDetails: function() {\n  734:         var tabs = this.up('app_pageframe');\n  735  \n  736          var grid = this.up('panel').down('gridpanel');\n  ...\n  752          var form;\n  753  \n  754:         var tab = tabs.add({\n  755              closable: true,\n  756:             iconCls: 'tabs',\n  757              autoScroll: true,\n  758              title: 'Order Entry',\n  ...\n  776          });\n  777  \n  778:         tabs.setActiveTab(tab.getId());\n  779      },\n  780  \n  781      onClickStatusHistory: function() {\n  782:         var tabs = this.up('app_pageframe');\n  783  \n  784          var grid = this.up('panel').down('gridpanel');\n  ...\n  799          var form;\n  800  \n  801:         var tab = tabs.add({\n  802              closable: true,\n  803              forceFit: true,\n  804:             iconCls: 'tabs',\n  805              autoScroll: true,\n  806              title: 'Status History',\n  ...\n  832          });\n  833  \n  834:         tabs.setActiveTab(tab.getId());\n  835      },\n  836  \n  ...\n  838          var form = this.up('panel');\n  839  \n  840:         var tabs = this.up('app_pageframe');\n  841  \n  842          var grid = form.down('#gridsales');\n  ...\n  864                  });\n  865  \n  866:                 var tab = tabs.add({\n  867                      closable: true,\n  868:                     iconCls: 'tabs',\n  869                      autoScroll: true,\n  870                      title: 'File: ' + this.getAt(0).data.x_FileNumFormatted,\n  ...\n  881      onClickSupplierQuotes: function() {\n  882          var me = this;\n  883:         var tabs = this.up('app_pageframe');\n  884  \n  885          var grid = me.down('#gridsales');\n  ...\n  923                      });\n  924  \n  925:                     var tab = tabs.add({\n  926                          closable: true,\n  927:                         iconCls: 'tabs',\n  928                          autoScroll: true,\n  929                          title: 'Quote Entry',\n  ...\n  981      onClickEditCustomerQuote: function() {\n  982          var me = this,\n  983:             tabs = me.up('app_pageframe'),\n  984              grid = me.down('#gridquotes'),\n  985              gridFiles = me.down('#gridsales'),\n  ...\n 1016                  });\n 1017  \n 1018:                 var tab = tabs.add({\n 1019                      closable: true,\n 1020:                     iconCls: 'tabs',\n 1021                      autoScroll: true,\n 1022                      title: 'Quote Maintenance',\n ....\n 1045  \n 1046      onClickFindFile: function() {\n 1047:         var tabs = this.up('app_pageframe');\n 1048  \n 1049          var me = this,\n ....\n 1088  \n 1089      onClickQuoteStatusHistory: function() {\n 1090:         var tabs = this.up('app_pageframe'),\n 1091              grid = this.up('panel').down('#gridquotes'),\n 1092              gridFiles = this.up('panel').down('gridpanel');\n ....\n 1109          var form;\n 1110  \n 1111:         var tab = tabs.add({\n 1112              closable: true,\n 1113:             iconCls: 'tabs',\n 1114              autoScroll: true,\n 1115              title: 'Quote Status History',\n ....\n 1143          });\n 1144  \n 1145:         tabs.setActiveTab(tab.getId());\n 1146      },\n 1147  \n 1148      onClickDeleteFile: function() {\n 1149          var me = this;\n 1150:         var tabs = this.up('app_pageframe');\n 1151  \n 1152          var grid = me.down('#gridsales');\n ....\n 1187      onClickDeleteQuote: function() {\n 1188          var me = this;\n 1189:         var tabs = this.up('app_pageframe');\n 1190  \n 1191          var grid = me.down('#gridquotes');\n ....\n 1228          tab = pageframe.add({\n 1229              closable: true,\n 1230:             iconCls: 'tabs',\n 1231              autoScroll: true,\n 1232              title: 'Status Report',\n ....\n 1255          tab = pageframe.add({\n 1256              closable: true,\n 1257:             iconCls: 'tabs',\n 1258              autoScroll: true,\n 1259              title: 'Closed and Shipped Report....',\n ....\n 1282          tab = pageframe.add({\n 1283              closable: true,\n 1284:             iconCls: 'tabs',\n 1285              autoScroll: true,\n 1286              title: 'Open Quote Report....',\n ....\n 1309          tab = pageframe.add({\n 1310              closable: true,\n 1311:             iconCls: 'tabs',\n 1312              autoScroll: true,\n 1313              title: 'Open Quote Report....',\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\vendors\\Items.js:\n  691              curitemkey = me.down(\"#FormToolbar\").getCurrentRecord().data.ItemKey;\n  692  \n  693:         var tabs = this.up('app_pageframe');\n  694          Ext.Msg.wait('Loading Item Price History...', 'Wait');\n  695          var storeItems = new CBH.store.vendors.Items().load({\n  ...\n  705                      CurRecord: currecord\n  706                  });\n  707:                 var tab = tabs.add({\n  708                      closable: true,\n  709:                     iconCls: 'tabs',\n  710                      title: 'Items Price History',\n  711                      items: [form]\n  ...\n  954              record = me.down('field[name=ItemSchBImportKey]').getSelectedRecord();\n  955  \n  956:         //var tabs = this.up('app_pageframe');\n  957  \n  958          me.getEl().mask('Please wait...');\n  ...\n 1056          var me = this;\n 1057  \n 1058:         var tabs = me.up('app_pageframe');\n 1059  \n 1060          me.loadPurchaseOrder(record.data.POKey).then({\n ....\n 1085                                  form.loadRecord(jobOverview);\n 1086  \n 1087:                                 var tab = tabs.add({\n 1088                                      closable: true,\n 1089:                                     iconCls: 'tabs',\n 1090                                      autoScroll: true,\n 1091                                      title: 'Job Overview: ' + purchaseOrder.data.x_JobNumFormatted,\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\vendors\\ItemsList.js:\n   88                          itemId: 'additem',\n   89                          handler: function() {\n   90:                             var tabs = this.up('app_pageframe');\n   91  \n   92                              storeToNavigate = new CBH.store.vendors.Items();\n   ..\n  111                              });\n  112  \n  113:                             var tab = tabs.add({\n  114                                  closable: true,\n  115:                                 iconCls: 'tabs',\n  116                                  autoScroll: true,\n  117                                  title: 'New Item',\n  ...\n  227      onViewDetails: function(record) {\n  228          var me = this;\n  229:         var tabs = this.up('app_pageframe');\n  230          var grid = me.down('#griditems');\n  231  \n  ...\n  242                  });\n  243  \n  244:                 var tab = tabs.add({\n  245                      closable: true,\n  246:                     iconCls: 'tabs',\n  247                      autoScroll: true,\n  248                      title: 'Item Maintenance',\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\vendors\\VendorsList.js:\n   91                          text: 'Create New Vendor',\n   92                          handler: function() {\n   93:                             var tabs = this.up('app_pageframe');\n   94  \n   95                              var grid = this.up('form').down('#gridvendor');\n   ..\n  100                              });\n  101  \n  102:                             var tab = tabs.add({\n  103                                  closable: true,\n  104:                                 iconCls: 'tabs',\n  105                                  autoScroll: true,\n  106                                  title: 'New Vendor',\n  ...\n  178      onViewDetails: function(record) {\n  179          var me = this,\n  180:             tabs = me.up('app_pageframe'),\n  181              grid = me.down('gridpanel');\n  182  \n  ...\n  191                  });\n  192  \n  193:                 var tab = tabs.add({\n  194                      closable: true,\n  195:                     iconCls: 'tabs',\n  196                      autoScroll: true,\n  197                      title: 'Vendor Maintenance',\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\ux\\form\\Toolbar.js:\n  208                          } else {\n  209                              parent = me.up('form').up('panel');\n  210:                             if (parent && parent.iconCls === 'tabs') {\n  211                                  parent.close();\n  212                              } else {\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\ux\\form\\ToolbarOld.js:\n  205                          } else {\n  206                              parent = me.up('form').up('panel');\n  207:                             if(parent && parent.iconCls === 'tabs') {\n  208                                  parent.close();\n  209                              } else {\n\n309 matches across 32 files\n\n\nSearching 358 files for \"numbercolumn\" (case sensitive)\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\common\\CurrencyList.js:\n   42                      flex: 4\n   43                  }, {\n   44:                     xtype: 'numbercolumn',\n   45                      text: 'Rate',\n   46                      dataIndex: 'CurrencyRate',\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\common\\PaymentTermsList.js:\n   39                      flex: 6\n   40                  }, {\n   41:                     xtype: 'numbercolumn',\n   42                      text: '% Prepaid',\n   43                      dataIndex: 'TermPercentPrepaid',\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\customers\\CustomersList.js:\n   29                      width: 50\n   30                  }, {\n   31:                     xtype: 'numbercolumn',\n   32                      width: 60,\n   33                      dataIndex: 'CustKey',\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\jobs\\InvoiceMaintenance.js:\n  840                                      }],\n  841                                      columns: [{\n  842:                                         xtype: 'numbercolumn',\n  843                                          flex: 0.25,\n  844                                          dataIndex: 'IChargeSort',\n  ...\n  846                                          format: '00,000'\n  847                                      }, {\n  848:                                         xtype: 'numbercolumn',\n  849                                          flex: 0.6,\n  850                                          dataIndex: 'IChargeQty',\n  ...\n  867                                          }\n  868                                      }, {\n  869:                                         xtype: 'numbercolumn',\n  870                                          flex: 0.6,\n  871                                          dataIndex: 'IChargeCost',\n  ...\n  875                                          summaryType: 'sum'\n  876                                      }, {\n  877:                                         xtype: 'numbercolumn',\n  878                                          flex: 0.6,\n  879                                          dataIndex: 'IChargePrice',\n  ...\n  986                                      format: '00,000'\n  987                                  }, {\n  988:                                     xtype: 'numbercolumn',\n  989                                      text: 'Qty.',\n  990                                      dataIndex: 'ISummaryQty',\n  ...\n 1010                                      }\n 1011                                  }, {\n 1012:                                     xtype: 'numbercolumn',\n 1013                                      text: 'Cost',\n 1014                                      dataIndex: 'ISummaryPrice',\n ....\n 1016                                      format: '00,000.00'\n 1017                                  }, {\n 1018:                                     xtype: 'numbercolumn',\n 1019                                      text: 'Price',\n 1020                                      dataIndex: 'ISummaryLinePrice',\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\jobs\\JobFindJobInvoice.js:\n   55                              text: 'Bill To'\n   56                          }, {\n   57:                             xtype: 'numbercolumn',\n   58                              width: 120,\n   59                              dataIndex: 'Price',\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\jobs\\JobNewInvoice.js:\n  176                                      text: 'Status'\n  177                                  }, {\n  178:                                     xtype: 'numbercolumn',\n  179                                      width: 80,\n  180                                      dataIndex: 'Cost',\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\jobs\\JobOverview.js:\n  133                                  },\n  134                              }, {\n  135:                                 xtype: 'numbercolumn',\n  136                                  width: 120,\n  137                                  dataIndex: 'Cost',\n  ...\n  235                                  text: 'Bill To'\n  236                              }, {\n  237:                                 xtype: 'numbercolumn',\n  238                                  dataIndex: 'Price',\n  239                                  text: 'Price',\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\jobs\\JobOverviewPopupUpdateCurrency.js:\n  108                              }\n  109                          }, {\n  110:                             xtype: 'numbercolumn',\n  111                              text: 'Rate',\n  112                              dataIndex: 'JobCurrencyRate',\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\jobs\\JobPurchaseOrderMaintenance.js:\n  669                                      format: '00,000'\n  670                                  }, {\n  671:                                     xtype: 'numbercolumn',\n  672                                      text: 'Qty.',\n  673                                      dataIndex: 'POItemsQty',\n  ...\n  687                                      }\n  688                                  }, {\n  689:                                     xtype: 'numbercolumn',\n  690                                      text: 'Cost',\n  691                                      dataIndex: 'POItemsLineCost',\n  ...\n  694                                      summaryType: 'sum'\n  695                                  }, {\n  696:                                     xtype: 'numbercolumn',\n  697                                      text: 'Price',\n  698                                      dataIndex: 'POItemsLinePrice',\n  ...\n  705                                      dataIndex: 'POItemsCurrencyCode'\n  706                                  }, {\n  707:                                     xtype: 'numbercolumn',\n  708                                      text: 'Backorder Qty.',\n  709                                      dataIndex: 'POItemsBackorderQty',\n  ...\n  900                                      format: '00,000'\n  901                                  }, {\n  902:                                     xtype: 'numbercolumn',\n  903                                      text: 'Qty.',\n  904                                      dataIndex: 'POChargesQty',\n  ...\n  919                                      }\n  920                                  }, {\n  921:                                     xtype: 'numbercolumn',\n  922                                      text: 'Cost Unit',\n  923                                      dataIndex: 'x_UnitCost',\n  ...\n  925                                      format: '00,000.00'\n  926                                  }, {\n  927:                                     xtype: 'numbercolumn',\n  928                                      text: 'Price Unit',\n  929                                      dataIndex: 'x_UnitPrice',\n  ...\n  931                                      format: '00,000.00'\n  932                                  }, {\n  933:                                     xtype: 'numbercolumn',\n  934                                      text: 'Total Cost',\n  935                                      dataIndex: 'POChargesCost',\n  ...\n  938                                      summaryType: 'sum'\n  939                                  }, {\n  940:                                     xtype: 'numbercolumn',\n  941                                      text: 'Total Price',\n  942                                      dataIndex: 'POChargesPrice',\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\manager\\JobRolesList.js:\n   72                  store: null,\n   73                  columns: [{\n   74:                     xtype: 'numbercolumn',\n   75                      sortable: true,\n   76                      width: 60,\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\sales\\FileLineEntry.js:\n  668                                      },\n  669                                      {\n  670:                                         xtype: 'numbercolumn',\n  671                                          flex: 1,\n  672                                          renderer: function(value, metaData, record) {\n  ...\n  699                                          }\n  700                                      }, {\n  701:                                         xtype: 'numbercolumn',\n  702                                          flex: 1,\n  703                                          renderer: function(value, metaData, record) {\n  ...\n  710                                          align: 'right'\n  711                                      }, {\n  712:                                         xtype: 'numbercolumn',\n  713                                          flex: 1,\n  714                                          renderer: function(value, metaData, record) {\n  ...\n  721                                          align: 'right'\n  722                                      }, {\n  723:                                         xtype: 'numbercolumn',\n  724                                          flex: 1,\n  725                                          renderer: function(value, metaData, record) {\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\sales\\FileOrderEntry.js:\n  104                  }],\n  105                  columns: [{\n  106:                     xtype: 'numbercolumn',\n  107                      width: 65,\n  108                      dataIndex: 'QuoteSort',\n  ...\n  111                      sortable: true\n  112                  }, {\n  113:                     xtype: 'numbercolumn',\n  114                      width: 65,\n  115                      dataIndex: 'QuoteQty',\n  ...\n  142                      sortable: true\n  143                  }, {\n  144:                     xtype: 'numbercolumn',\n  145                      width: 70,\n  146                      text: 'Profit',\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\sales\\FileOverview.js:\n  122                                  text: 'Vendor'\n  123                              }, {\n  124:                                 xtype: 'numbercolumn',\n  125                                  width: 80,\n  126                                  dataIndex: 'Qty',\n  ...\n  129                                  align: 'right'\n  130                              }, {\n  131:                                 xtype: 'numbercolumn',\n  132                                  width: 80,\n  133                                  dataIndex: 'Cost',\n  ...\n  136                                  align: 'right'\n  137                              }, {\n  138:                                 xtype: 'numbercolumn',\n  139                                  width: 80,\n  140                                  dataIndex: 'Price',\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\sales\\FileQuoteConfirmationSubVendorInfo.js:\n  185          minHeight: 50,\n  186          columns: [{\n  187:             xtype: 'numbercolumn',\n  188              flex: 1,\n  189              dataIndex: 'Cost',\n  ...\n  200              }\n  201          }, {\n  202:             xtype: 'numbercolumn',\n  203              flex: 1,\n  204              dataIndex: 'DiscountAmount',\n  ...\n  215              }\n  216          }, {\n  217:             xtype: 'numbercolumn',\n  218              flex: 1,\n  219              dataIndex: 'CostAfterDiscount',\n  ...\n  230              }\n  231          }, {\n  232:             xtype: 'numbercolumn',\n  233              flex: 1,\n  234              dataIndex: 'Price',\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\sales\\FileQuoteEntry.js:\n  512                  }],\n  513                  columns: [{\n  514:                     xtype: 'numbercolumn',\n  515                      width: 60,\n  516                      dataIndex: 'QuoteSort',\n  ...\n  518                      format: '00,000'\n  519                  }, {\n  520:                     xtype: 'numbercolumn',\n  521                      width: 70,\n  522                      dataIndex: 'QuoteQty',\n  ...\n  545                      }\n  546                  }, {\n  547:                     xtype: 'numbercolumn',\n  548                      width: 68,\n  549                      text: 'Profit (%)',\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\sales\\FileQuoteMaintenance.js:\n  629                                                  }\n  630                                              }, {\n  631:                                                 xtype: 'numbercolumn',\n  632                                                  width: 70,\n  633                                                  format: '00,000',\n  ...\n  637                                                  summaryType: 'sum'\n  638                                              }, {\n  639:                                                 xtype: 'numbercolumn',\n  640                                                  width: 120,\n  641                                                  renderer: Ext.util.Format.usMoney,\n  ...\n  645                                                  summaryType: 'sum'\n  646                                              }, {\n  647:                                                 xtype: 'numbercolumn',\n  648                                                  width: 120,\n  649                                                  renderer: Ext.util.Format.usMoney,\n  ...\n  858                                      }],\n  859                                      columns: [{\n  860:                                         xtype: 'numbercolumn',\n  861                                          width: 60,\n  862                                          dataIndex: 'QChargeSort',\n  ...\n  864                                          format: '00,000'\n  865                                      }, {\n  866:                                         xtype: 'numbercolumn',\n  867                                          width: 80,\n  868                                          dataIndex: 'QChargeQty',\n  ...\n  994                                          }\n  995                                      }, {\n  996:                                         xtype: 'numbercolumn',\n  997                                          width: 120,\n  998                                          dataIndex: 'QChargeCost',\n  ...\n 1041                                          }\n 1042                                      }, {\n 1043:                                         xtype: 'numbercolumn',\n 1044                                          width: 120,\n 1045                                          dataIndex: 'QChargePrice',\n ....\n 1274                                  }],\n 1275                                  columns: [{\n 1276:                                     xtype: 'numbercolumn',\n 1277                                      width: 80,\n 1278                                      dataIndex: 'QSummarySort',\n ....\n 1280                                      format: '00,000'\n 1281                                  }, {\n 1282:                                     xtype: 'numbercolumn',\n 1283                                      width: 80,\n 1284                                      dataIndex: 'QSummaryQty',\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\vendors\\Items.js:\n  538                                      format: '00,000'\n  539                                  }, {\n  540:                                     xtype: 'numbercolumn',\n  541                                      width: 65,\n  542                                      dataIndex: 'PONum',\n  ...\n  544                                      format: '0'\n  545                                  }, {\n  546:                                     xtype: 'numbercolumn',\n  547                                      width: 125,\n  548                                      text: 'Cost From Supplier',\n  ...\n  551                                      align: 'right'\n  552                                  }, {\n  553:                                     xtype: 'numbercolumn',\n  554                                      width: 150,\n  555                                      text: 'Price paid by Customer',\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\vendors\\ItemsList.js:\n   29                      format: '00,000'\n   30                  }, {\n   31:                     xtype: 'numbercolumn',\n   32                      width: 60,\n   33                      dataIndex: 'ItemKey',\n   ..\n   45                      flex: 3\n   46                  }, {\n   47:                     xtype: 'numbercolumn',\n   48                      text: 'Cost',\n   49                      dataIndex: 'ItemCost',\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\vendors\\ItemsPriceHistory.js:\n  107                                  },\n  108                                  {\n  109:                                     xtype: 'numbercolumn',\n  110                                      width:65,\n  111                                      dataIndex: 'PONum',\n  ...\n  114                                  },\n  115                                  {\n  116:                                     xtype: 'numbercolumn',\n  117                                      width:125,\n  118                                      text: 'Cost From Supplier',\n  ...\n  122                                  },\n  123                                  {\n  124:                                     xtype: 'numbercolumn',\n  125                                      width:150,\n  126                                      text: 'Price paid by Customer',\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\vendors\\Vendors.js:\n  333                                      dataIndex: 'x_StateName'\n  334                                  }, {\n  335:                                     xtype: 'numbercolumn',\n  336                                      text: 'Cost',\n  337                                      dataIndex: 'ItemCost',\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\vendors\\VendorsList.js:\n   34                      width: 50\n   35                  }, {\n   36:                     xtype: 'numbercolumn',\n   37                      width: 60,\n   38                      dataIndex: 'VendorKey',\n\n61 matches across 21 files\n\n\nSearching 358 files for \"onFieldChange\" (case sensitive)\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\common\\PaymentTerms.js:\n   39                      delay: 500,\n   40                      fn: function(item, e) {\n   41:                         this.getEditor().onFieldChange();\n   42                      }\n   43                  },\n   ..\n  217                                  change: function(field) {\n  218                                      var form = field.up('panel');\n  219:                                     form.onFieldChange();\n  220                                  },\n  221                                  beforequery: function(record) {\n  ...\n  238                                  change: function(field) {\n  239                                      var form = field.up('panel');\n  240:                                     form.onFieldChange();\n  241                                  }\n  242                              }\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\common\\ScheduleB.js:\n   35                      delay: 500,\n   36                      fn: function(item, e) {\n   37:                         this.getEditor().onFieldChange();\n   38                      }\n   39                  },\n   ..\n  233                                  change: function(field) {\n  234                                      var form = field.up('panel');\n  235:                                     form.onFieldChange();\n  236                                  },\n  237                                  beforequery: function(record) {\n  ...\n  254                                  change: function(field) {\n  255                                      var form = field.up('panel');\n  256:                                     form.onFieldChange();\n  257                                  }\n  258                              }\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\jobs\\InvoiceMaintenance.js:\n  690                                                          change: function(field) {\n  691                                                              var form = field.up('panel');\n  692:                                                             form.onFieldChange();\n  693                                                          },\n  694                                                          select: function(field, records, eOpts) {\n  ...\n  732                                                          change: function(field) {\n  733                                                              var form = field.up('panel');\n  734:                                                             form.onFieldChange();\n  735                                                          },\n  736                                                          select: function(field, records, eOpts) {\n  ...\n 1859                          var editor = this.getEditor();\n 1860                          editor.down('field[name=ISummaryBackorderQty]').focus(true, 200);\n 1861:                         this.getEditor().onFieldChange();\n 1862                      }\n 1863                  },\n ....\n 1898                      delay: 100,\n 1899                      fn: function(item, e) {\n 1900:                         this.getEditor().onFieldChange();\n 1901                      }\n 1902                  },\n ....\n 1944                          var record = context.record;\n 1945  \n 1946:                         formEditing.onFieldChange();\n 1947  \n 1948                          var filterQHdr = new Ext.util.Filter({\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\jobs\\JobInformation.js:\n   35                      //delay: 100,\n   36                      fn: function(item, e) {\n   37:                         this.getEditor().onFieldChange();\n   38                      }\n   39                  },\n   ..\n  394                                  change: function(field) {\n  395                                      var form = field.up('panel');\n  396:                                     form.onFieldChange();\n  397                                  },\n  398                                  select: function(field, records, eOpts) {\n  ...\n  434                                  change: function(field) {\n  435                                      var form = field.up('panel');\n  436:                                     form.onFieldChange();\n  437                                  },\n  438                                  select: function(field, records, eOpts) {\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\jobs\\JobOverviewPopupUpdateCurrency.js:\n  235                          \n  236                          editor.down('field[name=JobCurrencyCode]').focus(true, 200);\n  237:                         this.getEditor().onFieldChange();\n  238                      }\n  239                  },\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\jobs\\JobPurchaseOrderMaintenance.js:\n 1856                          var editor = this.getEditor();\n 1857                          editor.down('field[name=POItemsBackorderQty]').focus(true, 200);\n 1858:                         this.getEditor().onFieldChange();\n 1859                      }\n 1860                  },\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\manager\\JobRolesList.js:\n   22                      delay: 100,\n   23                      fn: function(item, e) {\n   24:                         this.getEditor().onFieldChange();\n   25                      }\n   26                  },\n   ..\n   91                              change: function(field, newValue, oldValue) {\n   92                                  var form = field.up('panel');\n   93:                                 form.onFieldChange();\n   94  \n   95                                  if (!String.isNullOrEmpty(newValue)) field.setValue(newValue.toUpperCase());\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\sales\\FileForm.js:\n   35                      //delay: 100,\n   36                      fn: function(item, e) {\n   37:                         this.getEditor().onFieldChange();\n   38                      }\n   39                  },\n   ..\n  441                                  change: function(field) {\n  442                                      var form = field.up('panel');\n  443:                                     form.onFieldChange();\n  444                                  },\n  445                                  select: function(field, records, eOpts) {\n  ...\n  480                                  change: function(field) {\n  481                                      var form = field.up('panel');\n  482:                                     form.onFieldChange();\n  483                                  },\n  484                                  select: function(field, records, eOpts) {\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\sales\\FileQuoteMaintenance.js:\n   36                          var record = context.record;\n   37  \n   38:                         formEditing.onFieldChange();\n   39  \n   40                          Ext.Msg.wait('Loading', 'Loading Data...');\n   ..\n  102                          var record = context.record;\n  103  \n  104:                         formEditing.onFieldChange();\n  105  \n  106                          var filterQHdr = new Ext.util.Filter({\n  ...\n  714                                                          change: function(field) {\n  715                                                              var form = field.up('panel');\n  716:                                                             form.onFieldChange();\n  717                                                          },\n  718                                                          select: function(field, records, eOpts) {\n  ...\n  756                                                          change: function(field) {\n  757                                                              var form = field.up('panel');\n  758:                                                             form.onFieldChange();\n  759                                                          },\n  760                                                          select: function(field, records, eOpts) {\n  ...\n  886                                                  change: function(field) {\n  887                                                      var form = field.up('panel');\n  888:                                                     form.onFieldChange();\n  889                                                  }\n  890                                              }\n  ...\n  914                                                  change: function(field) {\n  915                                                      var form = field.up('panel');\n  916:                                                     form.onFieldChange();\n  917                                                  },\n  918                                                  select: function(field, records, eOpts) {\n  ...\n  944                                                  change: function(field) {\n  945                                                      var form = field.up('panel');\n  946:                                                     form.onFieldChange();\n  947                                                  }\n  948                                              }\n  ...\n  969                                                  change: function(field) {\n  970                                                      var form = field.up('panel');\n  971:                                                     form.onFieldChange();\n  972                                                  }\n  973                                              }\n  ...\n  984                                                  change: function(field) {\n  985                                                      var form = field.up('panel');\n  986:                                                     form.onFieldChange();\n  987                                                  }\n  988                                              }\n  ...\n 1018                                                  change: function(field) {\n 1019                                                      var form = field.up('panel');\n 1020:                                                     form.onFieldChange();\n 1021                                                  },\n 1022                                                  keydown: function(field, e) {\n ....\n 1065                                                  change: function(field) {\n 1066                                                      var form = field.up('panel');\n 1067:                                                     form.onFieldChange();\n 1068                                                  },\n 1069                                                  keydown: function(field, e) {\n ....\n 1114                                                  change: function(field) {\n 1115                                                      var form = field.up('panel');\n 1116:                                                     form.onFieldChange();\n 1117                                                  },\n 1118                                                  select: function(field, records, eOpts) {\n ....\n 1162                                                  change: function(field) {\n 1163                                                      var form = field.up('panel');\n 1164:                                                     form.onFieldChange();\n 1165                                                  },\n 1166                                                  select: function(field, records, eOpts) {\n\nC:\\Users\\Rony\\Google Drive\\DEV\\WEB\\CBH\\app\\view\\vendors\\Items.js:\n   52                      delay: 500,\n   53                      fn: function(item, e) {\n   54:                         this.getEditor().onFieldChange();\n   55                      }\n   56                  },\n   ..\n  431                                              change: function(field) {\n  432                                                  var form = field.up('panel');\n  433:                                                 form.onFieldChange();\n  434                                              },\n  435                                              beforequery: function(record) {\n  ...\n  452                                              change: function(field) {\n  453                                                  var form = field.up('panel');\n  454:                                                 form.onFieldChange();\n  455                                              }\n  456                                          }\n\n37 matches across 10 files\n",
+			"settings":
+			{
+				"buffer_size": 88410,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "app/view/jobs/JobPurchaseOrderMaintenance.js",
+			"settings":
+			{
+				"buffer_size": 94415,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/view/common/ScheduleB.js",
+			"settings":
+			{
+				"buffer_size": 21756,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "ux/DataView/Draggable.js",
+			"settings":
+			{
+				"buffer_size": 5711,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ux/CheckColumn.js",
+			"settings":
+			{
+				"buffer_size": 4528,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "scripts/sessionsvars.js",
+			"settings":
+			{
+				"buffer_size": 536,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "ux/form/Toolbar.js",
+			"settings":
+			{
+				"buffer_size": 29584,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/model/common/ScheduleB.js",
+			"settings":
+			{
+				"buffer_size": 3816,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/JSHint Inline/JSHint-Inline.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"fe",
+				"Fetch: File"
+			],
+			[
+				"",
+				"Fetch: Package"
+			],
+			[
+				"fet",
+				"Fetch: Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install ",
+				"Package Control: Install Package"
+			],
+			[
+				"snipp",
+				"Snippet: Bootstrap pagination"
+			],
+			[
+				"snip",
+				"Snippet: Bootstrap toolbar"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/jobs/qfrmJobExemptFromProfitReportList.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/store/jobs/qfrmJobExemptFromProfitReport.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/model/jobs/qfrmJobExemptFromProfitReport.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/common/TreeViewMain.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/jobs/JobStatusHistoryList.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/jobs/JobOverview.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/controller/Logon.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/jobs/JobPurchaseOrderMaintenance.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/sales/FileQuoteMaintenance.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/ux/form/Toolbar.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/jobs/InvoiceMaintenance.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/sales/FileQuoteStatusHistory.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/sales/FileQuoteVendorSelection.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/sales/SalesMenu.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/common/FormReportCriteria.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/scripts/behavior.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/sales/FileOverview.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/customers/CustomersList.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/jobs/JobMenu.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/store/jobs/JobCurrencyMaster.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/store/jobs/JobStatusHistory.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/store/jobs/qfrmJobOverviewPopupUpdateCurrency.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/store/jobs/JobStatusHistorySubDetails.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/sales/FileQuoteConfirmationSubVendorInfo.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/sales/FileQuoteEntry.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/sales/FileOrderEntry.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/manager/ManagerMenu.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/model/common/ReportCriteria.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/model/sales/tlkpInvoiceSubTotalCategories.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/store/sales/tlkpInvoiceSubTotalCategories.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/store/sales/ChargeCategories.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/model/sales/ChargeCategories.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/common/ToolBar.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/jobs/JobFindJob.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/jobs/JobFindJobInvoice.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/jobs/JobFindPO.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/jobs/JobPOEditItems.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/manager/JobRolesList.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/sales/FileFindFile.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/sales/FileFindQuote.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/sales/FileForm.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/sales/FileLineEntry.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/jobs/JobStatusHistory.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/store/common/ReportCriteria.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/model/jobs/JobStatus.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/store/jobs/JobStatus.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/store/common/CountriesForReport.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/store/common/EmployeesForReport.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/store/customers/CustomersForReport.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/model/vendors/VendorsForReport.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/store/vendors/VendorsForReport.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/model/customers/CustomerContactsForReport.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/store/customers/CustomerContactsForReport.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/model/customers/CustomersForReport.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/resources/css/app.css",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/ux/CheckColumnPatch.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/ux/CheckColumn.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/model/jobs/JobRoles.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/store/jobs/JobRoles.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/common/PaymentTermsList.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/index.html",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/model/common/Employees.js",
+		"/C/Users/Rony/AppData/Roaming/Sublime Text 2/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/model/common/CountriesForReport.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/vendors/Items.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/jobs/JobInformation.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/model/sales/FileHeader.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/model/sales/qfrmFileQuoteDetailsSub.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/model/sales/FileQuoteDetail.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/model/vendors/Items.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/vendors/ItemsList.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/common/PageFrame.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/common/MainMenu.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/common/ScheduleBList.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/manager/EmployeeList.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/sales/FileQuoteConfirmation.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/vendors/VendorsList.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/sales/FileQuoteEditItemSummary.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/common/InputConvert.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/sales/InputProfitMargin.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/model/jobs/JobPurchaseOrderItems.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/exclude.txt",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/publish.bat",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/common/CurrencyRates.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/common/PaymentTerms.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/common/ScheduleB.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/customers/Customers.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/manager/Employees.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/vendors/Vendors.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/jobs/JobPurchaseOrderStatusHistoryList.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/common/CurrencyList.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/store/common/NavTree.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/customers/CustomerContacts.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/customers/CustomerShipAddress.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/jobs/InvoiceEditCharges.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/jobs/InvoiceEditItems.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/jobs/JobOverviewPopupUpdateCurrency.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/jobs/JobPOEditCharges.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/jobs/JobPOEditInstruction.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/jobs/JobPurchaseOrderStatusHistory.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/sales/FileStatusHistory.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/vendors/VendorContacts.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/vendors/VendorOriginAddress.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/vendors/VendorWarehouse.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/store/sales/FileQuoteHeader.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/model/sales/FileList.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/model/sales/QuotesById.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/common/Logon.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/model/common/Users.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/overrides/tree/Column.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/common/MainHeader.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/appViewPort.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/overrides/grid/column/Action.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/model/sales/FileQuoteHeader.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/view/sales/FileQuoteOrderEntryQuickAdd.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/model/common/ScheduleB.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/store/common/ScheduleB.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/model/common/ScheduleBLanguage.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/store/common/ScheduleBLanguage.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/overrides/form/ComboBox.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/ux/InputTextMask.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/model/vendors/qlstScheduleBImports.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/ux/form/ArancelField.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/overrides/util/Format.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/ux/form/field/InputTextMask.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/model/common/tsysEmployeeCodes.js",
+		"/C/Users/Rony/Google Drive/DEV/WEB/CBH/app/store/common/tsysEmployeeCodes.js"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"onFieldChange",
+			"numbercolumn",
+			"tabs",
+			"accordion",
+			"then(",
+			"console.log",
+			"doRefresh",
+			"refresh",
+			"\"refresh\"",
+			"ScheduleB.js",
+			"ScheduleB.",
+			"ScheduleB",
+			"ScheduleBLanguage",
+			"idProperty",
+			"doRefresh",
+			"doRefresh:",
+			"doRefre",
+			"id",
+			"id:",
+			"lastOp",
+			"doRefresh(",
+			"lastOpt",
+			"record.save({",
+			"loadRecord",
+			"OriginAddress ",
+			"VendorOriginAddress",
+			"onVendorBlur",
+			"displayTpl",
+			"tpl",
+			"POVendorOriginAddress",
+			"onViewDetailPriceHistory",
+			"onClickEditPurchaseOrder",
+			"onViewDetails",
+			"Vendor",
+			"setSilentMode",
+			"width: 120,",
+			"storeStatus",
+			"gridstatus",
+			"jobstatushistory",
+			"JobStatusHistory",
+			"executeReport",
+			"loadPluginItems",
+			"onSelectCustomerChange",
+			"=<",
+			"setReportEnvironment",
+			"onClickPrintStatusReport",
+			"printEnabled",
+			"onClickEditPurchaseOrder",
+			"Internal",
+			"JobKey",
+			"onClickEditCustomerQuote",
+			"Status",
+			"Print Status",
+			"onBeginEdit",
+			"PrintCustomerQ",
+			"onClickPrintCustomerQuoteBtn",
+			"storeChargesKeys",
+			"rowEditingCharges",
+			"storetlkpCategories",
+			"storetlkpCa",
+			"storetlkpCD",
+			"console",
+			"storeCriteria",
+			"Me.cboEmployeeRole",
+			"vbCrLf _",
+			"strWhere +=  ",
+			"strWhere = strWhere +",
+			"strWhere = strWhere & ",
+			"JobStatusOper",
+			"employees",
+			"Term",
+			"PaymentTerms",
+			"TermKey",
+			"PaymentTerms",
+			"allowBlank: false,",
+			"common.",
+			"doNotSync; true,",
+			"gridStatus",
+			"deleteitem",
+			"CBH.model",
+			"BrokerName",
+			"Brokers",
+			"IAMTrading",
+			"\"rptJobSummary\"",
+			"storeFileList",
+			"POCurrencyRate",
+			"x_VendorAddress",
+			"selection.data.",
+			": selection.data.",
+			"gotoAt",
+			"doRefr",
+			"onBeginEdit",
+			"getCurrentRecord",
+			"currentRecord",
+			"gotoAt",
+			"onClickEditStatusHistory",
+			"History",
+			"CreatePO",
+			"Roles",
+			"New Job",
+			"Roles",
+			"onViewItemClick",
+			"CurrencyRate",
+			"onItemVendorBlur",
+			"me.onItemVendorBlur",
+			"onGridQuotesSelectChange",
+			"Ext.Msg.wait((",
+			"...');",
+			"me.getEl().mask",
+			"onSelectChange",
+			"iconCls: 'tabs',",
+			"FileQuoteEntry",
+			"quoteentry",
+			"iconCls: 'tabs'",
+			"next",
+			"x_ItemName",
+			"gridquotes",
+			"setProfitMargin",
+			"x_ProfitMargin",
+			"glyph:",
+			"POItemsLineVolume",
+			"Weight",
+			"Save",
+			"onClickNewPurchaseOrder",
+			"Wareho",
+			"#QuoteVendorKey",
+			"QuoteVendorKey",
+			"doRefre"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"onViewDetailPriceHistory",
+			"flex: 1,",
+			"storeExempt",
+			"gridexempt",
+			"qfrmJobExemptFromProfitReport",
+			"<=",
+			"jobRoleKey",
+			"\"\\r\\n\"",
+			"strWhere += ",
+			"strWhere = strWhere + ",
+			"JobStatusExpression",
+			"vendors",
+			"Criteria",
+			"ReportCriteria",
+			"CriteriaKey",
+			"ReportCriteria",
+			"//allowBlank: false,",
+			"jobs.Job",
+			"doNotSync: true,",
+			"gridContacts",
+			"deleteline",
+			"JobRoleDescription",
+			"JobRoles",
+			"CBH",
+			"me.reportName",
+			"storeCust",
+			"currentJob.data.",
+			"= currentJob.data.",
+			"Ext.Msg.wait(",
+			"...', 'Wait');",
+			"Ext.Msg.wait(",
+			"field[name=QuoteVendorKey]",
+			"POItems",
+			"ItemWeight",
+			"ItemVolume",
+			"getUserRemember",
+			"CBH.GlobalSettings.CipherPass",
+			"#f58d37",
+			"onPrintRecord",
+			"panelQuote",
+			"panelFile",
+			"panelPrevious",
+			"that",
+			"onItemSchBImportKeyDoubleClick",
+			"ScheduleB",
+			"margin: '25 0 0 10',",
+			"margin: '25 0 0",
+			"margin: '0 0 25",
+			"SchB",
+			"SBLanguageKey",
+			"ScheduleBLanguage",
+			"SBLanguageKey",
+			"ScheduleBLanguage",
+			"SchBNum",
+			"ScheduleB",
+			"SchBNum",
+			"ScheduleB",
+			"ScheduleBList",
+			"ScheduleB",
+			"tsysEmployeeCodes",
+			"EmployeeKey",
+			"Employees",
+			"Employee Maintenance",
+			"Employees",
+			"MainMenu",
+			"qfrmJobOverviewPopupUpdateCurrency",
+			"JobCurrencyMaster",
+			"loadPluginCurrency",
+			"JobOverviewPopupUpdateCurrency",
+			"checkUnconfirmedVendor",
+			"0.15,",
+			"0.15",
+			"qsumFileQuoteChargesByGLAccount",
+			"0.1",
+			"purchaseOrder",
+			"invoice",
+			"jobOverview",
+			"invoice",
+			"curInvoice",
+			"gridInvoices",
+			"qryJobInvoiceSearch",
+			"JobFindJobInvoice",
+			"qryJobInvoiceSearch",
+			"qryPOSearch",
+			"PO",
+			"qryPOSearch",
+			"storePO",
+			"JobFindPO",
+			"FileQuoteItemsSummary",
+			"QSummary",
+			"FileQuoteEditItemSummary",
+			"onClickExportInvToPeach",
+			"ICharge",
+			"InvoiceEditCharges",
+			"field[name=ISummary",
+			"ISummary",
+			"InvoiceEditItems",
+			"+ me.JobNum +",
+			"custEmail",
+			"!custEmail",
+			"custEmail",
+			"}",
+			"} else {",
+			" { ",
+			"if (",
+			"\"\\n\"",
+			" + ",
+			"strEmailBody",
+			"subject",
+			"fwdEmail",
+			"custEmail",
+			"employeeEmail",
+			"ForwarderEmail",
+			"CustEmail",
+			"EmployeeEmail",
+			"curPO",
+			"EmployeeEmail",
+			"ForwarderEmail",
+			"CustEmail",
+			"Vendor",
+			"JobPurchaseOrderStatusHistory",
+			"qfrmJobPurchaseOrderStatusHistory",
+			"newValue ? newValue : 0;",
+			"down",
+			"x_Line",
+			"POItems",
+			"InvoiceDDL",
+			"5 10 10 10"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 11,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/GlobalSettings.js",
+					"settings":
+					{
+						"buffer_size": 2145,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								153,
+								153
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/AppEvents.js",
+					"settings":
+					{
+						"buffer_size": 95,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								50,
+								50
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/controller/Home.js",
+					"settings":
+					{
+						"buffer_size": 5922,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5366,
+								5366
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1596.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app.js",
+					"settings":
+					{
+						"buffer_size": 11297,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10572,
+								10572
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3390.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/view/sales/SalesMenu.js",
+					"settings":
+					{
+						"buffer_size": 47638,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								46876,
+								46876
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/view/common/FormReportCriteria.js",
+					"settings":
+					{
+						"buffer_size": 44301,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								44301,
+								44301
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 13035.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/resources/css/app.css",
+					"settings":
+					{
+						"buffer_size": 8518,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8516,
+								8516
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5433.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/view/manager/ManagerMenu.js",
+					"settings":
+					{
+						"buffer_size": 16166,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15841,
+								15841
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5932.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/view/jobs/InvoiceMaintenance.js",
+					"settings":
+					{
+						"buffer_size": 97569,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								47383,
+								47383
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 11310.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/view/vendors/Items.js",
+					"settings":
+					{
+						"buffer_size": 50442,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								49952,
+								49952
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 15034.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 1657,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								830,
+								830
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"settings":
+					{
+						"buffer_size": 88410,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										193,
+										197
+									],
+									[
+										364,
+										368
+									],
+									[
+										446,
+										450
+									],
+									[
+										625,
+										629
+									],
+									[
+										827,
+										831
+									],
+									[
+										1029,
+										1033
+									],
+									[
+										1231,
+										1235
+									],
+									[
+										1433,
+										1437
+									],
+									[
+										1621,
+										1625
+									],
+									[
+										1823,
+										1827
+									],
+									[
+										2025,
+										2029
+									],
+									[
+										2227,
+										2231
+									],
+									[
+										2429,
+										2433
+									],
+									[
+										2619,
+										2623
+									],
+									[
+										2821,
+										2825
+									],
+									[
+										3023,
+										3027
+									],
+									[
+										3225,
+										3229
+									],
+									[
+										3427,
+										3431
+									],
+									[
+										3629,
+										3633
+									],
+									[
+										3831,
+										3835
+									],
+									[
+										3988,
+										3992
+									],
+									[
+										4316,
+										4320
+									],
+									[
+										4568,
+										4572
+									],
+									[
+										4699,
+										4703
+									],
+									[
+										4986,
+										4990
+									],
+									[
+										5220,
+										5224
+									],
+									[
+										5335,
+										5339
+									],
+									[
+										5633,
+										5637
+									],
+									[
+										5877,
+										5881
+									],
+									[
+										6000,
+										6004
+									],
+									[
+										6301,
+										6305
+									],
+									[
+										6645,
+										6649
+									],
+									[
+										6967,
+										6971
+									],
+									[
+										7098,
+										7102
+									],
+									[
+										7377,
+										7381
+									],
+									[
+										7594,
+										7598
+									],
+									[
+										7701,
+										7705
+									],
+									[
+										7999,
+										8003
+									],
+									[
+										8238,
+										8242
+									],
+									[
+										8361,
+										8365
+									],
+									[
+										8745,
+										8749
+									],
+									[
+										9064,
+										9068
+									],
+									[
+										9195,
+										9199
+									],
+									[
+										9483,
+										9487
+									],
+									[
+										9713,
+										9717
+									],
+									[
+										9820,
+										9824
+									],
+									[
+										10116,
+										10120
+									],
+									[
+										10352,
+										10356
+									],
+									[
+										10475,
+										10479
+									],
+									[
+										10805,
+										10809
+									],
+									[
+										11027,
+										11031
+									],
+									[
+										11249,
+										11253
+									],
+									[
+										11471,
+										11475
+									],
+									[
+										11693,
+										11697
+									],
+									[
+										11915,
+										11919
+									],
+									[
+										12137,
+										12141
+									],
+									[
+										12359,
+										12363
+									],
+									[
+										12573,
+										12577
+									],
+									[
+										12952,
+										12956
+									],
+									[
+										13178,
+										13182
+									],
+									[
+										13309,
+										13313
+									],
+									[
+										13617,
+										13621
+									],
+									[
+										13840,
+										13844
+									],
+									[
+										13955,
+										13959
+									],
+									[
+										14292,
+										14296
+									],
+									[
+										14506,
+										14510
+									],
+									[
+										14629,
+										14633
+									],
+									[
+										14897,
+										14901
+									],
+									[
+										15151,
+										15155
+									],
+									[
+										15354,
+										15358
+									],
+									[
+										15490,
+										15494
+									],
+									[
+										15783,
+										15787
+									],
+									[
+										15986,
+										15990
+									],
+									[
+										16093,
+										16097
+									],
+									[
+										16360,
+										16364
+									],
+									[
+										16569,
+										16573
+									],
+									[
+										16676,
+										16680
+									],
+									[
+										16966,
+										16970
+									],
+									[
+										17127,
+										17131
+									],
+									[
+										17218,
+										17222
+									],
+									[
+										17414,
+										17418
+									],
+									[
+										17581,
+										17585
+									],
+									[
+										17790,
+										17794
+									],
+									[
+										18030,
+										18034
+									],
+									[
+										18195,
+										18199
+									],
+									[
+										18286,
+										18290
+									],
+									[
+										18465,
+										18469
+									],
+									[
+										18631,
+										18635
+									],
+									[
+										18706,
+										18710
+									],
+									[
+										18862,
+										18866
+									],
+									[
+										19047,
+										19051
+									],
+									[
+										19122,
+										19126
+									],
+									[
+										19262,
+										19266
+									],
+									[
+										19391,
+										19395
+									],
+									[
+										19604,
+										19608
+									],
+									[
+										19807,
+										19811
+									],
+									[
+										19898,
+										19902
+									],
+									[
+										20120,
+										20124
+									],
+									[
+										20281,
+										20285
+									],
+									[
+										20490,
+										20494
+									],
+									[
+										20698,
+										20702
+									],
+									[
+										20859,
+										20863
+									],
+									[
+										20950,
+										20954
+									],
+									[
+										21164,
+										21168
+									],
+									[
+										21393,
+										21397
+									],
+									[
+										21621,
+										21625
+									],
+									[
+										21777,
+										21781
+									],
+									[
+										21896,
+										21900
+									],
+									[
+										21971,
+										21975
+									],
+									[
+										22103,
+										22107
+									],
+									[
+										22251,
+										22255
+									],
+									[
+										22404,
+										22408
+									],
+									[
+										22479,
+										22483
+									],
+									[
+										22612,
+										22616
+									],
+									[
+										22766,
+										22770
+									],
+									[
+										22935,
+										22939
+									],
+									[
+										23026,
+										23030
+									],
+									[
+										23232,
+										23236
+									],
+									[
+										23396,
+										23400
+									],
+									[
+										23605,
+										23609
+									],
+									[
+										23820,
+										23824
+									],
+									[
+										24002,
+										24006
+									],
+									[
+										24211,
+										24215
+									],
+									[
+										24383,
+										24387
+									],
+									[
+										24566,
+										24570
+									],
+									[
+										24641,
+										24645
+									],
+									[
+										24781,
+										24785
+									],
+									[
+										24909,
+										24913
+									],
+									[
+										25129,
+										25133
+									],
+									[
+										25220,
+										25224
+									],
+									[
+										25407,
+										25411
+									],
+									[
+										25583,
+										25587
+									],
+									[
+										25738,
+										25742
+									],
+									[
+										25947,
+										25951
+									],
+									[
+										26160,
+										26164
+									],
+									[
+										26315,
+										26319
+									],
+									[
+										26406,
+										26410
+									],
+									[
+										26576,
+										26580
+									],
+									[
+										26733,
+										26737
+									],
+									[
+										26824,
+										26828
+									],
+									[
+										27072,
+										27076
+									],
+									[
+										27303,
+										27307
+									],
+									[
+										27560,
+										27564
+									],
+									[
+										27772,
+										27776
+									],
+									[
+										27863,
+										27867
+									],
+									[
+										28050,
+										28054
+									],
+									[
+										28371,
+										28375
+									],
+									[
+										28619,
+										28623
+									],
+									[
+										28750,
+										28754
+									],
+									[
+										29048,
+										29052
+									],
+									[
+										29278,
+										29282
+									],
+									[
+										29393,
+										29397
+									],
+									[
+										29695,
+										29699
+									],
+									[
+										29935,
+										29939
+									],
+									[
+										30058,
+										30062
+									],
+									[
+										30374,
+										30378
+									],
+									[
+										30564,
+										30568
+									],
+									[
+										30758,
+										30762
+									],
+									[
+										30946,
+										30950
+									],
+									[
+										31132,
+										31136
+									],
+									[
+										31326,
+										31330
+									],
+									[
+										31528,
+										31532
+									],
+									[
+										31722,
+										31726
+									],
+									[
+										31924,
+										31928
+									],
+									[
+										32191,
+										32195
+									],
+									[
+										32369,
+										32373
+									],
+									[
+										32460,
+										32464
+									],
+									[
+										32679,
+										32683
+									],
+									[
+										32942,
+										32946
+									],
+									[
+										33101,
+										33105
+									],
+									[
+										33192,
+										33196
+									],
+									[
+										33436,
+										33440
+									],
+									[
+										33597,
+										33601
+									],
+									[
+										33688,
+										33692
+									],
+									[
+										33890,
+										33894
+									],
+									[
+										34065,
+										34069
+									],
+									[
+										34140,
+										34144
+									],
+									[
+										34273,
+										34277
+									],
+									[
+										34495,
+										34499
+									],
+									[
+										34722,
+										34726
+									],
+									[
+										34888,
+										34892
+									],
+									[
+										34979,
+										34983
+									],
+									[
+										35190,
+										35194
+									],
+									[
+										35356,
+										35360
+									],
+									[
+										35447,
+										35451
+									],
+									[
+										35802,
+										35806
+									],
+									[
+										36059,
+										36063
+									],
+									[
+										36190,
+										36194
+									],
+									[
+										36477,
+										36481
+									],
+									[
+										36737,
+										36741
+									],
+									[
+										36844,
+										36848
+									],
+									[
+										37168,
+										37172
+									],
+									[
+										37387,
+										37391
+									],
+									[
+										37518,
+										37522
+									],
+									[
+										37721,
+										37725
+									],
+									[
+										37913,
+										37917
+									],
+									[
+										38004,
+										38008
+									],
+									[
+										38242,
+										38246
+									],
+									[
+										38408,
+										38412
+									],
+									[
+										38499,
+										38503
+									],
+									[
+										38705,
+										38709
+									],
+									[
+										38871,
+										38875
+									],
+									[
+										38962,
+										38966
+									],
+									[
+										39211,
+										39215
+									],
+									[
+										39367,
+										39371
+									],
+									[
+										39487,
+										39491
+									],
+									[
+										39562,
+										39566
+									],
+									[
+										39694,
+										39698
+									],
+									[
+										39842,
+										39846
+									],
+									[
+										40007,
+										40011
+									],
+									[
+										40082,
+										40086
+									],
+									[
+										40215,
+										40219
+									],
+									[
+										40369,
+										40373
+									],
+									[
+										40550,
+										40554
+									],
+									[
+										40641,
+										40645
+									],
+									[
+										40847,
+										40851
+									],
+									[
+										41010,
+										41014
+									],
+									[
+										41101,
+										41105
+									],
+									[
+										41271,
+										41275
+									],
+									[
+										41463,
+										41467
+									],
+									[
+										41554,
+										41558
+									],
+									[
+										41753,
+										41757
+									],
+									[
+										41899,
+										41903
+									],
+									[
+										42009,
+										42013
+									],
+									[
+										42145,
+										42149
+									],
+									[
+										42337,
+										42341
+									],
+									[
+										42400,
+										42404
+									],
+									[
+										42597,
+										42601
+									],
+									[
+										42704,
+										42708
+									],
+									[
+										43099,
+										43103
+									],
+									[
+										43317,
+										43321
+									],
+									[
+										43448,
+										43452
+									],
+									[
+										43719,
+										43723
+									],
+									[
+										43917,
+										43921
+									],
+									[
+										44024,
+										44028
+									],
+									[
+										44322,
+										44326
+									],
+									[
+										44532,
+										44536
+									],
+									[
+										44655,
+										44659
+									],
+									[
+										44894,
+										44898
+									],
+									[
+										45060,
+										45064
+									],
+									[
+										45151,
+										45155
+									],
+									[
+										45433,
+										45437
+									],
+									[
+										45619,
+										45623
+									],
+									[
+										45710,
+										45714
+									],
+									[
+										45924,
+										45928
+									],
+									[
+										46099,
+										46103
+									],
+									[
+										46174,
+										46178
+									],
+									[
+										46316,
+										46320
+									],
+									[
+										46545,
+										46549
+									],
+									[
+										46606,
+										46610
+									],
+									[
+										46919,
+										46923
+									],
+									[
+										47161,
+										47165
+									],
+									[
+										47284,
+										47288
+									],
+									[
+										47556,
+										47560
+									],
+									[
+										47728,
+										47732
+									],
+									[
+										47819,
+										47823
+									],
+									[
+										48009,
+										48013
+									],
+									[
+										48205,
+										48209
+									],
+									[
+										48369,
+										48373
+									],
+									[
+										48460,
+										48464
+									],
+									[
+										48638,
+										48642
+									],
+									[
+										48805,
+										48809
+									],
+									[
+										48880,
+										48884
+									],
+									[
+										49013,
+										49017
+									],
+									[
+										49132,
+										49136
+									],
+									[
+										49299,
+										49303
+									],
+									[
+										49409,
+										49413
+									],
+									[
+										49545,
+										49549
+									],
+									[
+										49676,
+										49680
+									],
+									[
+										49842,
+										49846
+									],
+									[
+										49933,
+										49937
+									],
+									[
+										50171,
+										50175
+									],
+									[
+										50343,
+										50347
+									],
+									[
+										50442,
+										50446
+									],
+									[
+										50656,
+										50660
+									],
+									[
+										50865,
+										50869
+									],
+									[
+										50956,
+										50960
+									],
+									[
+										51137,
+										51141
+									],
+									[
+										51292,
+										51296
+									],
+									[
+										51520,
+										51524
+									],
+									[
+										51595,
+										51599
+									],
+									[
+										51737,
+										51741
+									],
+									[
+										51883,
+										51887
+									],
+									[
+										52072,
+										52076
+									],
+									[
+										52270,
+										52274
+									],
+									[
+										52464,
+										52468
+									],
+									[
+										52674,
+										52678
+									],
+									[
+										52876,
+										52880
+									],
+									[
+										53154,
+										53158
+									],
+									[
+										53440,
+										53444
+									],
+									[
+										53531,
+										53535
+									],
+									[
+										53761,
+										53765
+									],
+									[
+										53915,
+										53919
+									],
+									[
+										54148,
+										54152
+									],
+									[
+										54271,
+										54275
+									],
+									[
+										54659,
+										54663
+									],
+									[
+										54882,
+										54886
+									],
+									[
+										54997,
+										55001
+									],
+									[
+										55219,
+										55223
+									],
+									[
+										55383,
+										55387
+									],
+									[
+										55474,
+										55478
+									],
+									[
+										55803,
+										55807
+									],
+									[
+										56025,
+										56029
+									],
+									[
+										56140,
+										56144
+									],
+									[
+										56364,
+										56368
+									],
+									[
+										56525,
+										56529
+									],
+									[
+										56616,
+										56620
+									],
+									[
+										56964,
+										56968
+									],
+									[
+										57314,
+										57318
+									],
+									[
+										57680,
+										57692
+									],
+									[
+										57965,
+										57977
+									],
+									[
+										58263,
+										58275
+									],
+									[
+										58599,
+										58611
+									],
+									[
+										58919,
+										58931
+									],
+									[
+										59222,
+										59234
+									],
+									[
+										59543,
+										59555
+									],
+									[
+										59851,
+										59863
+									],
+									[
+										60138,
+										60150
+									],
+									[
+										60445,
+										60457
+									],
+									[
+										60799,
+										60811
+									],
+									[
+										61141,
+										61153
+									],
+									[
+										61471,
+										61483
+									],
+									[
+										61743,
+										61755
+									],
+									[
+										62076,
+										62088
+									],
+									[
+										62446,
+										62458
+									],
+									[
+										62732,
+										62744
+									],
+									[
+										63040,
+										63052
+									],
+									[
+										63364,
+										63376
+									],
+									[
+										63684,
+										63696
+									],
+									[
+										63972,
+										63984
+									],
+									[
+										64281,
+										64293
+									],
+									[
+										64592,
+										64604
+									],
+									[
+										64904,
+										64916
+									],
+									[
+										65235,
+										65247
+									],
+									[
+										65550,
+										65562
+									],
+									[
+										65872,
+										65884
+									],
+									[
+										66207,
+										66219
+									],
+									[
+										66542,
+										66554
+									],
+									[
+										66877,
+										66889
+									],
+									[
+										67092,
+										67104
+									],
+									[
+										67306,
+										67318
+									],
+									[
+										67615,
+										67627
+									],
+									[
+										67884,
+										67896
+									],
+									[
+										68154,
+										68166
+									],
+									[
+										68456,
+										68468
+									],
+									[
+										68611,
+										68623
+									],
+									[
+										68776,
+										68788
+									],
+									[
+										68944,
+										68956
+									],
+									[
+										69197,
+										69209
+									],
+									[
+										69414,
+										69426
+									],
+									[
+										69615,
+										69627
+									],
+									[
+										69971,
+										69983
+									],
+									[
+										70324,
+										70336
+									],
+									[
+										70695,
+										70707
+									],
+									[
+										71030,
+										71042
+									],
+									[
+										71349,
+										71361
+									],
+									[
+										71652,
+										71664
+									],
+									[
+										71957,
+										71969
+									],
+									[
+										72256,
+										72268
+									],
+									[
+										72556,
+										72568
+									],
+									[
+										72916,
+										72928
+									],
+									[
+										73204,
+										73216
+									],
+									[
+										73504,
+										73516
+									],
+									[
+										73827,
+										73839
+									],
+									[
+										74033,
+										74045
+									],
+									[
+										74352,
+										74364
+									],
+									[
+										74623,
+										74635
+									],
+									[
+										74903,
+										74915
+									],
+									[
+										75279,
+										75291
+									],
+									[
+										75590,
+										75602
+									],
+									[
+										75992,
+										76005
+									],
+									[
+										76256,
+										76269
+									],
+									[
+										76578,
+										76591
+									],
+									[
+										76881,
+										76894
+									],
+									[
+										77145,
+										77158
+									],
+									[
+										77467,
+										77480
+									],
+									[
+										77897,
+										77910
+									],
+									[
+										78349,
+										78362
+									],
+									[
+										78750,
+										78763
+									],
+									[
+										78966,
+										78979
+									],
+									[
+										79155,
+										79168
+									],
+									[
+										79463,
+										79476
+									],
+									[
+										79727,
+										79740
+									],
+									[
+										80059,
+										80072
+									],
+									[
+										80460,
+										80473
+									],
+									[
+										80824,
+										80837
+									],
+									[
+										81108,
+										81121
+									],
+									[
+										81380,
+										81393
+									],
+									[
+										81729,
+										81742
+									],
+									[
+										81993,
+										82006
+									],
+									[
+										82325,
+										82338
+									],
+									[
+										82656,
+										82669
+									],
+									[
+										82873,
+										82886
+									],
+									[
+										83232,
+										83245
+									],
+									[
+										83684,
+										83697
+									],
+									[
+										84112,
+										84125
+									],
+									[
+										84479,
+										84492
+									],
+									[
+										84891,
+										84904
+									],
+									[
+										85258,
+										85271
+									],
+									[
+										85625,
+										85638
+									],
+									[
+										85992,
+										86005
+									],
+									[
+										86392,
+										86405
+									],
+									[
+										86792,
+										86805
+									],
+									[
+										87204,
+										87217
+									],
+									[
+										87581,
+										87594
+									],
+									[
+										87881,
+										87894
+									],
+									[
+										88263,
+										88276
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								75724,
+								75724
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"output_tag": 3,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 27748.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "app/view/jobs/JobPurchaseOrderMaintenance.js",
+					"settings":
+					{
+						"buffer_size": 94415,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								26600,
+								26600
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6623.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "app/view/common/ScheduleB.js",
+					"settings":
+					{
+						"buffer_size": 21756,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								19378,
+								19378
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6874.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "ux/DataView/Draggable.js",
+					"settings":
+					{
+						"buffer_size": 5711,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3361,
+								3361
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1314.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "ux/CheckColumn.js",
+					"settings":
+					{
+						"buffer_size": 4528,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2629,
+								2629
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 768.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "scripts/sessionsvars.js",
+					"settings":
+					{
+						"buffer_size": 536,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								95,
+								95
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "ux/form/Toolbar.js",
+					"settings":
+					{
+						"buffer_size": 29584,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								19024,
+								19024
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 8191.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "app/model/common/ScheduleB.js",
+					"settings":
+					{
+						"buffer_size": 3816,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								72,
+								72
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 144.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 314.0,
+	"status_bar_visible": true
+}

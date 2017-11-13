@@ -1,0 +1,47 @@
+﻿.sep5 {
+    width: 100%;
+    height: 5px;
+}
+
+.sep10 {
+    width: 100%;
+    height: 10px;
+}
+
+.btn-success {
+    background: #004A9C;
+    border-color: #126daf;
+    color: white;
+    font-family: "Tahoma";
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btn-success .fa {
+    font-weight:normal;
+}
+
+.btn-success:hover {
+    background-color: #f58d37;
+    border-color: #dd5503;
+    color: white;
+    font-family: "Tahoma";
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btn-success:focus {
+    background-color: #f58d37;
+    border-color: #dd5503;
+    color: white;
+    font-family: "Tahoma";
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#floating_alert {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    z-index: 5000;
+}

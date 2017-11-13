@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+    #loading {
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        position: fixed;
+        display: block;
+        z-index: 98;
+        background-color: #1985D0
+    }
+    
+    #loading-image {
+        position: absolute;
+        top: 40%;
+        left: 45%;
+        z-index: 1000
+    }
+    </style>
+    <!-- <link rel="prefetch" href="http://davidwalsh.name/wp-content/themes/walshbook3/images/sprite.png" /> -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="SHORTCUT ICON" href="favicon.ico" type="image/x-icon" />
+    <title>CBH</title>
+    <!--<script src="../packages/ext-4.2.1.883/ext-all.js"></script>
+    <script src="../packages/ext-4.2.1.883/ext-theme-neptune.js"></script>
+    <link rel="stylesheet" href="../packages/ext-4.2.1.883/resources/ext-theme-neptune/ext-theme-neptune-all.css">
+    <link rel="stylesheet" href="app/resources/css/fonts.css">
+    <link rel="stylesheet" href="app/resources/css/app.css">
+    <link rel="stylesheet" href="app/resources/css/data-view.css">-->
+    <script type="text/javascript">
+    function goyito() {
+        alert('SOMETIO');
+    }
+
+    var i = 0;
+
+    // document.getElementById("loading").setAttribute("style", "display:block;");                
+    // var loading = document.getElementById("loading");
+
+    // var btn = document.createElement("BUTTON");        // Create a <button> element
+    // loading.appendChild(btn);
+    // var t = document.createTextNode("CLICK ME");       // Create a text node
+    // btn.appendChild(t);  
+    // btn.setAttribute("onclick","goyito()");                              // Append the text to <button>
+    // ///document.body.appendChild(btn);                    // Append <button> to <body>
+
+
+
+    var onready = function onReady() {
+        var today = new Date(),
+            href = '?_DC=' + today.getTime();
+
+        var objeto = {
+            mensaje: "Hola hoy es " + new Date(),
+            decirHola: function(obj) {
+                alert(obj.msg);
+
+                if (confirm('Are you sure you want to save this thing into the database?')) {
+                    obj.callback();
+                } else {
+                    alert('nada');
+                }
+                
+            }
+        };
+
+        console.log(document);
+
+        document.getElementById("loading").setAttribute("style", "display:none;");
+
+        var onclick = function() {
+            var btn = this;
+            alert('CLICKED!!!! DIANITA');
+            this.setAttribute('style',"width:200px; height:100px; background-color: green; font-size:24px;");
+            i = i + 1;
+            console.log('CLICKED ', i);
+        }
+
+        objeto.decirHola({
+            msg: "LATU MANGUERITA",
+            callback: function() {
+                document.getElementById("loading").setAttribute("style", "display:block; background-color:orange; width:50%;");
+                console.log(document.getElementsByTagName("div")[1]);
+                document.getElementsByTagName("div")[1].setAttribute("style", "display:block;background-color:green; width:75%; height:300px; z-index: -1; position: absolute;");
+
+                //setTimeout(console.log(new Date()), 15000);
+
+
+                document.getElementById("loading").setAttribute("style", "display:block;");                
+                var loading = document.getElementById("loading");
+
+                var btn = document.createElement("BUTTON");        // Create a <button> element
+                loading.appendChild(btn);
+                var t = document.createTextNode("CLICK ME");       // Create a text node
+                btn.appendChild(t);  
+                //btn.setAttribute("onclick","goyito()");                              // Append the text to <button>
+
+                //btn.addEventListener('click', onclick, false);
+
+                document.getElementsByTagName('button')[0].addEventListener('click', onclick, false);
+                ///document.body.appendChild(btn);                    // Append <button> to <body>
+
+            }
+        });
+    };
+
+
+    var body = document.getElementsByTagName("body");
+    console.log(body);
+
+    document.addEventListener('DOMContentLoaded', onready, false);
+
+    console.log(new Date());
+
+    //body.addEventListener("onload", function(){ alert("Hello World!"); }, false);
+    </script>
+</head>
+
+<body>
+    <div id="loading">
+        <img id="loading-image" src="images/loading.gif" alt="Loading..." />
+    </div>
+    <div class="goyin"></div>
+</body>
+
+</html>

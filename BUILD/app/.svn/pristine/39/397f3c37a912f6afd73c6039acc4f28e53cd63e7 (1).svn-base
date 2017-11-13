@@ -1,0 +1,611 @@
+Ext.define('CBH.view.vendors.Items', {
+    extend: 'Ext.form.Panel',
+    alias: 'widget.items',
+
+    layout: {
+        type: 'column'
+    },
+    bodyPadding: 10,
+    frameHeader: false,
+    header: false,
+    enableKeyEvents: true,
+
+    storeNavigator: null,
+    VendorKey: 0,
+    ItemKey: 0,
+
+    requires: [
+    'Ext.ux.form.NumericField',
+    ],
+
+    initComponent: function() {
+        var me = this;
+
+        storeVendors = null;
+        storeCurrencyRates =  Ext.create('CBH.store.common.CurrencyRates').load({params: { page:0, start: 0, limit: 0} });
+        storeLangs =  Ext.create('CBH.store.common.Languages').load({params: { page:0, start: 0, limit: 0} });
+        storeDesc = null;
+
+        rowEditing = new Ext.grid.plugin.RowEditing({
+            clicksToMoveEditor: 2,
+            autoCancel: false,
+            errorSummary: false,
+            listeners: {
+                beforeedit: {
+                    delay: 500,
+                    fn: function (item, e) {
+                        this.getEditor().onFieldChange();
+                    }
+                },
+                cancelEdit: { 
+                    fn: function (rowEditing, context) {
+                        var grid = this.editor.up('gridpanel');
+                        // Canceling editing of a locally added, unsaved record: remove it
+                        if (context.record.phantom) {
+                            grid.store.remove(context.record);
+                        }
+                    }
+                },
+                edit: {
+                    fn: function (rowEditing, context) {
+                        var grid = this.editor.up('#griddesc'),
+                            record = context.record;
+
+                        record.save({
+                            callback: function() {
+                                grid.store.reload();
+                            }
+                        });
+                    }
+                }
+            }
+        });
+
+        Ext.applyIf(me, {
+            fieldDefaults: {
+                labelAlign: 'top',
+                labelWidth: 60,
+                msgTarget: 'side',
+                fieldStyle: 'font-size:11px',
+                labelStyle: 'font-size:11px'
+            },
+            items: [
+                // Item Information
+                {
+                    xtype: 'fieldset',
+                    columnWidth: 0.5,
+                    layout: {
+                        type: 'column'
+                    },
+                    padding: '0 10 10 10',
+                    collapsible: true,
+                    title: 'Item Information',
+                    items: [
+                    {
+                        xtype: 'combo',
+                        name: 'ItemVendorKey',
+                        fieldLabel: 'Vendor',
+                        columnWidth: 1,
+                        listConfig: {
+                            minWidth: null
+                        },
+                        valueField: 'VendorKey',
+                        displayField: 'VendorName',
+                        store: storeVendors,
+                        pageSize: 8,
+                        queryMode: 'remote',
+                        triggerAction: '',
+                        queryCaching: false,
+                        typeAhead: true,
+                        typeAheadDelay: 200,
+                        minChars: 3,
+                        allowBlank: false,
+                        forceSelection: true,
+                        emptyText: 'Choose Vendor'
+                    },
+                    {
+                        xtype: 'textfield',
+                        columnWidth:1,
+                        fieldLabel: 'Item Number',
+                        name: 'ItemNum',
+                        allowBlank: false,
+                    },
+                    {
+                        xtype:'numericfield',
+                        columnWidth: 0.5,
+                        name: 'ItemCost',
+                        fieldLabel: 'Latest Item Cost',
+                        fieldStyle: 'text-align: right;',
+                        minValue: 0,
+                        hideTrigger: true,
+                        useThousandSeparator: true,
+                        decimalPrecision: 2,
+                        alwaysDisplayDecimals: true,
+                        allowNegative: false,
+                        alwaysDecimals: true,
+                        thousandSeparator: ',',
+                        fieldStyle: 'text-align: right;'           
+                    },
+                    {
+                        margin: '0 0 0 5',
+                        xtype:'numericfield',
+                        columnWidth: 0.5,
+                        name: 'ItemPrice',
+                        fieldLabel: 'Latest Item Price',
+                        fieldStyle: 'text-align: right;',
+                        minValue: 0,
+                        hideTrigger: true,
+                        useThousandSeparator: true,
+                        decimalPrecision: 2,
+                        alwaysDisplayDecimals: true,
+                        allowNegative: false,
+                        alwaysDecimals: true,
+                        thousandSeparator: ',',
+                        fieldStyle: 'text-align: right;'           
+                    },
+                    {
+                        columnWidth: 1,
+                        xtype: 'combo',
+                        name: 'ItemCurrencyCode',
+                        fieldLabel: 'Currency',
+                        store: storeCurrencyRates,
+                        labelWidth: 50,
+                        listConfig: {
+                            minWidth: null
+                        },
+                        valueField: 'CurrencyCode',
+                        displayField: 'CurrencyCodeDesc',
+                        queryMode: 'local',
+                        typeAhead: true,
+                        minChars: 2,
+                        allowBlank: false,
+                        forceSelection: true,
+                        listeners: {
+                            beforequery: function(record){  
+                                record.query = new RegExp(record.query, 'i');
+                                record.forceAll = true;
+                            }
+                        }
+                    },
+                    {
+                        xtype:'numericfield',
+                        columnWidth: 0.5,
+                        name: 'ItemWeight',
+                        fieldLabel: 'Weight (kg)',
+                        fieldStyle: 'text-align: right;',
+                        minValue: 0,
+                        hideTrigger: true,
+                        useThousandSeparator: true,
+                        decimalPrecision: 2,
+                        alwaysDisplayDecimals: true,
+                        allowNegative: false,
+                        alwaysDecimals: true,
+                        thousandSeparator: ',',
+                        fieldStyle: 'text-align: right;'           
+                    },
+                    {
+                        margin: '0 0 0 5',
+                        xtype:'numericfield',
+                        columnWidth: 0.5,
+                        name: 'ItemVolume',
+                        fieldLabel: 'Volume (m³)',
+                        fieldStyle: 'text-align: right;',
+                        minValue: 0,
+                        hideTrigger: true,
+                        useThousandSeparator: true,
+                        decimalPrecision: 2,
+                        alwaysDisplayDecimals: true,
+                        allowNegative: false,
+                        alwaysDecimals: true,
+                        thousandSeparator: ',',
+                        fieldStyle: 'text-align: right;'           
+                    },
+                    {
+                        xtype: 'checkbox',
+                        columnWidth: 1,
+                        name: 'ItemActive',
+                        labelSeparator: '',
+                        hideLabel: true,
+                        boxLabel: 'Item is active'
+                    }
+                    ]
+                },
+                // Descriptions Panel
+                {
+                    columnWidth: 0.5,
+                    xtype: 'panel',
+                    title: 'Descriptions',
+                    margin: '0 0 0 10',
+                    items: [
+                    {
+                        xtype: 'gridpanel',
+                        itemId: 'griddesc',
+                        minHeight: 350,
+                        store: storeDesc,
+                        maxHeight: 600,
+                        columns: [
+                        {
+                            xtype: 'rownumberer',
+                            format: '00,000'
+                        },
+                        {
+                            xtype: 'gridcolumn',
+                            text: 'Language',
+                            dataIndex: 'x_Language',
+                            flex: 2,
+                            editor: {
+                                xtype:'combo',
+                                displayField: 'LanguageName',
+                                valueField: 'LanguageCode',
+                                name:'DescriptionLanguageCode',
+                                enableKeyEvents: true,
+                                forceSelection: true,
+                                queryMode: 'local',
+                                selectOnFocus: true,
+                                emptyText: 'Choose Language',
+                                listeners: {
+                                    select: function (field, records, eOpts) {
+                                        var form = field.up('panel'),
+                                        record = form.context.record;
+                                        if(records.length > 0) {
+                                            record.set('x_Language', records[0].data["LanguageName"]);
+                                        }
+                                    },
+                                    change: function(field) {
+                                        var form = field.up('panel');
+                                        form.onFieldChange();
+                                    },
+                                    beforequery: function(record){  
+                                        record.query = new RegExp(record.query, 'i');
+                                        record.forceAll = true;
+                                    }
+                                },
+                                store: storeLangs
+                            }
+                        },
+                        {
+                            xtype: 'gridcolumn',
+                            text: 'Description',
+                            dataIndex: 'DescriptionText',
+                            flex: 8,
+                            editor: {
+                                xtype: 'textfield',
+                                name: 'DescriptionText',
+                                allowBlank: false,
+                                listeners: {
+                                    change: function(field) {
+                                        var form = field.up('panel');
+                                        form.onFieldChange();
+                                    }
+                                }
+                            }
+                        }
+                        ],
+                        tbar: [
+                        {
+                            xtype: 'component',
+                            flex: 1
+                        },
+                        {
+                            text: 'Add',
+                            itemId: 'adddesc',
+                            handler : function() {
+                                rowEditing.cancelEdit();
+
+                                var grid = this.up('gridpanel');
+                                var itemkey =  me.down('#FormToolbar').getCurrentRecord().data.ItemKey
+
+                                // Create a model instance
+                                var r = Ext.create('CBH.model.vendors.ItemDescriptions', {
+                                    DescriptionItemKey: itemkey 
+                                });
+
+                                var count = grid.getStore().count();
+                                grid.store.insert(count, r);
+                                rowEditing.startEdit(count, 1);
+                            },
+                            disabled: true
+                        }, 
+                        {
+                            itemId: 'deletedesc',
+                            text: 'Delete',
+                            handler: function() {
+                                var grid = this.up('gridpanel');
+                                var sm = grid.getSelectionModel();
+
+                                selection = sm.getSelection()
+
+                                if(selection){
+                                    selection[0].destroy({
+                                        success: function() {
+                                            grid.store.remove(selection[0]);
+                                            if (grid.store.getCount() > 0) {
+                                                sm.select(0);
+                                            }
+                                        }
+                                    });
+                                }
+                            },
+                            disabled: true
+                        }
+                        ],
+                        selType: 'rowmodel',
+                        plugins: [rowEditing],
+                        listeners: {
+                            selectionchange : function(view, records) {
+                                this.down('#deletedesc').setDisabled(!records.length);
+                            }
+                            // celldblclick: function( view, td, cellIndex, record, tr, rowIndex, e, eOpts ) {
+                            //     var form = new CBH.view.vendors.Items();
+                            //     form.modal = true;
+                            //     form.loadRecord(record);
+                            //     form.callerForm = this.up('form');
+                            //     form.show();
+                            // }
+                        }
+                    }
+                    ]
+                }
+            ],
+            dockedItems: [
+            // Toolbar Header
+            {
+                xtype: 'formtoolbar',
+                itemId: 'FormToolbar',
+                dock: 'top',
+                store: me.storeNavigator,
+                listeners: {
+                    addrecord : {
+                        fn: me.onAddClick,
+                        scope: me
+                    },
+                    savechanges: {
+                        fn: me.onSaveClick,
+                        scope: me
+                    },
+                    deleterecord: {
+                        fn: me.onDeleteClick,
+                        scope: me
+                    },
+                    afterloadrecord: {
+                        fn: me.onAfterLoadRecord,
+                        scope: me
+                    },
+                    beginedit: {
+                        fn: me.onBeginEdit,
+                        scope: me
+                    }
+                }
+            },
+            // Toolbar Bottom
+            {
+                xtype: 'toolbar',
+                dock: 'bottom',
+                ui: 'footer',
+                items: [
+                {
+                    xtype: 'textfield',
+                    name: 'ItemCreatedBy',
+                    readOnly: true,
+                    fieldLabel: 'Created By',
+                    editable: false
+                },
+                {
+                    xtype: 'datefield',
+                    name: 'ItemCreatedDate',
+                    readOnly: true,
+                    fieldLabel: 'Created Date',
+                    hideTrigger: true,
+                    editable: false
+                },
+                {
+                    xtype: 'textfield',
+                    name: 'ItemModifiedBy',
+                    readOnly: true,
+                    fieldLabel: 'Modified By',
+                    editable: false
+                },
+                {
+                    xtype: 'datefield',
+                    name: 'ItemModifiedDate',
+                    readOnly: true,
+                    fieldLabel: 'Modified Date',
+                    hideTrigger: true,
+                    editable: false
+                },
+                {
+                    xtype: 'component',
+                    flex: 1
+                }
+                ]
+            }
+            ],
+            listeners:{
+                render: {
+                    fn: me.onRenderForm,
+                    scope: me
+                },
+                afterrender: {
+                    fn: me.registerKeyBindings,
+                    scope: me
+                },
+                close: {
+                    fn: me.onCloseForm,
+                    scope: me
+                }
+            }
+        });
+
+        me.callParent(arguments);
+    },
+
+    registerKeyBindings: function(view, options){
+        var me = this;
+        Ext.EventManager.on(view.getEl(), 'keyup', function(evt, t, o) {
+            if (evt.keyCode === Ext.EventObject.F8) {
+                evt.stopEvent();
+                var btn = me.down('#FormToolbar').down('#save');
+                btn.fireEvent('click');
+            }
+        }, 
+        this);
+    },
+
+    onRenderForm: function() {
+        var me = this;
+        var toolbar = me.down('#FormToolbar');
+
+        if(toolbar.store.getCount()===1 && toolbar.store.getAt(0).phantom) {
+            toolbar.items.items.forEach(function(btn){btn.setVisible(false);});
+            toolbar.down('#save').setVisible(true);
+        };
+
+        var field = me.down('field[name=ItemNum]');
+        field.focus(true, 100);
+    },
+
+    onAfterLoadRecord: function(tool, record) {
+        var me = this;
+
+        if(record.phantom) {
+            Ext.Msg.wait('Loading Vendors', 'Wait');
+            storeVendors = Ext.create('CBH.store.vendors.Vendors').load({
+                params: {id: record.data.ItemVendorKey, page:1, start: 0, limit: 8},
+                callback: function() {
+                    me.down('field[name=ItemVendorKey]').bindStore(storeVendors);
+                    if(record.data.ItemVendorKey > 0) {
+                        me.down('field[name=ItemVendorKey]').select(storeVendors.getAt(0));
+                        vendorkey = storeVendors.getAt(0).data.VendorKey;
+                    }
+                    Ext.Msg.hide();
+                }
+            });
+            return;
+        }
+
+        var currentItemKey = record.data.ItemKey;
+
+        curRec = record;
+        Ext.Msg.wait('Loading Vendors...','Wait');
+        storeVendors = Ext.create('CBH.store.vendors.Vendors').load({params:{id: record.data.ItemVendorKey, page:0, start: 0, limit: 0}, 
+            callback: function() {
+                var curVendor = this.getAt(0);
+                var fieldVendor = me.down('field[name=ItemVendorKey]');
+                fieldVendor.bindStore(storeVendors);
+                fieldVendor.setValue(curVendor.data.VendorKey);
+                if(curVendor.data.VendorKey) {
+                    fieldVendor.setReadOnly(true);
+                };
+
+                Ext.Msg.wait('Loading Descriptions','Wait');
+
+                var filterItem = {
+                    property: ''
+                }
+                storeDesc = Ext.create('CBH.store.vendors.ItemDescriptions').load(
+                {
+                    params: {page:0, start: 0, limit: 0, itemkey: currentItemKey},
+                    callback: function() {
+
+                        var grid = me.down('#griddesc');
+                        grid.reconfigure(this);
+                        me.down('#adddesc').setDisabled(false);
+
+                        Ext.Msg.hide();
+                    }
+                });
+            }
+        });
+    },
+
+    onAddClick: function(toolbar, record) {
+       
+    },
+
+    onBeginEdit: function(toolbar, record) {
+        var me = this;
+        me.down('field[name=ItemVendorKey]').focus(true, 200);
+    },
+
+    onSaveClick: function(button, e, eOpts) {
+        var me = this,
+            form = me.getForm(),
+            toolbar = me.down('#FormToolbar');
+
+        if(!form.isValid())  { 
+            Ext.Msg.alert("Validation","Check data for valid input!!!");
+            return;
+        };
+
+        form.updateRecord();
+
+        record = form.getRecord();
+
+        Ext.Msg.wait('Saving Record...', 'Wait');
+
+        var isdirty = record.dirty;
+
+        record.save({ 
+            success: function(e) { 
+                me.ItemKey = record.data.ItemKey;
+                Ext.Msg.hide();
+                toolbar.doRefresh();
+            },
+            failure: function() {
+                Ext.Msg.hide();
+            }
+        });
+    },
+
+    onDeleteClick: function(pageTool, record) {
+        
+        if(record){
+            var curRec = record.index - 1;
+            curPage = pageTool.store.currentPage;
+            prevRec = (curRec <= 0) ? 1 : curRec;
+
+            Ext.Msg.wait('Deleting Record...', 'Wait')
+            record.destroy({
+                success: function() {
+                    Ext.Msg.hide();
+                    var lastOpt = pageTool.store.lastOptions;
+                    pageTool.store.reload({params: lastOpt.params, callback: function() {}});
+                    if(pageTool.store.getCount() > 0) {
+                        pageTool.gotoAt(prevRec);    
+                    } else {
+                        pageTool.up('form').up('panel').destroy();
+                    };
+                },
+                failure: function() {
+                    Ext.Msg.hide();
+                }
+            });
+        };
+    },
+
+    onCloseForm: function() {
+        var me = this;
+
+        var form = me.callerForm, 
+            grid = form.down('#griditems');
+
+        if(grid) {
+            Ext.Msg.hide();
+            me.destroy();
+            grid.store.reload();
+            return;
+        } else {
+            var itemField = me.callerForm.down('field[name=QuoteItemKey]');
+
+            if(itemField) {
+                var record = me.getForm().getRecord();
+                if(itemField && record) {
+                    var itemnum = record.data.ItemNum;
+                    itemField.setRawValue(itemnum);
+                    itemField.doRawQuery();
+                    itemField.focus(true,400);
+                }
+            } 
+        }
+    }
+});

@@ -1,0 +1,37 @@
+﻿@{
+    //Layout = null;
+}
+<div class="sep10"></div>
+<div class="sep10"></div>
+<div class="col-lg-offset-1 col-lg-10" style="background-color:#f5f5f5;">
+    <div class="col-md-offset-3 col-md-6">
+        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+            <tr>
+                <td align="center" style="padding-top:10px;">
+                    <a href=":;"><img class="img-responsive" width="300px" src="~/Images/CBH_LogoHeader.png" /></a>
+                    <div class="sep5"></div>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#ffffff" id="content-body"><h2>Missing Parameters</h2></td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <div class="sep10"></div>
+                    <div class="sep10"></div>
+                    <p style="color:#004A9C;">Copyright © @DateTime.Now.Year CBH International</p>
+                    <div class="sep5"></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<script>
+    $(window).ready(function () {
+        $("#content-body").css({ 'height': ($(document).height() - ($(document).height() * 0.4).toFixed(0)) + 'px' });
+    });
+
+    $(window).resize(function () {
+        $("#content-body").css({ 'height': ($(document).height() - ($(document).height() * 0.4).toFixed(0)) + 'px' });
+    });
+</script>
