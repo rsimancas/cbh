@@ -1,0 +1,59 @@
+Ext.define('CBH.model.vendors.LastQuoteMargin', {
+	extend: 'Ext.data.Model',
+	idProperty: 'FVVendorKey',
+
+	fields: [
+	{ name:'FVVendorKey', type:'int' },
+	{ name:'FVProfitMargin', type:'float' }
+	],
+
+	proxy:{
+		type:'rest',
+		url:CBH.GlobalSettings.webApiPath + '/api/GetLastQuoteMargin',
+		headers: {
+			'Authorization-Token': Ext.util.Cookies.get('CBH.UserAuth')
+		},
+		reader:{
+			type:'json',
+			root:'data'
+		},
+		afterRequest: function (request, success) {
+
+			if (request.action == 'read') {
+                //this.readCallback(request);
+            }
+            else if (request.action == 'create') {
+                if (!request.operation.success)
+                {
+                    Ext.popupMsg.msg("Warning", "Record was not created");
+                    Ext.global.console.warn(request.proxy.reader.jsonData.message);
+                } else {
+                    Ext.popupMsg.msg("Success","Created Successfully");
+                }
+            }
+            else if (request.action == 'update') {
+                if (!request.operation.success)
+                {
+                    Ext.popupMsg.msg("Warning", "Record was not saved");
+                    Ext.global.console.warn(request.proxy.reader.jsonData.message);
+                } else {
+                    Ext.popupMsg.msg("Success","Updated Successfully");
+                }
+            }
+            else if (request.action == 'destroy') {
+                if (!request.operation.success)
+                {
+                    Ext.popupMsg.msg("Warning", "Record was not deleted");
+                    //Ext.global.console.warn(request.proxy.reader.jsonData.message);
+                } else {
+                    Ext.popupMsg.msg("Success","Deleted Successfully");
+                }
+            }
+		}
+	},
+
+	belongsTo: [
+	'CBH.model.vendors.Vendors'
+	]
+
+});
