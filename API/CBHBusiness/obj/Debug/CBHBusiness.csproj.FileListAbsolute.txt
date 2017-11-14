@@ -1,0 +1,5 @@
+C:\Workspaces\CBH\API\CBHBusiness\bin\Debug\CBHBusiness.dll
+C:\Workspaces\CBH\API\CBHBusiness\bin\Debug\CBHBusiness.pdb
+C:\Workspaces\CBH\API\CBHBusiness\obj\Debug\CBHBusiness.dll
+C:\Workspaces\CBH\API\CBHBusiness\obj\Debug\CBHBusiness.pdb
+C:\Workspaces\CBH\API\CBHBusiness\bin\Debug\CBHBusiness.dll.config

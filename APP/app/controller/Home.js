@@ -64,6 +64,7 @@ Ext.define('CBH.controller.Home', {
         'jobs.JobStatus',
         'jobs.qfrmJobExemptFromProfitReport',
         'jobs.qfrmJobExemptFromPronacaReport',
+        'jobs.qfrmInvoiceMaintenance',
         'sales.ChargeCategories',
         'sales.FileEmployeeRoles',
         'sales.FileHeader',

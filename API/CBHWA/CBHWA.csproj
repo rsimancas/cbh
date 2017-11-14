@@ -249,6 +249,7 @@
     <Compile Include="Controllers\Customers\CustomersController.cs" />
     <Compile Include="Controllers\Customers\CustomerShipAddressController.cs" />
     <Compile Include="Controllers\Customers\CustomerStatusController.cs" />
+    <Compile Include="Controllers\Jobs\qfrmInvoiceMaintenanceController.cs" />
     <Compile Include="Controllers\Jobs\qfrmJobExemptFromPronacaReportController.cs" />
     <Compile Include="Controllers\Jobs\qfrmJobOverviewPopupUpdateCurrencyController.cs" />
     <Compile Include="Controllers\Jobs\JobCurrencyMasterController.cs" />
@@ -344,6 +345,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Mappings\qfrmInvoiceMaintenanceMapping.cs" />
     <Compile Include="Models\Common\Common.cs" />
     <Compile Include="Models\Common\Country\Country.cs" />
     <Compile Include="Models\Common\Country\CountryRepository.cs" />
@@ -712,6 +714,12 @@
     <EmbeddedResource Include="Areas\Reports\ReportDesign\rptQuoteOFSubShipTo.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CBHBusiness\CBHBusiness.csproj">
+      <Project>{8aa32fb8-9a00-4621-a301-6a4e79786cf8}</Project>
+      <Name>CBHBusiness</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
