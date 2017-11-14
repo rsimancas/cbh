@@ -1,0 +1,20 @@
+﻿@{
+    Layout = null;
+    var nvc = HttpContext.Current.Request.QueryString;
+
+    string strWhere = nvc["strWhere"] ?? "rptDate >= CAST('2016-07-01' AS DATE) AND rptDate <= CAST('2016-09-28' AS DATE) AND StatusKey = 100";
+    string labelCriteria = nvc["labelCriteria"] ?? "";
+    string strEmployeeKey = nvc["employeeKey"] ?? "";
+    int employeeKey = 0;
+    int.TryParse(strEmployeeKey, out employeeKey);
+}
+
+<div class="pdfContent">
+
+</div>
+<script>
+    $(document).ready(function () {
+        $(".pdfContent").css({ 'height': ($(document).height() - ($(document).height() * 0.05).toFixed(0)) + 'px' });
+        PDFObject.embed("@Href("~/Areas/Reports/rptJobSummary/PDF?employeeKey=@strEmployeeKey&labelCriteria=@labelCriteria&strWhere=@Uri.EscapeUriString(strWhere)")", '#pdfContent');
+    });
+</script>

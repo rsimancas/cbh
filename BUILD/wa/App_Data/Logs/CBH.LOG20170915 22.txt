@@ -1,0 +1,9 @@
+INICIO: 9/15/2017 10:18:50 PM
+10:18:50 PM: ERROR:
+	METHOD = CBHWA.Models.JobsRepository.Add
+	MESSAGE = The INSERT statement conflicted with the FOREIGN KEY constraint "FK_tblJobPurchaseOrders_tblCustomerShipAddress". The conflict occurred in database "CBH", table "dbo.tblCustomerShipAddress", column 'ShipKey'.
+The statement has been terminated.
+10:22:33 PM: ERROR:
+	METHOD = CBHWA.Models.JobsRepository.Add
+	MESSAGE = The INSERT statement conflicted with the FOREIGN KEY constraint "FK_tblJobPurchaseOrders_tblCustomerShipAddress". The conflict occurred in database "CBH", table "dbo.tblCustomerShipAddress", column 'ShipKey'.
+The statement has been terminated.

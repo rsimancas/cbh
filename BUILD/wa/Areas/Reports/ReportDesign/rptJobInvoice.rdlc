@@ -716,7 +716,7 @@
             <Value>=First(Fields!CurrencyFormat.Value, "dsJobInvoice")</Value>
           </Parameter>
         </Parameters>
-        <Top>2.49454in</Top>
+        <Top>2.48204in</Top>
         <Left>3.08249in</Left>
         <Height>0.22917in</Height>
         <Width>4.7076in</Width>
@@ -1039,7 +1039,6 @@
                       </Style>
                     </Textbox>
                     <ColSpan>3</ColSpan>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell />

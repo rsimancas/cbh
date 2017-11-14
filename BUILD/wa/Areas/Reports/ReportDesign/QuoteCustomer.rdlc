@@ -1352,7 +1352,7 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>dsQuoteCustomer</DataSetName>
-        <Top>2.10188in</Top>
+        <Top>2.57688in</Top>
         <Left>0.09069in</Left>
         <Height>2.98119in</Height>
         <Width>7.77655in</Width>
@@ -1382,11 +1382,72 @@
             <Value>=Parameters!EmployeeKey.Value</Value>
           </Parameter>
         </Parameters>
-        <Top>4.5864cm</Top>
+        <Top>5.2849cm</Top>
         <Left>0.17038cm</Left>
         <Height>0.53673cm</Height>
         <Width>19.75246cm</Width>
         <ZIndex>19</ZIndex>
+        <Visibility>
+          <Hidden>=First(Fields!HasSummary.Value, "dsQuoteCustomer") = True</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Subreport>
+      <Subreport Name="ChargeDetails">
+        <ReportName>QuoteCustomerChargeDetails</ReportName>
+        <Parameters>
+          <Parameter Name="id">
+            <Value>=First(Fields!QHdrKey.Value, "dsQuoteCustomer")</Value>
+          </Parameter>
+          <Parameter Name="LanguageCode">
+            <Value>=First(Fields!CustLanguageCode.Value, "dsQuoteCustomer")</Value>
+          </Parameter>
+          <Parameter Name="CurrencySymbol">
+            <Value>=First(Fields!CurrencySymbol.Value, "dsQuoteCustomer")</Value>
+          </Parameter>
+        </Parameters>
+        <KeepTogether>true</KeepTogether>
+        <Top>5.92107cm</Top>
+        <Left>0.10882cm</Left>
+        <Height>0.17705in</Height>
+        <Width>19.87559cm</Width>
+        <ZIndex>20</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Subreport>
+      <Subreport Name="Subreport3">
+        <ReportName>QuoteCustomerItemSummary</ReportName>
+        <Parameters>
+          <Parameter Name="id">
+            <Value>=Fields!QHdrKey.Value</Value>
+          </Parameter>
+          <Parameter Name="LanguageCode">
+            <Value>=Fields!CustLanguageCode.Value</Value>
+          </Parameter>
+          <Parameter Name="CurrencySymbol">
+            <Value>=Fields!CurrencySymbol.Value</Value>
+          </Parameter>
+          <Parameter Name="wSch">
+            <Value>=Parameters!wSch.Value</Value>
+          </Parameter>
+          <Parameter Name="EmployeeKey">
+            <Value>=Parameters!EmployeeKey.Value</Value>
+          </Parameter>
+        </Parameters>
+        <Top>4.63931cm</Top>
+        <Left>0.17038cm</Left>
+        <Height>0.53673cm</Height>
+        <Width>19.75246cm</Width>
+        <ZIndex>21</ZIndex>
+        <Visibility>
+          <Hidden>=First(Fields!HasSummary.Value, "dsQuoteCustomer") = False</Hidden>
+        </Visibility>
         <Style>
           <Border>
             <Style>None</Style>
@@ -1394,7 +1455,7 @@
         </Style>
       </Subreport>
     </ReportItems>
-    <Height>5.10181in</Height>
+    <Height>5.59139in</Height>
     <Style>
       <Border>
         <Style>None</Style>
@@ -1904,6 +1965,10 @@
         <Field Name="CurrencySymbol">
           <DataField>CurrencySymbol</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HasSummary">
+          <DataField>HasSummary</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>

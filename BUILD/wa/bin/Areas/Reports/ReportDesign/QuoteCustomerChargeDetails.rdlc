@@ -6,7 +6,7 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>3.10521in</Width>
+              <Width>2.95313in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1.04813in</Width>
@@ -14,7 +14,7 @@
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>0.21131in</Height>
+              <Height>0.25in</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -26,9 +26,7 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!QCDDescription.Value</Value>
-                              <Style>
-                                <FontSize>11pt</FontSize>
-                              </Style>
+                              <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -40,6 +38,8 @@
                           <Style>None</Style>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
@@ -70,6 +70,8 @@
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
                   </CellContents>
@@ -77,7 +79,7 @@
               </TablixCells>
             </TablixRow>
             <TablixRow>
-              <Height>0.21131in</Height>
+              <Height>0.25in</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -89,9 +91,7 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!QChargeMemo.Value</Value>
-                              <Style>
-                                <FontSize>11pt</FontSize>
-                              </Style>
+                              <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -104,6 +104,8 @@
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
                     <ColSpan>2</ColSpan>
@@ -117,8 +119,9 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="SubTotalDescription3">
+                    <Textbox Name="SubTotalDescription2">
                       <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
@@ -129,9 +132,7 @@
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style>
-                            <TextAlign>Right</TextAlign>
-                          </Style>
+                          <Style />
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>SubTotalDescription</rd:DefaultName>
@@ -141,19 +142,22 @@
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="TotalWCharges2">
+                    <Textbox Name="TotalWCharges">
                       <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Parameters!CurrencySymbol.Value &amp; " " &amp; Microsoft.VisualBasic.Strings.FormatNumber(Max(Fields!TotalWCharges.Value), 2)</Value>
+                              <Value>=Parameters!CurrencySymbol.Value &amp; " " &amp; FormatNumber(Fields!TotalWCharges.Value,2)</Value>
                               <Style>
                                 <FontSize>9pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -172,11 +176,13 @@
                         </Border>
                         <TopBorder>
                           <Color>Black</Color>
-                          <Style>=IIf(Fields!row.Value = 1, "None", "Solid")</Style>
+                          <Style>Solid</Style>
                           <Width>1pt</Width>
                         </TopBorder>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
                   </CellContents>
@@ -194,18 +200,14 @@
         <TablixRowHierarchy>
           <TablixMembers>
             <TablixMember>
-              <Group Name="SubTotalKey">
+              <Group Name="SubTotalSort">
                 <GroupExpressions>
                   <GroupExpression>=Fields!SubTotalSort.Value</GroupExpression>
-                  <GroupExpression>=Fields!SubTotalKey.Value</GroupExpression>
                 </GroupExpressions>
               </Group>
               <SortExpressions>
                 <SortExpression>
                   <Value>=Fields!SubTotalSort.Value</Value>
-                </SortExpression>
-                <SortExpression>
-                  <Value>=Fields!SubTotalKey.Value</Value>
                 </SortExpression>
               </SortExpressions>
               <TablixMembers>
@@ -219,26 +221,24 @@
                     </TablixMember>
                     <TablixMember>
                       <Visibility>
-                        <Hidden>=IsNothing(Fields!QChargeMemo.Value)</Hidden>
+                        <Hidden>=IsNothing(Fields!QCDDescription.Value)</Hidden>
                       </Visibility>
                     </TablixMember>
                   </TablixMembers>
                 </TablixMember>
                 <TablixMember>
-                  <Visibility>
-                    <Hidden>=Fields!ShowFooter.Value &lt;&gt; Parameters!id.Value</Hidden>
-                  </Visibility>
                   <KeepWithGroup>Before</KeepWithGroup>
                 </TablixMember>
               </TablixMembers>
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
+        <KeepTogether>true</KeepTogether>
         <DataSetName>dsQuoteCustomerChargeDetail</DataSetName>
-        <Top>0cm</Top>
-        <Left>9.22911cm</Left>
-        <Height>0.67262in</Height>
-        <Width>4.15334in</Width>
+        <Top>0.15875cm</Top>
+        <Left>3.10621cm</Left>
+        <Height>0.75in</Height>
+        <Width>4.00126in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -246,10 +246,10 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>0.72768in</Height>
+    <Height>0.82917in</Height>
     <Style />
   </Body>
-  <Width>7.79715in</Width>
+  <Width>5.26168in</Width>
   <Page>
     <LeftMargin>0.2in</LeftMargin>
     <RightMargin>0.2in</RightMargin>
@@ -343,18 +343,14 @@
           <DataField>TotalWCharges</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="row">
-          <DataField>row</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>CBHDataSet</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\Rony\Google Drive\DEV\Projects\CBHWA\CBHWA\Areas\Reports\CBHDataSet.xsd</rd:SchemaPath>
+        <rd:SchemaPath>C:\Users\Rony\SkyDrive\DEV\Projects\CBHWA\CBHWA\Areas\Reports\CBHDataSet.xsd</rd:SchemaPath>
         <rd:TableName>qrptFileQuoteCustomerChargeDetail</rd:TableName>
-        <rd:TableAdapterFillMethod />
-        <rd:TableAdapterGetDataMethod />
-        <rd:TableAdapterName />
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>qrptFileQuoteCustomerChargeDetailTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>

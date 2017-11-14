@@ -78,14 +78,14 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="JobCreatedDate">
+                    <Textbox Name="rptDate">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!JobCreatedDate.Value</Value>
+                              <Value>=Fields!rptDate.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
                                 <Format>dd MMM yy</Format>
@@ -97,7 +97,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>JobCreatedDate</rd:DefaultName>
+                      <rd:DefaultName>rptDate</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>None</Style>
@@ -432,7 +432,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!QuotePrice.Value</Value>
+                              <Value>=Format(Fields!QuotePrice.Value, "Currency")</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
                                 <Format>#,0.00;(#,0.00)</Format>
@@ -455,6 +455,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -1014,7 +1015,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>=Sum(Fields!QuotePrice.Value, "dsRptPronacaReport")</Value>
+                    <Value>=Format(Sum(Fields!QuotePrice.Value, "dsRptPronacaReport"), "Currency")</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                       <Format>#,0.00;(#,0.00)</Format>

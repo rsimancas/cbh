@@ -111,7 +111,7 @@
 
     function OpenReport() {
         $("body").mask("Preparing Report...");
-        var body = "see the report on the following link {0} {1}".format(urlMailTo, urlPDF);
+        var body = "see the report on the following link {0}{1}".format(urlMailTo, urlPDF);
         var mailTo = "mailto:?subject=Job Summary&body=" + encodeURIComponent(body);
         var xhr;
         if (window.XMLHttpRequest) { xhr = new XMLHttpRequest(); }//code for modern browsers}

@@ -2,7 +2,7 @@
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <Body>
     <ReportItems>
-      <Tablix Name="Tablix3">
+      <Tablix Name="Tablix12">
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
@@ -14,11 +14,11 @@
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>0.52908cm</Height>
+              <Height>0.6cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="DescriptionText">
+                    <Textbox Name="DescriptionText2">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -45,7 +45,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="ChargePrice">
+                    <Textbox Name="ChargePrice2">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -81,7 +81,7 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="IChargeMemo">
+                    <Textbox Name="IChargeMemo2">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -104,45 +104,18 @@
                         <PaddingRight>2pt</PaddingRight>
                       </Style>
                     </Textbox>
+                    <ColSpan>2</ColSpan>
                   </CellContents>
                 </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Textbox36">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value />
-                              <Style />
-                            </TextRun>
-                          </TextRuns>
-                          <Style>
-                            <TextAlign>Right</TextAlign>
-                          </Style>
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Textbox36</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Style>None</Style>
-                        </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
+                <TablixCell />
               </TablixCells>
             </TablixRow>
             <TablixRow>
-              <Height>0.52908cm</Height>
+              <Height>0.6cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="SubTotalLocation">
+                    <Textbox Name="SubTotalLocation3">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -173,14 +146,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="ChargePrice1">
+                    <Textbox Name="ChargePrice5">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Format(Fields!TotalWCharges.Value,Parameters!CurrencyFormat.Value)</Value>
+                              <Value>=Microsoft.VisualBasic.Strings.Format(Max(Fields!TotalWCharges.Value), Parameters!CurrencyFormat.Value)</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                                 <Format>#,0.00;(#,0.00)</Format>
@@ -216,19 +189,23 @@
         <TablixRowHierarchy>
           <TablixMembers>
             <TablixMember>
-              <Group Name="SubTotalKey">
+              <Group Name="SubTotalSort">
                 <GroupExpressions>
+                  <GroupExpression>=Fields!SubTotalSort.Value</GroupExpression>
                   <GroupExpression>=Fields!SubTotalKey.Value</GroupExpression>
                 </GroupExpressions>
               </Group>
               <SortExpressions>
+                <SortExpression>
+                  <Value>=Fields!SubTotalSort.Value</Value>
+                </SortExpression>
                 <SortExpression>
                   <Value>=Fields!SubTotalKey.Value</Value>
                 </SortExpression>
               </SortExpressions>
               <TablixMembers>
                 <TablixMember>
-                  <Group Name="Details" />
+                  <Group Name="Details1" />
                   <TablixMembers>
                     <TablixMember>
                       <Visibility>
@@ -253,7 +230,9 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>dsJobInvoiceChargeDetail</DataSetName>
-        <Height>1.65816cm</Height>
+        <Top>0cm</Top>
+        <Left>0cm</Left>
+        <Height>1.8cm</Height>
         <Width>11.49871cm</Width>
         <Style>
           <Border>
@@ -262,7 +241,7 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>0.65282in</Height>
+    <Height>0.70866in</Height>
     <Style />
   </Body>
   <Width>4.52705in</Width>

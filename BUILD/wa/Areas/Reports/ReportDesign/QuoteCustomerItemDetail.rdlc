@@ -1412,33 +1412,8 @@
           </Border>
         </Style>
       </Tablix>
-      <Subreport Name="ChargeDetails">
-        <ReportName>QuoteCustomerChargeDetails</ReportName>
-        <Parameters>
-          <Parameter Name="id">
-            <Value>=Fields!FVQHdrKey.Value</Value>
-          </Parameter>
-          <Parameter Name="LanguageCode">
-            <Value>=Parameters!LanguageCode.Value</Value>
-          </Parameter>
-          <Parameter Name="CurrencySymbol">
-            <Value>=Parameters!CurrencySymbol.Value</Value>
-          </Parameter>
-        </Parameters>
-        <KeepTogether>true</KeepTogether>
-        <Top>2.57187cm</Top>
-        <Left>0.00001cm</Left>
-        <Height>0.17705in</Height>
-        <Width>19.87559cm</Width>
-        <ZIndex>1</ZIndex>
-        <Style>
-          <Border>
-            <Style>None</Style>
-          </Border>
-        </Style>
-      </Subreport>
     </ReportItems>
-    <Height>1.1896in</Height>
+    <Height>0.96112in</Height>
     <Style />
   </Body>
   <Width>7.82504in</Width>

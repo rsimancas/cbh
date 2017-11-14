@@ -1107,7 +1107,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Iif(IsNothing(Fields!VendorContactPhone.Value), Fields!VendorPhone.Value, Fields!VendorContactPhone.Value)</Value>
+                                  <Value>=Iif(IsNothing(Fields!VendorContactPhone.Value) Or String.IsNullOrWhiteSpace(Fields!VendorContactPhone.Value), Fields!VendorPhone.Value, Fields!VendorContactPhone.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>

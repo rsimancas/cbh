@@ -1,0 +1,16 @@
+INICIO: 9/16/2017 12:11:27 PM
+12:11:27 PM: ERROR:
+	METHOD = CBHWA.Models.JobsRepository.Add
+	MESSAGE = Cannot insert the value NULL into column 'POStatusDate', table 'CBH.dbo.tblJobPurchaseOrderStatusHistory'; column does not allow nulls. INSERT fails.
+Arithmetic overflow occurred.
+The statement has been terminated.
+12:46:20 PM: ERROR:
+	METHOD = CBHWA.Models.JobsRepository.Add
+	MESSAGE = Cannot insert the value NULL into column 'POStatusDate', table 'CBH.dbo.tblJobPurchaseOrderStatusHistory'; column does not allow nulls. INSERT fails.
+Arithmetic overflow occurred.
+The statement has been terminated.
+12:56:35 PM: ERROR:
+	METHOD = CBHWA.Models.JobsRepository.Add
+	MESSAGE = Cannot insert the value NULL into column 'POStatusDate', table 'CBH.dbo.tblJobPurchaseOrderStatusHistory'; column does not allow nulls. INSERT fails.
+Arithmetic overflow occurred.
+The statement has been terminated.
