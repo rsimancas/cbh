@@ -356,7 +356,7 @@ Ext.define('CBH.view.manager.Employees', {
                 me.loadRecord(record);
                 Ext.Msg.hide();
                 toolbar.doRefresh();
-                CBH.AppEvents.broadcast.fireEvent('EmployeesChanged');
+                CBH.AppEvents.fireEvent('EmployeesChanged');
             },
             failure: function() {
                 Ext.Msg.hide();

@@ -91,7 +91,7 @@ Ext.define('CBH.view.sales.FileForm', {
             }
         });
 
-        CBH.AppEvents.broadcast.on("EmployeesChanged", function() {
+        CBH.AppEvents.on("EmployeesChanged", function() {
             this.reload();
         }, storeEmployeeRolesGrid);
 
