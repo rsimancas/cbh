@@ -1460,11 +1460,11 @@ Ext.define('CBH.view.jobs.JobOverview', {
 
         var savedRecord = form.getRecord();
 
-        me.setLoading("Saving...");
+       Ext.getBody().mask("Saving Changes...")
 
         savedRecord.save({
             callback: function(records, operation, success) {
-                me.setLoading(false);
+                Ext.getBody().unmask();
             }
         });
     }
