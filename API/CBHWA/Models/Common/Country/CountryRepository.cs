@@ -156,9 +156,16 @@
 
             if ((new string[] { "rptPronacaReport", "rptPronacaReport NoProfit", "rptPronacaReportClosedShipped", "rptPronacaTransitOrders", "rptPronacaReportQuotes", "rptPronacaReportQuotes NoProfit", "rptPronacaReportCommissionOnly" }).Contains(reportName))
             {
-                sql = @"SELECT CountryKey, CountryName 
-                        FROM tblCountries 
-                        WHERE CountryKey IN (SELECT CountryKey FROM dbo.qrptPronacaReport WHERE {0}) 
+                sql = @"WITH qData
+                        AS
+                        (
+	                        SELECT b.CountryKey 
+                            FROM tblCustomers a LEFT OUTER JOIN tblCountries b ON a.CustCountryKey = b.CountryKey 
+	                        WHERE a.CustKey IN (SELECT DISTINCT CustKey FROM qrptPronacaReport WHERE {0})
+	                        GROUP BY b.CountryKey
+                        )
+                        SELECT tc.CountryKey, tc.CountryName 
+                        FROM tblCountries tc inner join qData q on tc.CountryKey = q.CountryKey
                         ORDER BY CountryName";
 
                 where = "1=1";
