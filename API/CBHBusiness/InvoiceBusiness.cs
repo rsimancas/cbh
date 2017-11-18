@@ -94,11 +94,12 @@ namespace CBHBusiness
             invoice.InvoiceMemoFont = model.InvoiceMemoFont;
             invoice.tblJobHeader.JobShipDate = model.JobShipDate;
             invoice.tblJobHeader.JobShipType = model.JobShipType.Value;
+            invoice.tblCustomer.CustZip = model.CustZip;
 
-            //db.tblInvoiceHeaders.
-            //db.Refresh(System.Data.Linq.RefreshMode.KeepCurrentValues, invoice);
+            //db.tblInvoiceHeaders.Attach(invoice);
+            db.Refresh(System.Data.Linq.RefreshMode.KeepCurrentValues, invoice);
             db.SubmitChanges();
-            return db.qfrmInvoiceMaintenances.Where(w => w.InvoiceKey == model.InvoiceKey).Single();
+            return db.qfrmInvoiceMaintenances.Where(w => w.InvoiceKey == invoice.InvoiceKey).Single();
         }
     }
 }

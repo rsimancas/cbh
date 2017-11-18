@@ -132,7 +132,7 @@ namespace CBHWA.Controllers
                 object json = new
                 {
                     total = 1,
-                    data = new InvoiceBusiness().UpdateInvoiceMaintenance(model),
+                    data = new qfrmInvoiceMaintenanceMapping().MapModels(new InvoiceBusiness().UpdateInvoiceMaintenance(model)),
                     success = true
                 };
                 return json;

@@ -243,6 +243,7 @@ Ext.application({
         'Ext.ux.form.field.DateTimeField',
         'Ext.ux.form.DateTimeMenu',
         'Ext.ux.InputTextMask',
+        'Ext.ux.TabCloseMenu',
         'Overrides.form.field.Date',
         'Overrides.form.field.Base',
         'Overrides.form.ComboBox',

@@ -17,13 +17,6 @@ Ext.define('CBH.view.jobs.JobOverview', {
             params: {
                 JobKey: me.currentRecord.data.JobKey
             },
-            /*callback: function() {
-                var grid = me.down('#gridvendors');
-
-                if (grid.getSelectionModel().selected.length === 0) {
-                    grid.getSelectionModel().select(0);
-                }
-            },*/
             scope: me
         });
 
@@ -31,13 +24,6 @@ Ext.define('CBH.view.jobs.JobOverview', {
             params: {
                 JobKey: me.currentRecord.data.JobKey
             },
-            /*callback: function() {
-                var grid = this.down('#gridInvoices');
-
-                if (grid.getSelectionModel().selected.length === 0) {
-                    grid.getSelectionModel().select(0);
-                }
-            },*/
             scope: me
         });
 
@@ -126,7 +112,6 @@ Ext.define('CBH.view.jobs.JobOverview', {
                                 dataIndex: 'Status',
                                 text: 'Status',
                                 summaryRenderer: function(value, summaryData, dataIndex) {
-                                    //return Ext.String.format('Total for {0} items', value, value !== 1 ? value : 0);
                                     var lastIndex = this.store.getCount() - 1,
                                         currency = (lastIndex > -1) ? this.store.getAt(lastIndex).data.CurrencyCode : 0;
                                     return Ext.String.format('Total {0}', currency);
@@ -146,10 +131,6 @@ Ext.define('CBH.view.jobs.JobOverview', {
                                 text: 'CUR'
                             }],
                             listeners: {
-                                /*selectionchange: {
-                                    fn: me.onSelectChange,
-                                    scope: me
-                                },*/
                                 celldblclick: {
                                     fn: me.onClickEditPurchaseOrder,
                                     scope: me
@@ -327,17 +308,6 @@ Ext.define('CBH.view.jobs.JobOverview', {
                                     text: 'Modified Date',
                                     renderer: Ext.util.Format.dateRenderer('m/d/Y H:i')
                                 },
-                                /*{
-                                                               xtype: 'gridcolumn',
-                                                               width: 150,
-                                                               dataIndex: 'x_Status',
-                                                               text: 'Status'
-                                                           }, {
-                                                               xtype: 'gridcolumn',
-                                                               width: 80,
-                                                               dataIndex: 'StatusQuoteNum',
-                                                               text: 'Quote Num.'
-                                                           },*/
                                 {
                                     xtype: 'gridcolumn',
                                     flex: 1,
@@ -950,6 +920,7 @@ Ext.define('CBH.view.jobs.JobOverview', {
                 });
 
                 form.down('#FormToolbar').gotoAt(1);
+                form.down('#FormToolbar').on('aftersavechanges', me.refreshOverview, me);
                 tab.show();
             },
             scope: this
@@ -1405,5 +1376,22 @@ Ext.define('CBH.view.jobs.JobOverview', {
         var params = Serialize(formData),
             pathReport = CBH.GlobalSettings.webApiPath + '/Reports/{0}{1}'.format("rptJobInvoice", params);
         window.open(pathReport, 'CBH - Invoice', false);
+    },
+
+    refreshOverview: function(toolbar, record) {
+        var me = this;
+        me.setLoading("Loading...");
+        var storeJobOverview = new CBH.store.jobs.qJobOverview().load({
+            params: {
+                id: me.currentJob.get("JobKey")
+            },
+            callback: function(records, operation, success) {
+                
+                if(records && records.length)
+                    me.loadRecord(this.getAt(0));
+
+                me.setLoading(false);
+            }
+        });
     }
 });

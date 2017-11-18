@@ -63,11 +63,10 @@ Ext.define('CBH.view.jobs.JobMenu', {
                         xtype: 'actioncolumn',
                         width: 35,
                         items: [{
-                            getGlyph: function(itemScope, rowIdx, colIdx, item, rec) { return 'xf00e@FontAwesome';},
+                            getGlyph: function() { return 'xf00e@FontAwesome';},
                             tooltip: 'view details Job',
-                            handler: function(grid, rowIndex, colIndex) {
-                                var me = this.up('form');
-                                var record = grid.getStore().getAt(rowIndex);
+                            handler: function(view, rowIndex, colIndex, item, e, record, row) {
+                                var me = view.up('form');
                                 me.onClickViewDetails(record);
                             }
                         }]
@@ -571,21 +570,22 @@ Ext.define('CBH.view.jobs.JobMenu', {
     },
 
     onClickViewDetails: function(record) {
-        var me = this.up('panel');
+        var me = this.up('panel'),
+            tabs = this.up('app_pageframe'),
+            grid = me.down('#gridjobs');
 
-        var tabs = this.up('app_pageframe');
+        if(!record) {
+            if (grid.getSelectionModel().selected.length === 0) {
+                grid.getSelectionModel().select(0);
+            }
 
-        var grid = me.down('#gridjobs');
-
-        if (grid.getSelectionModel().selected.length === 0) {
-            grid.getSelectionModel().select(0);
+            if (!grid.getSelectionModel().getSelection()[0]) {
+                return;
+            }
+            record = grid.getSelectionModel().getSelection()[0];
         }
 
-        if (!grid.getSelectionModel().getSelection()[0]) {
-            return;
-        }
-
-        var curJob = grid.getSelectionModel().getSelection()[0];
+        var curJob = record;
 
         var storeJobOverview = new CBH.store.jobs.qJobOverview().load({
             params: {

@@ -3,6 +3,8 @@ Ext.define('CBH.view.appViewPort', {
 
     xtype: 'app_viewport',
 
+    id: 'MainViewport',
+
     layout: {
         type: 'border'
     },
@@ -39,8 +41,6 @@ Ext.define('CBH.view.appViewPort', {
                         html: '<div style="width:100%; padding:10px;"><p style="text-align:center;"><img src="images/logo_cbh_logon.png" style="width:130px;"/></p></div>'
                     },
                     {
-                        /*margin: '5 0 0 0',*/
-                        /*padding: '10 0 0 0',*/
                         xtype: 'app_treeview',
                         width: 240,
                         height: Math.round(screen.height * 0.40),

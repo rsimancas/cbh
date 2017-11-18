@@ -230,6 +230,7 @@ Ext.define('Ext.ux.form.Toolbar', {
                     if (me.fireEvent('beforesavechanges', me, me.getCurrentRecord()) !== false) {
                         if (me.fireEvent('savechanges', me, me.getCurrentRecord()) !== false) {
                             me.setReadOnlyFormFields(true);
+                            me.fireEvent('aftersavechanges', me, me.getCurrentRecord());
                         }
                     }
                 }
@@ -394,7 +395,8 @@ Ext.define('Ext.ux.form.Toolbar', {
             'undochanges',
             'savechanges',
             'beforeprint',
-            'printrecord'
+            'printrecord',
+            'aftersavechanges'
         );
 
         me.on('beforerender', me.onLoad, me, { single: true });
