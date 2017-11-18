@@ -175,6 +175,7 @@ Ext.define('CBH.view.jobs.JobStatusHistory', {
                 });
                 me.sendMail();
                 me.destroy();
+                CBH.AppEvents.fireEvent("jobclosed");
             },
             failure: function() {
                 Ext.Msg.hide();

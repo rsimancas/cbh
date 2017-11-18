@@ -13,7 +13,8 @@ Ext.define('CBH.AppEvents', {
 
         this.addEvents(
             'printqueue',
-            'quit'
+            'quit',
+            'jobclosed'
         );
     },
 

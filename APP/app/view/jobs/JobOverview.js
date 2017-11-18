@@ -540,7 +540,7 @@ Ext.define('CBH.view.jobs.JobOverview', {
                     }, {
                         margin: '0 0 0 5',
                         xtype: 'textfield',
-                        name: 'JobInspectionCertificatedNum',
+                        name: 'JobInspectionCertificateNum',
                         fieldLabel: 'Certificated',
                         columnWidth: 0.4
                     }, {
@@ -760,8 +760,16 @@ Ext.define('CBH.view.jobs.JobOverview', {
         var me = this,
             cr = me.currentRecord.data,
             grid = me.down('#gridvendors'),
-            selection = grid.getSelectionModel().getSelection()[0],
-            curJobKey = selection.get('JobKey');
+            selection = null;
+
+        if(grid.getStore().getCount() > 0 && grid.getSelectionModel().selected.length == 0) {
+            grid.getSelectionModel().select(0);
+            selection = grid.getSelectionModel().getSelection()[0];
+        }
+
+        if(!selection) return;
+
+        var curJobKey = selection.get('JobKey');
 
         var newCommissionInvoice = Ext.create('CBH.model.jobs.NewCommissionInvoice', {
             CommissionPCT: 0,
@@ -986,6 +994,11 @@ Ext.define('CBH.view.jobs.JobOverview', {
         var JobKey = selection.data.JobKey;
         var JobNum = selection.data.JobNum;
         var customer = selection.data.CustName;
+
+        CBH.AppEvents.on("jobclosed", function() {
+            me.refreshOverview(me, me.currentRecord);
+        });
+
 
         var tab = tabs.add({
             closable: true,
