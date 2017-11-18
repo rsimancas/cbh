@@ -163,9 +163,9 @@
 
                 where = "1=1";
                 if (!string.IsNullOrEmpty(startDate))
-                    where += string.Format(" AND CAST(JobShipDate as Date) >= '{0}'", startDate);
+                    where += string.Format(" AND CAST(rptDate as Date) >= '{0}'", startDate);
                 if (!string.IsNullOrEmpty(endDate))
-                    where += string.Format(" AND CAST(JobShipDate as Date) <= '{0}'", endDate);
+                    where += string.Format(" AND CAST(rptDate as Date) <= '{0}'", endDate);
 
                 where = where.Replace("1=1 AND", "");
 
