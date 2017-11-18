@@ -1,0 +1,23 @@
+<html> 
+<head> 
+<title>Redirigir al navegador a otra URL</title> 
+<!--<META HTTP-EQUIV="REFRESH" CONTENT="0;URL=http://CBHAWS.IPCNetworks.com/Clients/app/index.html"> -->
+<script src="URI.min.js"></script>
+</head> 
+<body onload="redireccionar()"> 
+
+<script language="Javascript">
+
+	function redireccionar() {
+        	setTimeout(function() {
+			var url = location.href.split('?')[0];
+		        url = URI('app').absoluteTo(url)._string;
+			location.href=url;
+		}, 1000);
+	}
+
+</script>
+
+
+</body> 
+</html>
