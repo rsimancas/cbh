@@ -1,9 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CBHWA", "CBHWA\CBHWA.csproj", "{755A705B-1A11-4F56-858F-CBD83232E537}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8AA32FB8-9A00-4621-A301-6A4E79786CF8} = {8AA32FB8-9A00-4621-A301-6A4E79786CF8}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CBHBusiness", "CBHBusiness\CBHBusiness.csproj", "{8AA32FB8-9A00-4621-A301-6A4E79786CF8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{755A705B-1A11-4F56-858F-CBD83232E537}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{755A705B-1A11-4F56-858F-CBD83232E537}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{755A705B-1A11-4F56-858F-CBD83232E537}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AA32FB8-9A00-4621-A301-6A4E79786CF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AA32FB8-9A00-4621-A301-6A4E79786CF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AA32FB8-9A00-4621-A301-6A4E79786CF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AA32FB8-9A00-4621-A301-6A4E79786CF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

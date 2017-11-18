@@ -923,7 +923,7 @@ Ext.define('CBH.view.jobs.JobOverview', {
             curJobKey = me.currentRecord.data.JobKey,
             InvoiceKey = selection.data.InvoiceKey;
 
-        var storeToNavigate = new CBH.store.jobs.InvoiceHeader().load({
+        var storeToNavigate = new CBH.store.jobs.qfrmInvoiceMaintenance().load({
             params: {
                 id: InvoiceKey
             },

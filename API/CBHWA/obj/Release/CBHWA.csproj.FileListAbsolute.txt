@@ -244,3 +244,5 @@ C:\Workspaces\CBH\API\CBHWA\obj\Release\RdlCompile.cache
 C:\Workspaces\CBH\API\CBHWA\obj\Release\RdlCompile.compiled
 C:\Workspaces\CBH\API\CBHWA\obj\Release\CBHWA.dll
 C:\Workspaces\CBH\API\CBHWA\obj\Release\CBHWA.pdb
+C:\Workspaces\CBH\API\CBHWA\bin\CBHBusiness.dll
+C:\Workspaces\CBH\API\CBHWA\bin\CBHBusiness.pdb

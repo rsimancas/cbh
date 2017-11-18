@@ -1,0 +1,6 @@
+C:\Workspaces\CBH\API\CBHBusiness\bin\Release\CBHBusiness.dll.config
+C:\Workspaces\CBH\API\CBHBusiness\bin\Release\CBHBusiness.dll
+C:\Workspaces\CBH\API\CBHBusiness\bin\Release\CBHBusiness.pdb
+C:\Workspaces\CBH\API\CBHBusiness\obj\Release\CBHBusiness.dll
+C:\Workspaces\CBH\API\CBHBusiness\obj\Release\CBHBusiness.pdb
+C:\Workspaces\CBH\API\CBHBusiness\obj\Release\CBHBusiness.csprojResolveAssemblyReference.cache
