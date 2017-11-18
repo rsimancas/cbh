@@ -1,9 +1,13 @@
-/****** Object:  UserDefinedFunction [dbo].[fnPronacaProfitMargin]    Script Date: 09/15/2017 22:08:46 ******/
+USE [CBH]
+GO
+
+/****** Object:  UserDefinedFunction [dbo].[fnPronacaProfitMargin]    Script Date: 11/18/2017 13:18:39 ******/
 SET ANSI_NULLS ON
 GO
 
 SET QUOTED_IDENTIFIER ON
 GO
+
 
 -- =============================================
 -- Author:		Rony Simancas
@@ -15,21 +19,21 @@ ALTER FUNCTION [dbo].[fnPronacaProfitMargin]
 (
 	-- Add the parameters for the function here
 	@JobNum varchar(MAX)
-	,@QuotePrice DECIMAL(18,2)
-    ,@QuoteCost DECIMAL(18,2)
-    ,@QuoteProfit DECIMAL(18,2)
-    ,@JobPriceUSD DECIMAL(18,2)
-    ,@JobCostUSD DECIMAL(18,2)
-    ,@JobProfit DECIMAL(18,2)
+	,@QuotePrice DECIMAL(18,4)
+    ,@QuoteCost DECIMAL(18,4)
+    ,@QuoteProfit DECIMAL(18,4)
+    ,@JobPriceUSD DECIMAL(18,4)
+    ,@JobCostUSD DECIMAL(18,4)
+    ,@JobProfit DECIMAL(18,4)
 )
-RETURNS DECIMAL(18,2)
+RETURNS DECIMAL(18,4)
 AS
 BEGIN
 	-- Declare the return variable here
-	DECLARE @Price DECIMAL(18,2) = 0
-	,@Cost DECIMAL(18,2) = 0
-	,@Profit DECIMAL(18,2) = 0
-	,@Percent DECIMAL(18,2) = 0
+	DECLARE @Price DECIMAL(18,4) = 0
+	,@Cost DECIMAL(18,4) = 0
+	,@Profit DECIMAL(18,4) = 0
+	,@Percent DECIMAL(18,4) = 0
 
 	IF(@JobNum IS NULL)
 	BEGIN
@@ -53,6 +57,8 @@ BEGIN
 	RETURN @Percent
 
 END
+
+
 
 
 GO
