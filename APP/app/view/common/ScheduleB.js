@@ -222,6 +222,7 @@ Ext.define('CBH.view.common.ScheduleB', {
                             selectOnFocus: true,
                             emptyText: 'Choose Language',
                             allowBlank: false,
+                            anyMatch: true,
                             listeners: {
                                 select: function(field, records, eOpts) {
                                     var form = field.up('panel'),
@@ -233,10 +234,6 @@ Ext.define('CBH.view.common.ScheduleB', {
                                 change: function(field) {
                                     var form = field.up('panel');
                                     form.onFieldChange();
-                                },
-                                beforequery: function(record) {
-                                    record.query = new RegExp(record.query, 'i');
-                                    record.forceAll = true;
                                 }
                             },
                             store: storeLangs

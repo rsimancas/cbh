@@ -170,12 +170,7 @@ Ext.define('CBH.view.sales.FileForm', {
                         selectOnFocus: true,
                         emptyText: 'Choose Employee',
                         //enableKeyEvents: true,
-                        listeners: {
-                            beforequery: function(record) {
-                                record.query = new RegExp(record.query, 'i');
-                                record.forceAll = true;
-                            }
-                        }
+                        anyMatch: true
                     }, {
                         xtype: 'combo',
                         itemId: 'FileOrderEmployeeKey',
@@ -206,12 +201,7 @@ Ext.define('CBH.view.sales.FileForm', {
                         forceSelection: true,
                         selectOnFocus: true,
                         emptyText: 'Choose Employee',
-                        listeners: {
-                            beforequery: function(record) {
-                                record.query = new RegExp(record.query, 'i');
-                                record.forceAll = true;
-                            }
-                        }
+                        anyMatch: true
                     }]
                 }, {
                     xtype: 'fieldcontainer',
@@ -268,11 +258,8 @@ Ext.define('CBH.view.sales.FileForm', {
                         forceSelection: false,
                         //triggerAction: '',
                         queryCaching: false, // set for after add a new contact, this control recognize the new contact added
+                        anyMatch: true,
                         listeners: {
-                            beforequery: function(record) {
-                                record.query = new RegExp(record.query, 'i');
-                                record.forceAll = true;
-                            },
                             blur: {
                                 fn: me.onContactBlur,
                                 scope: this
@@ -293,11 +280,8 @@ Ext.define('CBH.view.sales.FileForm', {
                         allowBlank: false,
                         forceSelection: false,
                         queryCaching: false,
+                        anyMatch: true,
                         listeners: {
-                            beforequery: function(record) {
-                                record.query = new RegExp(record.query, 'i');
-                                record.forceAll = true;
-                            },
                             blur: {
                                 fn: me.onShipAddressBlur,
                                 scope: this
@@ -329,10 +313,7 @@ Ext.define('CBH.view.sales.FileForm', {
                         minChars: 2,
                         allowBlank: false,
                         forceSelection: true,
-                        /*tpl: Ext.create('Ext.XTemplate',
-                            '<tpl for=".">',
-                            '<div class="x-bound-list-item" >{CurrencyCode} {CurrencyDescription} {CurrencySymbol} {CurrencyRate}</div>',
-                            '</tpl>'),*/
+                        anyMatch: true,
                         listeners: {
                             blur: function(field, The, eOpts) {
                                 if (field.value !== null) {
@@ -342,10 +323,6 @@ Ext.define('CBH.view.sales.FileForm', {
                                     copyField = form.down('#FileDefaultCurrencyRate');
                                     copyField.setValue(copyToField);
                                 }
-                            },
-                            beforequery: function(record) {
-                                record.query = new RegExp(record.query, 'i');
-                                record.forceAll = true;
                             }
                         },
                     }, {
@@ -377,9 +354,7 @@ Ext.define('CBH.view.sales.FileForm', {
                         fieldLabel: 'Date Rqd. by Customer',
                         labelAlign: 'top',
                         labelWidth: 50,
-                        name: 'FileDateCustRequired',
-                        //format: 'm/d/Y',
-                        //allowBlank: false
+                        name: 'FileDateCustRequired'
                     }, {
                         xtype: 'textfield',
                         columnWidth: 0.7,
@@ -387,13 +362,7 @@ Ext.define('CBH.view.sales.FileForm', {
                         fieldLabel: 'Date Rqd. by Cust. Note',
                         labelAlign: 'top',
                         labelWidth: 50,
-                        name: 'FileDateCustRequiredNote',
-                        //allowBlank: false
-                        listeners: {
-                            blur: function() {
-                                //me.onSaveClick();
-                            }
-                        }
+                        name: 'FileDateCustRequiredNote'
                     }]
                 }]
             }, {
@@ -422,6 +391,7 @@ Ext.define('CBH.view.sales.FileForm', {
                             queryMode: 'local',
                             selectOnFocus: true,
                             allowBlank: false,
+                            anyMatch: true,
                             listeners: {
                                 // specialkey: function(field, e){
                                 //     // e.HOME, e.END, e.PAGE_UP, e.PAGE_DOWN,
@@ -448,10 +418,6 @@ Ext.define('CBH.view.sales.FileForm', {
                                     if (records.length > 0) {
                                         record.set('x_RoleName', records[0].data.JobRoleDescription);
                                     }
-                                },
-                                beforequery: function(record) {
-                                    record.query = new RegExp(record.query, 'i');
-                                    record.forceAll = true;
                                 }
                             },
                             store: new CBH.store.jobs.JobRoles().load({
@@ -476,6 +442,7 @@ Ext.define('CBH.view.sales.FileForm', {
                             queryMode: 'local',
                             selectOnFocus: true,
                             allowBlank: false,
+                            anyMatch: true,
                             listeners: {
                                 change: function(field) {
                                     var form = field.up('panel');
@@ -487,10 +454,6 @@ Ext.define('CBH.view.sales.FileForm', {
                                     if (records.length > 0) {
                                         record.set('FileEmployeeEmployeeKey', field.value);
                                     }
-                                },
-                                beforequery: function(record) {
-                                    record.query = new RegExp(record.query, 'i');
-                                    record.forceAll = true;
                                 }
                             },
                             store: storeEmployeeRolesGrid

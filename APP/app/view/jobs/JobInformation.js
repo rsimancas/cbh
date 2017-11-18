@@ -227,11 +227,8 @@ Ext.define('CBH.view.jobs.JobInformation', {
                     allowBlank: false,
                     forceSelection: false,
                     queryCaching: false, // set for after add a new contact, this control recognize the new contact added
+                    anyMatch: true,
                     listeners: {
-                        beforequery: function(record) {
-                            record.query = new RegExp(record.query, 'i');
-                            record.forceAll = true;
-                        },
                         blur: {
                             fn: me.onContactBlur,
                             scope: this
@@ -262,6 +259,7 @@ Ext.define('CBH.view.jobs.JobInformation', {
                         '<tpl for=".">',
                         '<div class="x-boundlist-item" >{CurrencyCode} {CurrencyDescription} {CurrencySymbol} {CurrencyRate}</div>',
                         '</tpl>'),
+                    anyMatch: true,
                     listeners: {
                         blur: function(field, The, eOpts) {
                             if (field.value !== null) {
@@ -271,10 +269,6 @@ Ext.define('CBH.view.jobs.JobInformation', {
                                 copyField = form.down('field[name=JobCustCurrencyRate]');
                                 copyField.setValue(copyToField);
                             }
-                        },
-                        beforequery: function(record) {
-                            record.query = new RegExp(record.query, 'i');
-                            record.forceAll = true;
                         }
                     }
                 }, {
@@ -335,12 +329,7 @@ Ext.define('CBH.view.jobs.JobInformation', {
                     listConfig: {
                         width: 400
                     },
-                    listeners: {
-                        beforequery: function(record) {
-                            record.query = new RegExp(record.query, 'i');
-                            record.forceAll = true;
-                        }
-                    }
+                    anyMatch: true
                 }]
             },
             // Job Roles
@@ -375,6 +364,7 @@ Ext.define('CBH.view.jobs.JobInformation', {
                             queryMode: 'local',
                             selectOnFocus: true,
                             allowBlank: false,
+                            anyMatch: true,
                             listeners: {
                                 // specialkey: function(field, e){
                                 //     // e.HOME, e.END, e.PAGE_UP, e.PAGE_DOWN,
@@ -401,10 +391,6 @@ Ext.define('CBH.view.jobs.JobInformation', {
                                     if (records.length > 0) {
                                         record.set('x_RoleName', records[0].data.JobRoleDescription);
                                     }
-                                },
-                                beforequery: function(record) {
-                                    record.query = new RegExp(record.query, 'i');
-                                    record.forceAll = true;
                                 }
                             },
                             store: new CBH.store.jobs.JobRoles().load({
@@ -430,6 +416,7 @@ Ext.define('CBH.view.jobs.JobInformation', {
                             queryMode: 'local',
                             selectOnFocus: true,
                             allowBlank: false,
+                            anyMatch: true,
                             listeners: {
                                 change: function(field) {
                                     var form = field.up('panel');
@@ -441,10 +428,6 @@ Ext.define('CBH.view.jobs.JobInformation', {
                                     if (records.length > 0) {
                                         record.set('JobEmployeeEmployeeKey', field.value);
                                     }
-                                },
-                                beforequery: function(record) {
-                                    record.query = new RegExp(record.query, 'i');
-                                    record.forceAll = true;
                                 }
                             },
                             store: new CBH.store.common.Employees().load({
@@ -558,12 +541,7 @@ Ext.define('CBH.view.jobs.JobInformation', {
                     typeAhead: false,
                     minChars: 2,
                     forceSelection: true,
-                    listeners: {
-                        beforequery: function(record) {
-                            record.query = new RegExp(record.query, 'i');
-                            record.forceAll = true;
-                        }
-                    }
+                    anyMatch: true
                 }, {
                     margin: '0 0 0 5',
                     columnWidth: 0.5,
@@ -577,10 +555,7 @@ Ext.define('CBH.view.jobs.JobInformation', {
                     typeAhead: true,
                     minChars: 2,
                     forceSelection: true,
-                    beforequery: function(record) {
-                        record.query = new RegExp(record.query, 'i');
-                        record.forceAll = true;
-                    }
+                    anyMatch: true,
                 }, {
                     columnWidth: 1,
                     xtype: 'combo',
@@ -596,12 +571,7 @@ Ext.define('CBH.view.jobs.JobInformation', {
                     allowBlank: false,
                     forceSelection: true,
                     queryCaching: false,
-                    listeners: {
-                        beforequery: function(record) {
-                            record.query = new RegExp(record.query, 'i');
-                            record.forceAll = true;
-                        }
-                    }
+                    anyMatch: true
                 }, {
                     columnWidth: 0.5,
                     xtype: 'combo',
@@ -616,12 +586,7 @@ Ext.define('CBH.view.jobs.JobInformation', {
                     //allowBlank: true,
                     forceSelection: false,
                     queryCaching: false,
-                    listeners: {
-                        beforequery: function(record) {
-                            record.query = new RegExp(record.query, 'i');
-                            record.forceAll = true;
-                        }
-                    }
+                    anyMatch: true
                 }, {
                     xtype: 'textfield',
                     columnWidth: 0.5,
@@ -629,26 +594,14 @@ Ext.define('CBH.view.jobs.JobInformation', {
                     fieldLabel: 'Num',
                     labelAlign: 'top',
                     labelWidth: 50,
-                    name: 'JobInspectionNum',
-                    //allowBlank: false
-                    listeners: {
-                        blur: function() {
-                            //me.onSaveClick();
-                        }
-                    }
+                    name: 'JobInspectionNum'
                 }, {
                     xtype: 'textfield',
                     columnWidth: 1,
                     fieldLabel: 'DUI Number',
                     labelAlign: 'top',
                     labelWidth: 50,
-                    name: 'JobDUINum',
-                    //allowBlank: false
-                    listeners: {
-                        blur: function() {
-                            //me.onSaveClick();
-                        }
-                    }
+                    name: 'JobDUINum'
                 }]
             }
             ],

@@ -403,10 +403,7 @@ Ext.define('CBH.view.sales.FileQuoteMaintenance', {
                                                         typeAhead: false,
                                                         minChars: 2,
                                                         forceSelection: false,
-                                                        beforequery: function(record) {
-                                                            record.query = new RegExp(record.query, 'i');
-                                                            record.forceAll = true;
-                                                        },
+                                                        anyMatch: true,
                                                         listeners: {
                                                             select: function(field) {
                                                                 field.next().setValue(field.value);
@@ -427,12 +424,7 @@ Ext.define('CBH.view.sales.FileQuoteMaintenance', {
                                                         typeAhead: false,
                                                         minChars: 2,
                                                         forceSelection: true,
-                                                        listeners: {
-                                                            beforequery: function(record) {
-                                                                record.query = new RegExp(record.query, 'i');
-                                                                record.forceAll = true;
-                                                            }
-                                                        }
+                                                        anyMatch: true
                                                     }, {
                                                         xtype: 'combo',
                                                         margin: '0 0 0 5',
@@ -446,12 +438,7 @@ Ext.define('CBH.view.sales.FileQuoteMaintenance', {
                                                         typeAhead: false,
                                                         minChars: 2,
                                                         forceSelection: true,
-                                                        listeners: {
-                                                            beforequery: function(record) {
-                                                                record.query = new RegExp(record.query, 'i');
-                                                                record.forceAll = true;
-                                                            }
-                                                        }
+                                                        anyMatch: true
                                                     }, {
                                                         xtype: 'combo',
                                                         margin: '0 0 0 0',
@@ -465,12 +452,7 @@ Ext.define('CBH.view.sales.FileQuoteMaintenance', {
                                                         typeAhead: false,
                                                         minChars: 2,
                                                         forceSelection: false,
-                                                        listeners: {
-                                                            beforequery: function(record) {
-                                                                record.query = new RegExp(record.query, 'i');
-                                                                record.forceAll = true;
-                                                            }
-                                                        }
+                                                        anyMatch: true
                                                     }, {
                                                         xtype: 'textfield',
                                                         fieldLabel: 'Job Number',
@@ -598,12 +580,7 @@ Ext.define('CBH.view.sales.FileQuoteMaintenance', {
                                     minChars: 2,
                                     allowBlank: false,
                                     forceSelection: true,
-                                    listeners: {
-                                        beforequery: function(record) {
-                                            record.query = new RegExp(record.query, 'i');
-                                            record.forceAll = true;
-                                        }
-                                    },
+                                    anyMatch: true,
                                     tpl: Ext.create('Ext.XTemplate',
                                         '<tpl for=".">',
                                         '<div class="x-boundlist-item" >{CurrencyCode} {CurrencyDescription} {CurrencySymbol} {CurrencyRate}</div>',
@@ -723,6 +700,7 @@ Ext.define('CBH.view.sales.FileQuoteMaintenance', {
                                                     listConfig: {
                                                         width: 400
                                                     },
+                                                    anyMatch: true,
                                                     listeners: {
                                                         change: function(field) {
                                                             var form = field.up('panel');
@@ -735,10 +713,6 @@ Ext.define('CBH.view.sales.FileQuoteMaintenance', {
                                                             if (records.length > 0) {
                                                                 record.set('x_Category', field.getRawValue());
                                                             }
-                                                        },
-                                                        beforequery: function(record) {
-                                                            record.query = new RegExp(record.query, 'i');
-                                                            record.forceAll = true;
                                                         }
                                                     },
                                                     selectOnFocus: true,
@@ -765,6 +739,7 @@ Ext.define('CBH.view.sales.FileQuoteMaintenance', {
                                                     listConfig: {
                                                         width: 400
                                                     },
+                                                    anyMatch: true,
                                                     listeners: {
                                                         change: function(field) {
                                                             var form = field.up('panel');
@@ -777,10 +752,6 @@ Ext.define('CBH.view.sales.FileQuoteMaintenance', {
                                                             if (records.length > 0) {
                                                                 record.set('x_Location', field.getRawValue());
                                                             }
-                                                        },
-                                                        beforequery: function(record) {
-                                                            record.query = new RegExp(record.query, 'i');
-                                                            record.forceAll = true;
                                                         }
                                                     },
                                                     selectOnFocus: true,
@@ -923,6 +894,7 @@ Ext.define('CBH.view.sales.FileQuoteMaintenance', {
                                             listConfig: {
                                                 width: 400
                                             },
+                                            anyMatch: true,
                                             listeners: {
                                                 change: function(field) {
                                                     var form = field.up('panel');
@@ -936,10 +908,6 @@ Ext.define('CBH.view.sales.FileQuoteMaintenance', {
                                                         record.set('x_ChargeDescription', field.getRawValue());
                                                         field.next().next().setValue(records[0].data.x_DescriptionMemo);
                                                     }
-                                                },
-                                                beforequery: function(record) {
-                                                    record.query = new RegExp(record.query, 'i');
-                                                    record.forceAll = true;
                                                 }
                                             },
                                             selectOnFocus: true,
@@ -1123,6 +1091,7 @@ Ext.define('CBH.view.sales.FileQuoteMaintenance', {
                                                 '<tpl for=".">',
                                                 '<div class="x-boundlist-item" >{CurrencyCode} {CurrencyDescription} {CurrencySymbol} {CurrencyRate}</div>',
                                                 '</tpl>'),
+                                            anyMatch: true,
                                             listeners: {
                                                 change: function(field) {
                                                     var form = field.up('panel');
@@ -1135,10 +1104,6 @@ Ext.define('CBH.view.sales.FileQuoteMaintenance', {
                                                         record.set('QChargeCurrencyCode', field.value);
                                                         record.set('QChargeCurrencyRate', records[0].data.CurrencyRate);
                                                     }
-                                                },
-                                                beforequery: function(record) {
-                                                    record.query = new RegExp(record.query, 'i');
-                                                    record.forceAll = true;
                                                 }
                                             }
                                         }
@@ -1167,10 +1132,6 @@ Ext.define('CBH.view.sales.FileQuoteMaintenance', {
                                             listConfig: {
                                                 width: 250
                                             },
-                                            /*tpl: Ext.create('Ext.XTemplate',
-                                                '<tpl for=".">',
-                                                '<div class="x-boundlist-item" >{CurrencyCode} {CurrencyDescription} {CurrencySymbol} {CurrencyRate}</div>',
-                                                '</tpl>'),*/
                                             listeners: {
                                                 change: function(field) {
                                                     var form = field.up('panel');
@@ -1464,6 +1425,7 @@ Ext.define('CBH.view.sales.FileQuoteMaintenance', {
                         minChars: 2,
                         allowBlank: true,
                         forceSelection: true,
+                        anyMatch: true,
                         listeners: {
                             select: function(field, records, eOpts) {
                                 if (records.length > 0) {
@@ -1484,10 +1446,6 @@ Ext.define('CBH.view.sales.FileQuoteMaintenance', {
                                     copyField = me.down('field[name=QHdrCurrencyRate]');
                                     copyField.setValue(copyToField);
                                 }
-                            },
-                            beforequery: function(record) {
-                                record.query = new RegExp(record.query, 'i');
-                                record.forceAll = true;
                             }
                         },
                         tpl: Ext.create('Ext.XTemplate',
@@ -1541,17 +1499,6 @@ Ext.define('CBH.view.sales.FileQuoteMaintenance', {
                             dataIndex: 'QStatusQuoteNum',
                             text: 'Quote Num'
                         },
-                        /*{
-                           xtype: 'gridcolumn',
-                           width: 150,
-                           dataIndex: 'x_Status',
-                           text: 'Status'
-                        }, {
-                           xtype: 'gridcolumn',
-                           width: 80,
-                           dataIndex: 'StatusQuoteNum',
-                           text: 'Quote Num.'
-                        },*/
                         {
                             xtype: 'gridcolumn',
                             flex: 1,

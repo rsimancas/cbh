@@ -62,12 +62,7 @@ Ext.define('CBH.view.jobs.JobPurchaseOrderStatusHistory', {
                     allowBlank: false,
                     queryMode: 'local',
                     store: storeStatus,
-                    listeners: {
-                        beforequery: function(record){  
-                            record.query = new RegExp(record.query, 'i');
-                            record.forceAll = true;
-                        }
-                    }
+                    anyMatch: true
                 },
                 {
                     xtype: 'textareafield',

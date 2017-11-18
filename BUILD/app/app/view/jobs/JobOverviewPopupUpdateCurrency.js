@@ -90,6 +90,7 @@ Ext.define('CBH.view.jobs.JobOverviewPopupUpdateCurrency', {
                                     '<tpl for=".">',
                                     '<div class="x-bound-list-item" >{CurrencyCode} {CurrencyDescription} {CurrencySymbol} {CurrencyRate}</div>',
                                     '</tpl>'),
+                                anyMatch: true,
                                 listeners: {
                                     blur: function(field, The, eOpts) {
                                         if (field.value !== null) {
@@ -99,10 +100,6 @@ Ext.define('CBH.view.jobs.JobOverviewPopupUpdateCurrency', {
                                             copyField = form.down('field[name=JobCurrencyRate]');
                                             copyField.setValue(copyToField);
                                         }
-                                    },
-                                    beforequery: function(record) {
-                                        record.query = new RegExp(record.query, 'i');
-                                        record.forceAll = true;
                                     }
                                 }
                             }

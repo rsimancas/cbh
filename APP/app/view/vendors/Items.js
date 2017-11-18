@@ -221,12 +221,7 @@ Ext.define('CBH.view.vendors.Items', {
                                         minChars: 2,
                                         allowBlank: false,
                                         forceSelection: true,
-                                        listeners: {
-                                            beforequery: function(record) {
-                                                record.query = new RegExp(record.query, 'i');
-                                                record.forceAll = true;
-                                            }
-                                        },
+                                        anyMatch: true,
                                         disabled: me.fromLineEntry,
                                         editable: !me.fromLineEntry
                                     }, {
@@ -420,6 +415,7 @@ Ext.define('CBH.view.vendors.Items', {
                                         queryMode: 'local',
                                         selectOnFocus: true,
                                         emptyText: 'Choose Language',
+                                        anyMatch: true,
                                         listeners: {
                                             select: function(field, records, eOpts) {
                                                 var form = field.up('panel'),
@@ -431,10 +427,6 @@ Ext.define('CBH.view.vendors.Items', {
                                             change: function(field) {
                                                 var form = field.up('panel');
                                                 form.onFieldChange();
-                                            },
-                                            beforequery: function(record) {
-                                                record.query = new RegExp(record.query, 'i');
-                                                record.forceAll = true;
                                             }
                                         },
                                         store: storeLangs

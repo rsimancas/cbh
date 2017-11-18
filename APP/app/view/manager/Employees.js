@@ -98,12 +98,7 @@ Ext.define('CBH.view.manager.Employees', {
                 store: storeStates,
                 valueField: 'StateCode',
                 emptyText: 'Choose State',
-                listeners: {
-                    beforequery: function(record) {
-                        record.query = new RegExp(record.query, 'i');
-                        record.forceAll = true;
-                    }
-                }
+                anyMatch: true
             }, {
                 xtype: 'textfield',
                 margin: '0 0 0 5',
@@ -134,12 +129,7 @@ Ext.define('CBH.view.manager.Employees', {
                 store: storeTitles,
                 valueField: 'TextExpression',
                 emptyText: 'Choose Title',
-                listeners: {
-                    beforequery: function(record) {
-                        record.query = new RegExp(record.query, 'i');
-                        record.forceAll = true;
-                    }
-                }
+                anyMatch: true
             }, {
                 xtype: 'combo',
                 columnWidth: 1,
@@ -154,12 +144,7 @@ Ext.define('CBH.view.manager.Employees', {
                 store: storeStatus,
                 valueField: 'TextExpression',
                 emptyText: 'Choose Status',
-                listeners: {
-                    beforequery: function(record) {
-                        record.query = new RegExp(record.query, 'i');
-                        record.forceAll = true;
-                    }
-                }
+                anyMatch: true
             }, {
                 xtype: 'textfield',
                 columnWidth: 1,

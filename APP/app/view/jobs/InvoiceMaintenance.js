@@ -302,12 +302,7 @@ Ext.define('CBH.view.jobs.InvoiceMaintenance', {
                                         minChars: 2,
                                         //allowBlank: false,
                                         forceSelection: true,
-                                        listeners: {
-                                            beforequery: function(record) {
-                                                record.query = new RegExp(record.query, 'i');
-                                                record.forceAll = true;
-                                            }
-                                        }
+                                        anyMatch: true
                                     }, {
                                         columnWidth: 1,
                                         xtype: 'combo',
@@ -320,12 +315,7 @@ Ext.define('CBH.view.jobs.InvoiceMaintenance', {
                                         queryMode: 'local',
                                         selectOnFocus: true,
                                         allowBlank: false,
-                                        listeners: {
-                                            beforequery: function(record) {
-                                                record.query = new RegExp(record.query, 'i');
-                                                record.forceAll = true;
-                                            }
-                                        },
+                                        anyMatch: true,
                                         store: new CBH.store.common.Employees().load({
                                             params: {
                                                 fieldFilters: JSON.stringify({fields: [{name:'EmployeeStatusCode',value:8,type:'int'}]}),
@@ -378,12 +368,7 @@ Ext.define('CBH.view.jobs.InvoiceMaintenance', {
                                         typeAhead: false,
                                         minChars: 2,
                                         forceSelection: true,
-                                        listeners: {
-                                            beforequery: function(record) {
-                                                record.query = new RegExp(record.query, 'i');
-                                                record.forceAll = true;
-                                            }
-                                        }
+                                        anyMatch: true
                                     }, {
                                         xtype: 'textfield',
                                         columnWidth: 1,
@@ -475,12 +460,7 @@ Ext.define('CBH.view.jobs.InvoiceMaintenance', {
                                             valueField: 'ContactKey',
                                             displayField: 'x_ContactFullName',
                                             triggerAction: '',
-                                            listeners: {
-                                                beforequery: function(record) {
-                                                    record.query = new RegExp(record.query, 'i');
-                                                    record.forceAll = true;
-                                                }
-                                            },
+                                            anyMatch: true
                                         }]
                                     }, {
                                         xtype: 'container',
@@ -527,12 +507,7 @@ Ext.define('CBH.view.jobs.InvoiceMaintenance', {
                                             valueField: 'ContactKey',
                                             displayField: 'x_ContactFullName',
                                             triggerAction: '',
-                                            listeners: {
-                                                beforequery: function(record) {
-                                                    record.query = new RegExp(record.query, 'i');
-                                                    record.forceAll = true;
-                                                }
-                                            },
+                                            anyMatch: true
                                         }]
                                     }, {
                                         xtype: 'textfield',
@@ -569,12 +544,7 @@ Ext.define('CBH.view.jobs.InvoiceMaintenance', {
                                         store: storeStates,
                                         valueField: 'StateCode',
                                         emptyText: 'Choose State',
-                                        listeners: {
-                                            beforequery: function(record) {
-                                                record.query = new RegExp(record.query, 'i');
-                                                record.forceAll = true;
-                                            }
-                                        }
+                                        anyMatch: true
                                     }, {
                                         xtype: 'textfield',
                                         margin: '0 0 0 5',
@@ -594,12 +564,7 @@ Ext.define('CBH.view.jobs.InvoiceMaintenance', {
                                         displayField: 'CountryName',
                                         store: storeCountries,
                                         valueField: 'CountryKey',
-                                        listeners: {
-                                            beforequery: function(record) {
-                                                record.query = new RegExp(record.query, 'i');
-                                                record.forceAll = true;
-                                            }
-                                        }
+                                        anyMatch: true
                                     }, {
                                         columnWidth: 1,
                                         xtype: 'combo',
@@ -614,14 +579,11 @@ Ext.define('CBH.view.jobs.InvoiceMaintenance', {
                                         allowBlank: false,
                                         forceSelection: false,
                                         queryCaching: false,
+                                        anyMatch: true,
                                         listeners: {
                                             select: function(field, records, eOpts) {
                                                 if(records[0])
                                                     field.next().setValue(records[0].data.x_FullShipAddress);
-                                            },
-                                            beforequery: function(record) {
-                                                record.query = new RegExp(record.query, 'i');
-                                                record.forceAll = true;
                                             }
                                         }
                                     }, {
@@ -686,6 +648,7 @@ Ext.define('CBH.view.jobs.InvoiceMaintenance', {
                                                     listConfig: {
                                                         width: 400
                                                     },
+                                                    anyMatch: true,
                                                     listeners: {
                                                         change: function(field) {
                                                             var form = field.up('panel');
@@ -698,13 +661,8 @@ Ext.define('CBH.view.jobs.InvoiceMaintenance', {
                                                             if (records.length > 0) {
                                                                 record.set('x_Category', field.getRawValue());
                                                             }
-                                                        },
-                                                        beforequery: function(record) {
-                                                            record.query = new RegExp(record.query, 'i');
-                                                            record.forceAll = true;
                                                         }
                                                     },
-                                                    //selectOnFocus: true,
                                                     store: storetlkpCategories
                                                 }
                                             }, {
@@ -728,6 +686,7 @@ Ext.define('CBH.view.jobs.InvoiceMaintenance', {
                                                     listConfig: {
                                                         width: 400
                                                     },
+                                                    anyMatch: true,
                                                     listeners: {
                                                         change: function(field) {
                                                             var form = field.up('panel');
@@ -740,10 +699,6 @@ Ext.define('CBH.view.jobs.InvoiceMaintenance', {
                                                             if (records.length > 0) {
                                                                 record.set('x_Location', field.getRawValue());
                                                             }
-                                                        },
-                                                        beforequery: function(record) {
-                                                            record.query = new RegExp(record.query, 'i');
-                                                            record.forceAll = true;
                                                         }
                                                     },
                                                     selectOnFocus: true,

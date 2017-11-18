@@ -251,12 +251,7 @@ Ext.define('CBH.view.jobs.JobNewInvoice', {
                                     valueField: 'ContactKey',
                                     displayField: 'x_ContactFullName',
                                     triggerAction: '',
-                                    listeners: {
-                                        beforequery: function(record) {
-                                            record.query = new RegExp(record.query, 'i');
-                                            record.forceAll = true;
-                                        }
-                                    },
+                                    anyMatch: true
                                 }, {
                                     xtype: 'numericfield',
                                     name: 'TotalSale',
@@ -301,15 +296,12 @@ Ext.define('CBH.view.jobs.JobNewInvoice', {
                                     allowBlank: false,
                                     forceSelection: true,
                                     triggerAction: '',
+                                    anyMatch: true,
                                     listeners: {
                                         blur: function(field, The, eOpts) {
                                             if (field.value !== null) {
                                                 //me.onSaveClick();
                                             }
-                                        },
-                                        beforequery: function(record) {
-                                            record.query = new RegExp(record.query, 'i');
-                                            record.forceAll = true;
                                         }
                                     },
                                     tpl: Ext.create('Ext.XTemplate',
@@ -378,15 +370,12 @@ Ext.define('CBH.view.jobs.JobNewInvoice', {
                                     allowBlank: false,
                                     forceSelection: true,
                                     triggerAction: '',
+                                    anyMatch: true,
                                     listeners: {
                                         blur: function(field, The, eOpts) {
                                             if (field.value !== null) {
                                                 //me.onSaveClick();
                                             }
-                                        },
-                                        beforequery: function(record) {
-                                            record.query = new RegExp(record.query, 'i');
-                                            record.forceAll = true;
                                         }
                                     },
                                     tpl: Ext.create('Ext.XTemplate',

@@ -81,10 +81,7 @@ Ext.define('CBH.view.sales.FileQuoteConfirmationSubVendorInfo', {
         typeAhead: false,
         minChars: 2,
         forceSelection: false,
-        beforequery: function(record) {
-            record.query = new RegExp(record.query, 'i');
-            record.forceAll = true;
-        }
+        anyMatch: true
     }, {
         xtype: 'textfield',
         name: 'ContactPhone',
@@ -112,12 +109,7 @@ Ext.define('CBH.view.sales.FileQuoteConfirmationSubVendorInfo', {
         typeAhead: false,
         minChars: 2,
         forceSelection: true,
-        listeners: {
-            beforequery: function(record) {
-                record.query = new RegExp(record.query, 'i');
-                record.forceAll = true;
-            }
-        }
+        anyMatch: true
     }, {
         xtype: 'numberfield',
         columnWidth: 0.5,

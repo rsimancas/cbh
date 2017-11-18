@@ -359,6 +359,7 @@ Ext.define('CBH.view.sales.FileLineEntry', {
                                     minChars: 2,
                                     allowBlank: false,
                                     forceSelection: true,
+                                    anyMatch: true,
                                     listeners: {
                                         select: function(field, records, eOpts) {
                                             if (records.length > 0) {
@@ -383,10 +384,6 @@ Ext.define('CBH.view.sales.FileLineEntry', {
                                                 copyField = me.down('#QuoteItemCurrencyRate');
                                                 copyField.setValue(copyToField);
                                             }
-                                        },
-                                        beforequery: function(record) {
-                                            record.query = new RegExp(record.query, 'i');
-                                            record.forceAll = true;
                                         }
                                     },
                                     tpl: Ext.create('Ext.XTemplate',

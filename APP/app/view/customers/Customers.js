@@ -182,12 +182,7 @@ Ext.define('CBH.view.customers.Customers', {
                                     store: storeStates,
                                     valueField: 'StateCode',
                                     emptyText: 'Choose State',
-                                    listeners: {
-                                        beforequery: function(record) {
-                                            record.query = new RegExp(record.query, 'i');
-                                            record.forceAll = true;
-                                        }
-                                    }
+                                    anyMatch: true,
                                 }, {
                                     xtype: 'textfield',
                                     margin: '0 0 0 5',
@@ -211,12 +206,7 @@ Ext.define('CBH.view.customers.Customers', {
                                     store: storeCountries,
                                     valueField: 'CountryKey',
                                     itemId: 'custcountrykey',
-                                    listeners: {
-                                        beforequery: function(record) {
-                                            record.query = new RegExp(record.query, 'i');
-                                            record.forceAll = true;
-                                        }
-                                    }
+                                    anyMatch: true,
                                 }, {
                                     columnWidth: 0.25,
                                     margin: '0 0 0 5',
@@ -233,12 +223,7 @@ Ext.define('CBH.view.customers.Customers', {
                                     allowBlank: false,
                                     defaultValue: 'en',
                                     store: storeLangs,
-                                    listeners: {
-                                        beforequery: function(record) {
-                                            record.query = new RegExp(record.query, 'i');
-                                            record.forceAll = true;
-                                        }
-                                    }
+                                    anyMatch: true,
                                 }, {
                                     xtype: 'textfield',
                                     columnWidth: 0.25,
@@ -301,12 +286,7 @@ Ext.define('CBH.view.customers.Customers', {
                                     emptyText: 'Choose Employee',
                                     //enableKeyEvents: true,
                                     store: storeSalesEmployees,
-                                    listeners: {
-                                        beforequery: function(record) {
-                                            record.query = new RegExp(record.query, 'i');
-                                            record.forceAll = true;
-                                        }
-                                    }
+                                    anyMatch: true,
                                 }, {
                                     xtype: 'combo',
                                     columnWidth: 1,
@@ -321,12 +301,7 @@ Ext.define('CBH.view.customers.Customers', {
                                     emptyText: 'Choose Employee',
                                     store: storeOrderEmployees,
                                     //enableKeyEvents: true,
-                                    listeners: {
-                                        beforequery: function(record) {
-                                            record.query = new RegExp(record.query, 'i');
-                                            record.forceAll = true;
-                                        }
-                                    }
+                                    anyMatch: true,
                                 }, {
                                     xtype: 'combo',
                                     columnWidth: 1,
@@ -342,12 +317,7 @@ Ext.define('CBH.view.customers.Customers', {
                                     selectOnFocus: true,
                                     emptyText: 'Choose Status',
                                     store: storeCustStatus,
-                                    listeners: {
-                                        beforequery: function(record) {
-                                            record.query = new RegExp(record.query, 'i');
-                                            record.forceAll = true;
-                                        }
-                                    }
+                                    anyMatch: true,
                                 }, {
                                     xtype: 'combo',
                                     name: 'CustCurrencyCode',
@@ -363,17 +333,7 @@ Ext.define('CBH.view.customers.Customers', {
                                     allowBlank: false,
                                     forceSelection: true,
                                     //triggerAction: '',
-                                    listeners: {
-                                        /*blur: function(field, The, eOpts) {
-                                            if (field.value !== null) {
-                                                //me.onSaveClick();
-                                            }
-                                        },*/
-                                        beforequery: function(record) {
-                                            record.query = new RegExp(record.query, 'i');
-                                            record.forceAll = true;
-                                        }
-                                    },
+                                    anyMatch: true,
                                     tpl: Ext.create('Ext.XTemplate',
                                         '<tpl for=".">',
                                         '<div class="x-boundlist-item" >{CurrencyCode} {CurrencyDescription} {CurrencySymbol} {CurrencyRate}</div>',
@@ -461,29 +421,6 @@ Ext.define('CBH.view.customers.Customers', {
                                             }
                                         }
                                     },
-                                    // 'Search',
-                                    // {
-                                    //     xtype: 'textfield',
-                                    //     name: 'searchField',
-                                    //     itemId: 'contactsearchfield',
-                                    //     hideLabel: true,
-                                    //     width: 400,
-                                    //     listeners: {
-                                    //         change: {
-                                    //             fn: me.onContactSearchFieldChange,
-                                    //             scope: this,
-                                    //             buffer: 100
-                                    //         }
-                                    //     }
-                                    // }, 
-                                    // {
-                                    //     xtype: 'button',
-                                    //     cls:'x-btn-toolbar-small-cus',
-                                    //     iconCls: 'app-search',
-                                    //     tooltip: 'Search',
-                                    //     handler: me.onContactSearchFieldChange,
-                                    //     scope: me
-                                    // },
                                     {
                                         xtype: 'component',
                                         flex: 1

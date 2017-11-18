@@ -67,12 +67,7 @@ Ext.define('CBH.view.jobs.JobPOEditInstruction', {
                     forceSelection: true,
                     store: storeInstructions,
                     emptyText: 'Choose Instructions',
-                    listeners: {
-                        beforequery: function(record) {
-                            record.query = new RegExp(record.query, 'i');
-                            record.forceAll = true;
-                        }
-                    }
+                    anyMatch: true
                 }, {
                     xtype: 'textareafield',
                     columnWidth: 1,

@@ -364,11 +364,8 @@ Ext.define('CBH.view.jobs.JobPurchaseOrderMaintenance', {
                                         forceSelection: false,
                                         //triggerAction: '',
                                         queryCaching: false, // set for after add a new contact, this control recognize the new contact added
+                                        anyMatch: true,
                                         listeners: {
-                                            beforequery: function(record) {
-                                                record.query = new RegExp(record.query, 'i');
-                                                record.forceAll = true;
-                                            },
                                             blur: {
                                                 fn: me.onContactBlur,
                                                 scope: this
@@ -414,12 +411,7 @@ Ext.define('CBH.view.jobs.JobPurchaseOrderMaintenance', {
                                         typeAhead: false,
                                         minChars: 2,
                                         forceSelection: true,
-                                        listeners: {
-                                            beforequery: function(record) {
-                                                record.query = new RegExp(record.query, 'i');
-                                                record.forceAll = true;
-                                            }
-                                        }
+                                        anyMatch: true
                                     }, {
                                         xtype: 'combo',
                                         name: 'POCurrencyCode',
@@ -438,6 +430,7 @@ Ext.define('CBH.view.jobs.JobPurchaseOrderMaintenance', {
                                         minChars: 2,
                                         allowBlank: false,
                                         forceSelection: true,
+                                        anyMatch: true,
                                         listeners: {
                                             select: function(field, records, eOpts) {
                                                 if (records.length > 0) {
@@ -458,10 +451,6 @@ Ext.define('CBH.view.jobs.JobPurchaseOrderMaintenance', {
                                                     var rate = field.valueModels[0].data.CurrencyRate;
                                                     me.down('field[name=POCurrencyRate]').setValue(rate);
                                                 }
-                                            },
-                                            beforequery: function(record) {
-                                                record.query = new RegExp(record.query, 'i');
-                                                record.forceAll = true;
                                             }
                                         }
                                     }, {
@@ -498,12 +487,7 @@ Ext.define('CBH.view.jobs.JobPurchaseOrderMaintenance', {
                                         minChars: 2,
                                         //allowBlank: false,
                                         forceSelection: true,
-                                        listeners: {
-                                            beforequery: function(record) {
-                                                record.query = new RegExp(record.query, 'i');
-                                                record.forceAll = true;
-                                            }
-                                        }
+                                        anyMatch: true
                                     }, {
                                         xtype: 'fieldcontainer',
                                         columnWidth: 1,
@@ -524,12 +508,7 @@ Ext.define('CBH.view.jobs.JobPurchaseOrderMaintenance', {
                                             minChars: 2,
                                             //allowBlank: false,
                                             forceSelection: true,
-                                            listeners: {
-                                                beforequery: function(record) {
-                                                    record.query = new RegExp(record.query, 'i');
-                                                    record.forceAll = true;
-                                                }
-                                            },
+                                            anyMatch: true,
                                             tpl: Ext.create('Ext.XTemplate',
                                                 '<tpl for=".">',
                                                 '<div class="x-boundlist-item" >{x_CountryName} ({OriginName}) {x_StateName}</div>',
@@ -567,12 +546,7 @@ Ext.define('CBH.view.jobs.JobPurchaseOrderMaintenance', {
                                         minChars: 2,
                                         allowBlank: false,
                                         forceSelection: true,
-                                        listeners: {
-                                            beforequery: function(record) {
-                                                record.query = new RegExp(record.query, 'i');
-                                                record.forceAll = true;
-                                            }
-                                        }
+                                        anyMatch: true
                                     }, {
                                         columnWidth: 1,
                                         xtype: 'combo',
@@ -587,11 +561,8 @@ Ext.define('CBH.view.jobs.JobPurchaseOrderMaintenance', {
                                         allowBlank: false,
                                         forceSelection: false,
                                         queryCaching: false,
+                                        anyMatch: true,
                                         listeners: {
-                                            beforequery: function(record) {
-                                                record.query = new RegExp(record.query, 'i');
-                                                record.forceAll = true;
-                                            },
                                             select: function(combo, records, eOpts) {
                                                 var me = combo.up('form'),
                                                     record = records[0];
@@ -610,10 +581,7 @@ Ext.define('CBH.view.jobs.JobPurchaseOrderMaintenance', {
                                         typeAhead: false,
                                         minChars: 2,
                                         forceSelection: false,
-                                        beforequery: function(record) {
-                                            record.query = new RegExp(record.query, 'i');
-                                            record.forceAll = true;
-                                        }
+                                        anyMatch: true
                                     }, {
                                         xtype: 'textfield',
                                         columnWidth: 1,
@@ -1229,6 +1197,7 @@ Ext.define('CBH.view.jobs.JobPurchaseOrderMaintenance', {
                         minChars: 2,
                         allowBlank: true,
                         forceSelection: true,
+                        anyMatch: true,
                         listeners: {
                             select: function(field, records, eOpts) {
                                 if (records.length > 0) {
@@ -1249,10 +1218,6 @@ Ext.define('CBH.view.jobs.JobPurchaseOrderMaintenance', {
                                     copyField = me.down('field[name=POCurrencyRate]');
                                     copyField.setValue(copyToField);
                                 }
-                            },
-                            beforequery: function(record) {
-                                record.query = new RegExp(record.query, 'i');
-                                record.forceAll = true;
                             }
                         },
                         tpl: Ext.create('Ext.XTemplate',

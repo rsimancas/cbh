@@ -111,12 +111,7 @@ Ext.define('CBH.view.customers.CustomerShipAddress', {
                     store: storeShipStates,
                     valueField: 'StateCode',
                     emptyText: 'Choose State',
-                    listeners: {
-                        beforequery: function(record) {
-                            record.query = new RegExp(record.query, 'i');
-                            record.forceAll = true;
-                        }
-                    }
+                    anyMatch: true,
                 }, {
                     xtype: 'textfield',
                     margin: '0 0 0 10',
@@ -138,12 +133,7 @@ Ext.define('CBH.view.customers.CustomerShipAddress', {
                     displayField: 'CountryName',
                     store: storeCountries,
                     valueField: 'CountryKey',
-                    listeners: {
-                        beforequery: function(record) {
-                            record.query = new RegExp(record.query, 'i');
-                            record.forceAll = true;
-                        }
-                    }
+                    anyMatch: true,
                 }, {
                     xtype: 'textfield',
                     margin: '0 0 0 0',

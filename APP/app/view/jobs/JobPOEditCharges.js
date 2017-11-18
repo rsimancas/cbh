@@ -81,12 +81,7 @@ Ext.define('CBH.view.jobs.JobPOEditCharges', {
                     forceSelection: true,
                     store: storeCategories,
                     emptyText: 'choose category',
-                    listeners: {
-                        beforequery: function(record) {
-                            record.query = new RegExp(record.query, 'i');
-                            record.forceAll = true;
-                        }
-                    }
+                    anyMatch: true
                 }, {
                     xtype: 'textareafield',
                     columnWidth: 1,
@@ -243,6 +238,7 @@ Ext.define('CBH.view.jobs.JobPOEditCharges', {
                     minChars: 2,
                     allowBlank: false,
                     forceSelection: true,
+                    anyMatch: true,
                     listeners: {
                         select: function(field, records, eOpts) {
                             if (records.length > 0) {
@@ -262,10 +258,6 @@ Ext.define('CBH.view.jobs.JobPOEditCharges', {
                                 copyField = me.down('field[name=POChargesCurrencyRate]');
                                 copyField.setValue(copyToField);
                             }
-                        },
-                        beforequery: function(record) {
-                            record.query = new RegExp(record.query, 'i');
-                            record.forceAll = true;
                         }
                     },
                     tpl: Ext.create('Ext.XTemplate',

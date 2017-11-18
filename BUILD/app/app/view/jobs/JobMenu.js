@@ -119,12 +119,7 @@ Ext.define('CBH.view.jobs.JobMenu', {
                                 }]
                             },
                             valueField: 'id',
-                            listeners: {
-                                beforequery: function(record) {
-                                    record.query = new RegExp(record.query, 'i');
-                                    record.forceAll = true;
-                                }
-                            }
+                            anyMatch: true
                         }
                     ],
                     // Grid Job Listeners

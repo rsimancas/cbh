@@ -146,10 +146,7 @@ Ext.define('CBH.view.sales.FileQuoteConfirmation', {
                                 typeAhead: false,
                                 minChars: 2,
                                 forceSelection: false,
-                                beforequery: function(record) {
-                                    record.query = new RegExp(record.query, 'i');
-                                    record.forceAll = true;
-                                }
+                                anyMatch: true,
                             }, {
                                 margin: '0 0 0 5',
                                 columnWidth: 0.5,
@@ -163,10 +160,7 @@ Ext.define('CBH.view.sales.FileQuoteConfirmation', {
                                 typeAhead: false,
                                 minChars: 2,
                                 forceSelection: false,
-                                beforequery: function(record) {
-                                    record.query = new RegExp(record.query, 'i');
-                                    record.forceAll = true;
-                                }
+                                anyMatch: true,
                             }, {
                                 columnWidth: 0.5,
                                 xtype: 'combo',
@@ -181,12 +175,7 @@ Ext.define('CBH.view.sales.FileQuoteConfirmation', {
                                 //allowBlank: true,
                                 forceSelection: false,
                                 queryCaching: false,
-                                listeners: {
-                                    beforequery: function(record) {
-                                        record.query = new RegExp(record.query, 'i');
-                                        record.forceAll = true;
-                                    }
-                                }
+                                anyMatch: true,
                             }, {
                                 margin: '0 0 0 5',
                                 xtype: 'textfield',
@@ -242,10 +231,7 @@ Ext.define('CBH.view.sales.FileQuoteConfirmation', {
                                 typeAhead: false,
                                 minChars: 2,
                                 forceSelection: false,
-                                beforequery: function(record) {
-                                    record.query = new RegExp(record.query, 'i');
-                                    record.forceAll = true;
-                                }
+                                anyMatch: true,
                             }, {
                                 xtype: 'textfield',
                                 name: 'ContactPhone',
@@ -297,12 +283,7 @@ Ext.define('CBH.view.sales.FileQuoteConfirmation', {
                                 typeAhead: false,
                                 minChars: 2,
                                 forceSelection: true,
-                                listeners: {
-                                    beforequery: function(record) {
-                                        record.query = new RegExp(record.query, 'i');
-                                        record.forceAll = true;
-                                    }
-                                }
+                                anyMatch: true
                             }]
                         }
 
@@ -328,10 +309,7 @@ Ext.define('CBH.view.sales.FileQuoteConfirmation', {
                         typeAhead: false,
                         minChars: 2,
                         forceSelection: false,
-                        beforequery: function(record) {
-                            record.query = new RegExp(record.query, 'i');
-                            record.forceAll = true;
-                        },
+                        anyMatch: true,
                         listeners: {
                             change: function(field, newValue, oldValue, eOpts) {
                                 var me = field.up('form');
@@ -462,31 +440,7 @@ Ext.define('CBH.view.sales.FileQuoteConfirmation', {
                     ]
                 }
             ],
-            dockedItems: [/*{
-                xtype: 'formtoolbar',
-                itemId: 'FormToolbar',
-                dock: 'top',
-                addEnabled: false,
-                store: me.storeNavigator,
-                listeners: {
-                    addrecord: {
-                        fn: me.onAddClick,
-                        scope: me
-                    },
-                    savechanges: {
-                        fn: me.onSaveClick,
-                        scope: me
-                    },
-                    deleterecord: {
-                        fn: me.onDeleteClick,
-                        scope: me
-                    },
-                    afterloadrecord: {
-                        fn: me.onAfterLoadRecord,
-                        scope: me
-                    }
-                }
-            },*/ {
+            dockedItems: [{
                 xtype: 'toolbar',
                 dock: 'bottom',
                 ui: 'footer',
