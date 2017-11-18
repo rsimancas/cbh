@@ -38,6 +38,24 @@ Ext.define('CBH.view.jobs.JobOverview', {
             }
         });
 
+        var filterQHdr = new Ext.util.Filter({
+            property: 'ListCategory',
+            value: 2
+        });
+
+        var storetlkpGL = new CBH.store.sales.tlkpGenericLists().load({
+            params: {
+                page: 0,
+                start: 0,
+                limit: 0
+            },
+            filters: [filterQHdr],
+            callback: function() {
+                var field = me.down('field[name=JobShipmentCarrier]').bindStore(storetlkpGL);
+                field.setValue(me.currentRecord.data.JobShipmentCarrier);
+            }
+        });
+
         Ext.applyIf(me, {
             items: [{
                     xtype: 'fieldset',
@@ -468,24 +486,40 @@ Ext.define('CBH.view.jobs.JobOverview', {
                     columnWidth: 0.5,
                     fieldDefaults: {
                         labelWidth: 50,
-                        labelAlign: 'top',
-                        readOnly: true
+                        labelAlign: 'top'
                     },
                     padding: '0 10 10 10',
                     layout: 'column',
                     collapsible: true,
                     title: 'Shipping Information',
-                    items: [{
+                    items: [
+                    {
                         xtype: 'datefield',
                         name: 'JobShipDate',
                         fieldLabel: 'Ship Date',
                         columnWidth: 0.2
-                    }, {
+                    }, /*{
                         margin: '0 0 0 5',
                         xtype: 'textfield',
                         name: 'x_JobShipmentCarrierText',
                         fieldLabel: 'Carrier',
                         columnWidth: 0.4
+                    },*/ {
+                        margin: '0 0 0 5',
+                        columnWidth: 0.4,
+                        xtype: 'combo',
+                        fieldLabel: 'Carrier',
+                        displayField: 'ListText',
+                        valueField: 'ListKey',
+                        name: 'JobShipmentCarrier',
+                        queryMode: 'local',
+                        minChars: 2,
+                        allowBlank: false,
+                        forceSelection: true,
+                        emptyText: 'Choose Location',
+                        autoSelect: false,
+                        anyMatch: true,
+                        selectOnFocus: true
                     }, {
                         margin: '0 0 0 5',
                         xtype: 'textfield',
@@ -509,6 +543,19 @@ Ext.define('CBH.view.jobs.JobOverview', {
                         name: 'JobInspectionCertificatedNum',
                         fieldLabel: 'Certificated',
                         columnWidth: 0.4
+                    }, {
+                        margin: '15 0 6 0',
+                        xtype: 'container',
+                        layout: 'hbox',
+                        columnWidth: 1,
+                        items: [{
+                            xtype: 'component',
+                            flex: 1
+                        }, {
+                            xtype: 'button',
+                            text: 'Save Changes',
+                            handler: me.onShippingInformationChange
+                        }]
                     }]
                 },
                 // footer
@@ -1390,6 +1437,33 @@ Ext.define('CBH.view.jobs.JobOverview', {
                 if(records && records.length)
                     me.loadRecord(this.getAt(0));
 
+                me.setLoading(false);
+            }
+        });
+    },
+
+    onShippingInformationChange: function(component, e) {
+        var me = component.up("form");
+        me.saveChanges();
+    },
+
+    saveChanges: function() {
+        var me = this,
+            form = me.getForm();
+
+        if (!form.isValid()) {
+            Ext.Msg.alert("Validation", "Check data for valid input!!!");
+            return false;
+        }
+
+        form.updateRecord();
+
+        var savedRecord = form.getRecord();
+
+        me.setLoading("Saving...");
+
+        savedRecord.save({
+            callback: function(records, operation, success) {
                 me.setLoading(false);
             }
         });

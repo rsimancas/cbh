@@ -61,20 +61,6 @@
             }
             #endregion Ordenamiento
 
-            //string sql = "select JobKey,Date,JobNum,Customer,Reference,Status,JobCreatedBy,JobClosed,JobStatusDesc," +
-            //             "  StatusModifiedBy,StatusModifiedDate,row,CAST(TotalRecords as int) as TotalRecords " +
-            //             "from (select a.JobKey,a.Date,a.[Job Num] as JobNum,a.Customer,a.Reference,a.Status,a.JobCreatedBy, " +
-            //             "a.JobClosed,b.StatusMemo AS JobStatusDesc,b.StatusModifiedBy, " +
-            //             "CONVERT(VARCHAR(8),b.StatusModifiedDate) as StatusModifiedDate, " +
-            //             "ROW_NUMBER() OVER (ORDER BY {1} {2}) as row, " +
-            //             "IsNull((select count(*) from dbo.qlstjobs),0)  as TotalRecords " +
-            //             "from dbo.qlstjobs a " +
-            //             "left outer join (select StatusJobKey,MAX(StatusDate) as StatusDate " +
-            //             "from dbo.qfrmJobOverviewSubJobStatus group by StatusJobKey) c on a.JobKey=c.StatusJobKey " +
-            //             "LEFT OUTER JOIN dbo.qfrmJobOverviewSubJobStatus b on b.StatusDate=c.StatusDate " +
-            //             "where {0}) a " +
-            //             " WHERE row > @start and row <= @limit";
-
             string sql = @"WITH qData 
                         AS 
                         ( 
