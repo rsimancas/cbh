@@ -1,9 +1,9 @@
-del c:\Workspaces\cbh\build\app.* /S /F /Q
-del c:\Workspaces\cbh\build\app\app\*.* /S /F /Q
-del c:\Workspaces\cbh\build\app\scripts\*.* /S /F /Q
-del c:\Workspaces\cbh\build\app\images\*.* /S /F /Q
-del c:\Workspaces\cbh\build\app\ux\*.* /S /F /Q
-del c:\Workspaces\cbh\build\app\overrides\*.* /S /F /Q
+REM del c:\Workspaces\cbh\build\app.* /S /F /Q
+REM del c:\Workspaces\cbh\build\app\app\*.* /S /F /Q
+REM del c:\Workspaces\cbh\build\app\scripts\*.* /S /F /Q
+REM del c:\Workspaces\cbh\build\app\images\*.* /S /F /Q
+REM del c:\Workspaces\cbh\build\app\ux\*.* /S /F /Q
+REM del c:\Workspaces\cbh\build\app\overrides\*.* /S /F /Q
 
 XCOPY *.* "c:\Workspaces\cbh\build\app\*.*" /D /Y /S /EXCLUDE:EXCLUDE.TXT
 
