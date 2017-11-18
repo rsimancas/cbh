@@ -1,4 +1,0 @@
-INICIO: 9/12/2017 8:26:44 PM
-8:26:44 PM: ERROR:
-	METHOD = CBHWA.Controllers.CreateNewJobInvoiceController.Post
-	MESSAGE = Object reference not set to an instance of an object.
