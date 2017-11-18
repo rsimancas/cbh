@@ -1,9 +1,0 @@
-INICIO: 10/24/2017 10:37:29 PM
-10:37:29 PM: ERROR:
-	METHOD = CBHWA.Areas.Reports.Controllers.rptQuoteCustomerController.GetChargesDetail
-	MESSAGE = Incorrect syntax near '5'.
-Incorrect syntax near '5'.
-Incorrect syntax near the keyword 'ORDER'.
-Incorrect syntax near '5'.
-Incorrect syntax near '5'.
-Incorrect syntax near '5'.

@@ -1,9 +1,0 @@
-INICIO: 13-11-2017 23:47:01
-23:47:01: ERROR:
-	METHOD = ConnManager.OpenConn	MESSAGE = Error de inicio de sesión del usuario 'IIS APPPOOL\CBH'.
-23:47:01: ERROR:
-	METHOD = CBHWA.Models.UserRepository.ValidLogon
-	MESSAGE = Error de inicio de sesión del usuario 'IIS APPPOOL\CBH'.
-23:57:33: ERROR:
-	METHOD = CBHWA.Controllers.qfrmInvoiceMaintenanceController.Put
-	MESSAGE = No se pueden ejecutar operaciones Create, Update o Delete en 'Table(qfrmInvoiceMaintenance)' porque no tiene una clave principal.

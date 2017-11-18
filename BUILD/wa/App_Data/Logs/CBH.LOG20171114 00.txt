@@ -1,4 +1,0 @@
-INICIO: 14-11-2017 0:17:55
-0:17:55: ERROR:
-	METHOD = CBHWA.Controllers.qfrmInvoiceMaintenanceController.Put
-	MESSAGE = No se puede adjuntar una entidad que ya existe.
