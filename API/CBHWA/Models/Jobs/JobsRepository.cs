@@ -4669,16 +4669,6 @@
                 throw;
             }
 
-//            string sql = @"select a.StatusDate as JobStatusdate, a.StatusJobKey as JobStatusJobKey
-//                                ,a.StatusKey as JobStatusKey, a.StatusMemo as JobStatusMemo, a.StatusModifiedBy as JobStatusModifiedBy
-//                                ,a.StatusModifiedDate as JobStatusModifiedDate, a.StatusPONum as JobStatusPONum
-//                                ,a.StatusPublic as JobStatusPublic, a.StatusStatusKey as JobStatusStatusKey
-//                                ,c.StatusText as x_Status, c.StatusText as x_Status, 
-//                             ROW_NUMBER() OVER (ORDER BY a.StatusDate DESC) as row
-//                             FROM dbo.qfrmJobStatusHistorySubDetails a 
-//                                INNER JOIN tlkpStatus c ON a.StatusStatusKey=c.StatusKey
-//                             where a.StatusKey = @key ";
-
             string sql = @"select a.*,b.StatusText as x_Status, 
                              ROW_NUMBER() OVER (ORDER BY a.JobStatusDate DESC) as row
                              from tblJobStatusHistory a INNER JOIN tlkpStatus b on a.JobStatusStatusKey = b.StatusKey  

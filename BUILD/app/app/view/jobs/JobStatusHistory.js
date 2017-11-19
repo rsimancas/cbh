@@ -37,23 +37,21 @@ Ext.define('CBH.view.jobs.JobStatusHistory', {
                 columnWidth: 1,
                 layout: 'fit',
                 items: [{
+                    xtype:'hidden',
+                    name: 'JobKey'
+                }, {
                     xtype: 'datetimefield',
                     margin: '0 0 0 0',
                     fieldLabel: 'Date',
-                    name: 'JobStatusDate',
+                    name: 'StatusDate',
                     allowBlank: false,
                     editable: false,
-                    readOnly: true,
-                    listeners: {
-                        blur: function() {
-                            //me.onSaveChangesClick();
-                        }
-                    }
+                    readOnly: true
                 }, {
                     xtype: 'combo',
                     margin: '0 0 0 0',
                     fieldLabel: 'Status',
-                    name: 'JobStatusStatusKey',
+                    name: 'StatusStatusKey',
                     valueField: 'StatusKey',
                     displayField: 'StatusText',
                     allowBlank: false,
@@ -66,7 +64,10 @@ Ext.define('CBH.view.jobs.JobStatusHistory', {
                     margin: '0 0 20 0',
                     fieldLabel: 'Notes',
                     labelWidth: 50,
-                    name: 'JobStatusMemo',
+                    enforceMaxLength: true,
+                    maxLength: 2000,
+                    maxLengthText: "The text cannot exceed 2.000 characters",
+                    name: 'StatusMemo',
                     allowBlank: false
                 }]
             }, {
@@ -145,7 +146,7 @@ Ext.define('CBH.view.jobs.JobStatusHistory', {
             }
         });
 
-        me.down('field[name=JobStatusStatusKey]').focus(true, 200);
+        me.down('field[name=StatusStatusKey]').focus(true, 200);
     },
 
     onSaveChanges: function(button, e, eOpts) {
@@ -160,6 +161,29 @@ Ext.define('CBH.view.jobs.JobStatusHistory', {
         form.updateRecord();
 
         record = form.getRecord();
+
+        record.set("JobModifiedBy", CBH.GlobalSettings.getCurrentUserName());
+
+        var statusKey = me.down("field[name=StatusStatusKey]").getValue(),
+            store = me.down("field[name=StatusStatusKey]").getStore();
+
+        var statusIndex = store.find('StatusKey', statusKey),
+            status = store.getAt(statusIndex);
+
+        //*** Update closed/completed
+        if (status.get("StatusClosed") && record.get("JobClosed") === null) 
+            record.set("JobClosed", new Date());
+
+        if (status.get("StatusCompleted") && record.get("JobComplete") === null) 
+            record.set("JobComplete", new Date());
+        
+        if (status.get("StatusStatusKey") > 0)
+            record.set("JobStatusKey", statusKey);
+        
+        if (status.get("StatusStatusKey") === 71) {
+            record.set("JobStatusKey", 0);
+            record.set("JobClosed", null);
+        }
 
         Ext.Msg.wait('Saving Record...', 'Wait');
 
@@ -206,8 +230,8 @@ Ext.define('CBH.view.jobs.JobStatusHistory', {
             "CBH Job Number: " + me.JobNum + "\n" +
             ((!String.isNullOrEmpty(job.QuoteNum)) ? "CBH Quote Number: " + job.QuoteNum + "\n": "") +
             ((!String.isNullOrEmpty(job.JobProdDescription)) ? "Product Description: " + job.JobProdDescription + "\n": "") +
-            me.down('field[name=JobStatusStatusKey]').getRawValue() + "\n" +
-            me.down('field[name=JobStatusMemo]').getValue();
+            me.down('field[name=StatusStatusKey]').getRawValue() + "\n" +
+            me.down('field[name=StatusMemo]').getValue();
 
 
         if(!String.isNullOrEmpty(job.JobCustRefNum) && emailCust) {

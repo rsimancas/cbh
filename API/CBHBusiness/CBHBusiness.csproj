@@ -47,9 +47,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CBHClasses.dbml</DependentUpon>
     </Compile>
+    <Compile Include="ClientModels\qfrmJobStatusHistory.cs" />
     <Compile Include="ClientModels\qfrmInvoiceMaintenance.cs" />
-    <Compile Include="qfrmJobOverviewBusiness.cs" />
-    <Compile Include="InvoiceBusiness.cs" />
+    <Compile Include="Jobs\qfrmJobStatusHistoryBusiness.cs" />
+    <Compile Include="Jobs\qfrmJobOverviewBusiness.cs" />
+    <Compile Include="Jobs\InvoiceBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>

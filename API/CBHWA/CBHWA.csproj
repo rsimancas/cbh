@@ -345,6 +345,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Mappings\qfrmJobStatusHistoryMapping.cs" />
     <Compile Include="Mappings\qfrmJobOverviewMapping.cs" />
     <Compile Include="Mappings\qfrmInvoiceMaintenanceMapping.cs" />
     <Compile Include="Models\Common\Common.cs" />

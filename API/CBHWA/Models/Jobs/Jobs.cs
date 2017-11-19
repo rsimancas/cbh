@@ -528,6 +528,10 @@
         public string CustName { get; set; }
         public string ContactName { get; set; }
         public int JobStatusKey { get; set; }
+        public int StatusStatusKey { get; set; }
+        public string StatusMemo { get; set; }
+        public bool StatusPublic { get; set; }
+        public DateTime StatusDate { get; set; }
     }
     public class qryJobSearch
     {

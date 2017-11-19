@@ -121,11 +121,12 @@ Ext.define('CBH.view.jobs.JobStatusHistoryList', {
                             JobNum: me.JobNum
                         });
 
-                        record = new CBH.model.jobs.JobStatusHistory({
-                            JobStatusJobKey: me.JobKey,
-                            JobStatusDate: new Date()
+                        record = new CBH.model.jobs.qfrmJobStatusHistory({
+                            JobKey: me.JobKey,
+                            StatusDate: new Date()
 
                         });
+
                         form.loadRecord(record);
                         form.center();
                         form.callerForm = this.up('form');
@@ -185,7 +186,7 @@ Ext.define('CBH.view.jobs.JobStatusHistoryList', {
     onClickViewDetails: function(record) {
         var me = this;
 
-        var storeHistory = new CBH.store.jobs.JobStatusHistory().load({
+        var storeHistory = new CBH.store.jobs.qfrmJobStatusHistory().load({
             params: {
                 id: record.data.StatusKey
             },
