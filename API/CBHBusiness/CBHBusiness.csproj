@@ -60,7 +60,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Jobs\qfrmFileQuoteConfirmationBusiness.cs" />
+    <Compile Include="Sales\qfrmFileQuoteConfirmationBusiness.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

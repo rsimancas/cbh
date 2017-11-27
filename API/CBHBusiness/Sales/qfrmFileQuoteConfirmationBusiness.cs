@@ -125,7 +125,7 @@ namespace CBHBusiness
 
             fv.tblVendor.VendorFax = model.VendorFax;
             fv.tblVendorContact.ContactPhone = model.ContactPhone;
-            fv.tblVendorContact.ContactEmail = model.ContactPhone;
+            fv.tblVendorContact.ContactEmail = model.ContactEmail;
 
             db.Refresh(System.Data.Linq.RefreshMode.KeepCurrentValues, fv);
             db.SubmitChanges();
