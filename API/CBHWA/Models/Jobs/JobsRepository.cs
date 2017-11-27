@@ -5177,7 +5177,7 @@
             strOutput[1] = invoice.InvoiceNum;
             strOutput[2] = "";
             strOutput[3] = "FALSE";
-            strOutput[4] = invoice.JobShipDate.GetValueOrDefault().ToString("m/d/yyyy");
+            strOutput[4] = invoice.JobShipDate.GetValueOrDefault().ToString("MM/d/yyyy");
             strOutput[5] = "";
             strOutput[6] = "FALSE";
             strOutput[7] = invoice.QuoteNum ?? "";
@@ -5193,7 +5193,7 @@
             strOutput[17] = String.Format("{0}{1}{0}", '"', invoice.JobCustRefNum ?? "");
             strOutput[18] = String.Format("{0}{1}{0}", '"', GetShipmentType(invoice.JobShipType, invoice.CustLanguageCode, oConn));
             strOutput[19] = strOutput[4];
-            strOutput[20] = GetPaymentTermDueDate(invoice.InvoiceDate, invoice.InvoicePaymentTerms, oConn).ToString("m/d/yyyy");
+            strOutput[20] = GetPaymentTermDueDate(invoice.InvoiceDate, invoice.InvoicePaymentTerms, oConn).ToString("MM/d/yyyy");
             strOutput[21] = "0";
             strOutput[22] = strOutput[4];
             strOutput[23] = String.Format("{0}{1}{0}", '"', GetPaymentTerms(invoice.InvoicePaymentTerms, invoice.CustLanguageCode, oConn));
