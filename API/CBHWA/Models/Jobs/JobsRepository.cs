@@ -5331,14 +5331,17 @@
                     strOutput[46] = String.Format("{0}{1},CLIENT,{2}{0}", '"', invoice.JobNum, charge.ChargePeachtreeJobPhaseID);
 
                     //'*** Process description
-                    string[] notes = charge.ChargeMemo.Split(Environment.NewLine.ToCharArray());
-                    foreach (var note in notes)
+                    if (!String.IsNullOrWhiteSpace(charge.ChargeMemo))
                     {
-                        strOutput[41] = String.Format("{0}{1}{0}", '"', note.Replace(@"""", "''"));
-                        ws.WriteLine(string.Join(",", strOutput));
-                        strOutput[41] = "";
-                        Counter += 1;
-                        strOutput[34] = Counter.ToString();
+                        string[] notes = charge.ChargeMemo.Split(Environment.NewLine.ToCharArray());
+                        foreach (var note in notes)
+                        {
+                            strOutput[41] = String.Format("{0}{1}{0}", '"', note.Replace(@"""", "''"));
+                            ws.WriteLine(string.Join(",", strOutput));
+                            strOutput[41] = "";
+                            Counter += 1;
+                            strOutput[34] = Counter.ToString();
+                        }
                     }
 
                     ws.WriteLine(string.Join(",", strOutput));

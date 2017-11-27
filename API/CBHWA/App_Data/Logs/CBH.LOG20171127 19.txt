@@ -1,0 +1,7 @@
+INICIO: 27-11-2017 19:55:57
+19:55:57: ERROR:
+	METHOD = CBHWA.Controllers.ExportInvoiceToPeachtreeController.Index
+	MESSAGE = Referencia a objeto no establecida como instancia de un objeto.
+19:59:27: ERROR:
+	METHOD = CBHWA.Controllers.ExportInvoiceToPeachtreeController.Index
+	MESSAGE = Referencia a objeto no establecida como instancia de un objeto.
