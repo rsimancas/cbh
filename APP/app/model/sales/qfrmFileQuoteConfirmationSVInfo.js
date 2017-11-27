@@ -50,38 +50,38 @@ Ext.define('CBH.model.sales.qfrmFileQuoteConfirmationSVInfo', {
             successProperty: 'success',
             messageProperty: 'message',
         },
-		afterRequest: function (request, success) {
+		afterRequest: function(request, success) {
+            var silentMode = this.getSilentMode();
 
-			if (request.action == 'read') {
+            if (request.action == 'read') {
                 //this.readCallback(request);
-            }
-            else if (request.action == 'create') {
-                if (!request.operation.success)
-                {
-                    Ext.popupMsg.msg("Warning", "Record was not created");
+            } else if (request.action == 'create') {
+                if (!request.operation.success) {
+                    Ext.popupMsg.msg("Warning", "Record was not saved!!!");
                     Ext.global.console.warn(request.proxy.reader.jsonData.message);
                 } else {
-                    Ext.popupMsg.msg("Success","Created Successfully");
+                    if (!silentMode)
+                        Ext.popupMsg.msg("Success", "Saved Successfully!!!");
                 }
-            }
-            else if (request.action == 'update') {
-                if (!request.operation.success)
-                {
-                    Ext.popupMsg.msg("Warning", "Record was not saved");
+            } else if (request.action == 'update') {
+                if (!request.operation.success) {
+                    Ext.popupMsg.msg("Warning", "Record was not saved!!!");
                     Ext.global.console.warn(request.proxy.reader.jsonData.message);
                 } else {
-                    Ext.popupMsg.msg("Success","Updated Successfully");
+                    if (!silentMode)
+                        Ext.popupMsg.msg("Success", "Saved Successfully!!!");
                 }
-            }
-            else if (request.action == 'destroy') {
-                if (!request.operation.success)
-                {
-                    Ext.popupMsg.msg("Warning", "Record was not deleted");
+            } else if (request.action == 'destroy') {
+                if (!request.operation.success) {
+                    Ext.popupMsg.msg("Warning", "Record was not Deleted");
                     //Ext.global.console.warn(request.proxy.reader.jsonData.message);
                 } else {
-                    Ext.popupMsg.msg("Success","Deleted Successfully");
+                    if (!silentMode)
+                        Ext.popupMsg.msg("Success", "Deleted Successfully");
                 }
             }
-		}
+
+            this.setSilentMode(false);
+        }
 	}
 });

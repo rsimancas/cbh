@@ -1,4 +1,5 @@
 ﻿using CBHWA.Models;
+using CBHWA.Mappings;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -6,18 +7,21 @@ using System.Net.Http;
 using System.Reflection;
 using System.Web.Http;
 using Utilidades;
+using CBHBusiness;
+using Client = CBHBusiness.ClientModels;
 
 namespace CBHWA.Controllers
 {
-    
+
     [TokenValidation]
     public class qfrmFileQuoteConfirmationSVInfoController : ApiController
     {
         static readonly IFileRepository repository = new FileRepository();
+        static readonly qfrmFileQuoteConfirmationMapping mappings = new qfrmFileQuoteConfirmationMapping();
 
         public object GetAll()
         {
-           var queryValues = Request.RequestUri.ParseQueryString();
+            var queryValues = Request.RequestUri.ParseQueryString();
 
             int page = Convert.ToInt32(queryValues["page"]);
             int start = Convert.ToInt32(queryValues["start"]);
@@ -111,6 +115,31 @@ namespace CBHWA.Controllers
                     success = false
                 };
 
+                return json;
+            }
+        }
+
+        public object Put(Client.qfrmFileQuoteConfirmationSubVendorInfo model)
+        {
+            try
+            {
+                object json = new
+                {
+                    total = 1,
+                    data = mappings.MapModels(new qfrmFileQuoteConfirmationBusiness().Update(model)),
+                    success = true
+                };
+                return json;
+            }
+            catch (Exception ex)
+            {
+                LogManager.Write("ERROR:" + Environment.NewLine + "\tMETHOD = " + this.GetType().FullName + "." + MethodBase.GetCurrentMethod().Name + Environment.NewLine + "\tMESSAGE = " + ex.Message);
+                object error = new { message = ex.Message };
+                object json = new
+                {
+                    message = ex.Message,
+                    success = false
+                };
                 return json;
             }
         }

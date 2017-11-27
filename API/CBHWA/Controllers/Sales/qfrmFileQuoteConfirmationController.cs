@@ -1,4 +1,5 @@
-﻿using CBHWA.Models;
+﻿using Models = CBHWA.Models;
+using CBHWA.Mappings;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -6,6 +7,9 @@ using System.Net.Http;
 using System.Reflection;
 using System.Web.Http;
 using Utilidades;
+using Client = CBHBusiness.ClientModels;
+using CBHBusiness;
+
 
 namespace CBHWA.Controllers
 {
@@ -13,7 +17,8 @@ namespace CBHWA.Controllers
     [TokenValidation]
     public class qfrmFileQuoteConfirmationController : ApiController
     {
-        static readonly IFileRepository repository = new FileRepository();
+        static readonly Models.IFileRepository repository = new Models.FileRepository();
+        static readonly qfrmFileQuoteConfirmationMapping mappings = new qfrmFileQuoteConfirmationMapping();
 
         public object GetAll()
         {
@@ -35,15 +40,15 @@ namespace CBHWA.Controllers
             strOrder = strOrder.Replace('[', ' ');
             strOrder = strOrder.Replace(']', ' ');
 
-            Sort sort;
+            Models.Sort sort;
 
             if (!string.IsNullOrWhiteSpace(strOrder))
             {
-                sort = JsonConvert.DeserializeObject<Sort>(strOrder);
+                sort = JsonConvert.DeserializeObject<Models.Sort>(strOrder);
             }
             else
             {
-                sort = new Sort();
+                sort = new Models.Sort();
             }
             #endregion
 
@@ -52,15 +57,15 @@ namespace CBHWA.Controllers
             strFilter = strFilter.Replace('[', ' ');
             strFilter = strFilter.Replace(']', ' ');
 
-            Filter filter;
+            Models.Filter filter;
 
             if (!string.IsNullOrWhiteSpace(strFilter))
             {
-                filter = JsonConvert.DeserializeObject<Filter>(strFilter);
+                filter = JsonConvert.DeserializeObject<Models.Filter>(strFilter);
             }
             else
             {
-                filter = new Filter();
+                filter = new Models.Filter();
             }
             #endregion Configuramos el filtro de la consulta si se obtuvo como parametro
 
@@ -71,7 +76,7 @@ namespace CBHWA.Controllers
                 if (id == 0)
                 {
                     object json;
-                    IList<qfrmFileQuoteConfirmation> lista;
+                    IList<Models.qfrmFileQuoteConfirmation> lista;
 
                     lista = repository.GetqfrmFileQuoteConfirmations(query, sort, filter, page, start, limit, ref totalRecords);
 
@@ -86,7 +91,7 @@ namespace CBHWA.Controllers
                 }
                 else
                 {
-                    qfrmFileQuoteConfirmation genericList = repository.GetqfrmFileQuoteConfirmation(id);
+                    Models.qfrmFileQuoteConfirmation genericList = repository.GetqfrmFileQuoteConfirmation(id);
 
                     object json = new
                     {
@@ -110,6 +115,31 @@ namespace CBHWA.Controllers
                     success = false
                 };
 
+                return json;
+            }
+        }
+
+        public object Put(Client.qfrmFileQuoteConfirmation model)
+        {
+            try
+            {
+                object json = new
+                {
+                    total = 1,
+                    data = mappings.MapModels(new qfrmFileQuoteConfirmationBusiness().Update(model)),
+                    success = true
+                };
+                return json;
+            }
+            catch (Exception ex)
+            {
+                LogManager.Write("ERROR:" + Environment.NewLine + "\tMETHOD = " + this.GetType().FullName + "." + MethodBase.GetCurrentMethod().Name + Environment.NewLine + "\tMESSAGE = " + ex.Message);
+                object error = new { message = ex.Message };
+                object json = new
+                {
+                    message = ex.Message,
+                    success = false
+                };
                 return json;
             }
         }

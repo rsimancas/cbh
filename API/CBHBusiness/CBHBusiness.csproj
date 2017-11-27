@@ -47,6 +47,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CBHClasses.dbml</DependentUpon>
     </Compile>
+    <Compile Include="ClientModels\qfrmFileQuoteConfirmationSubVendorInfo.cs" />
+    <Compile Include="ClientModels\qfrmFileQuoteConfirmation.cs" />
     <Compile Include="ClientModels\qfrmJobStatusHistory.cs" />
     <Compile Include="ClientModels\qfrmInvoiceMaintenance.cs" />
     <Compile Include="Jobs\qfrmJobStatusHistoryBusiness.cs" />
@@ -58,6 +60,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Jobs\qfrmFileQuoteConfirmationBusiness.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

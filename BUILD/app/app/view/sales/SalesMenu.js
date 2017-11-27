@@ -71,17 +71,15 @@ Ext.define('CBH.view.sales.SalesMenu', {
                         flex: 0.7
                     }, {
                         xtype: 'actioncolumn',
-                        flex: 0.2,
-                        getGlyph: function(itemScope, rowIdx, colIdx, item, rec) {
-                            return 'xf00e@FontAwesome';
-                        },
-                        tooltip: 'view details',
-                        listeners: {
-                            click: {
-                                fn: me.onClickViewDetails,
-                                scope: me
+                        width: 35,
+                        items: [{
+                            getGlyph: function() { return 'xf00e@FontAwesome';},
+                            tooltip: 'view details',
+                            handler: function(view, rowIndex, colIndex, item, e, record, row) {
+                                var me = view.up('form');
+                                me.onClickViewDetails(record);
                             }
-                        }
+                        }]
                     }],
                     plugins: [{
                         ptype: 'rowexpander',
@@ -147,7 +145,9 @@ Ext.define('CBH.view.sales.SalesMenu', {
                             scope: me
                         },
                         celldblclick: {
-                            fn: me.onClickViewDetails,
+                            fn: function(view, td, cellIndex, record, tr, rowIndex, e, eOpts ) {
+                                this.onClickViewDetails(record);
+                            },
                             scope: me
                         }
                     }
@@ -174,8 +174,19 @@ Ext.define('CBH.view.sales.SalesMenu', {
                                 text: 'Open File',
                                 listeners: {
                                     click: {
-                                        fn: me.onClickViewDetails,
-                                        scope: me
+                                        fn: function() {
+                                            var me = this.up("form");
+                                                grid = me.down("#gridsales");
+                                        
+                                            if(!grid.getStore().getCount())
+                                                return;
+
+                                            if(!grid.getSelectionModel().getSelection().length) {
+                                                grid.getSelectionModel().select(0);
+                                            }
+                                            
+                                            me.onClickViewDetails(grid.getSelectionModel().getSelection()[0]);
+                                        }
                                     }
                                 }
                             }, {
@@ -586,24 +597,16 @@ Ext.define('CBH.view.sales.SalesMenu', {
         }
     },
 
-    onClickViewDetails: function(view, rowIndex, colIndex, item, e, record) {
-        var form = this;
+    onClickViewDetails: function(record) {
+        var me = this;
         var tabs = this.up('app_pageframe');
 
-        var grid = form.down('#gridsales');
+        var grid = me.down('#gridsales');
 
-        if (grid.getSelectionModel().selected.length === 0) {
-            grid.getSelectionModel().select(0);
-        }
-
-        if (!grid.getSelectionModel().getSelection()[0]) {
-            return;
-        }
-
-        var filekey = grid.getSelectionModel().getSelection()[0].get('FileKey');
-        var filenum = grid.getSelectionModel().getSelection()[0].get('FileNum');
-        var filestatus = grid.getSelectionModel().getSelection()[0].get('Status');
-        var customer = grid.getSelectionModel().getSelection()[0].get('Customer');
+        var filekey = record.get('FileKey');
+        var filenum = record.get('FileNum');
+        var filestatus = record.get('Status');
+        var customer = record.get('Customer');
 
         new CBH.store.sales.FileOverview().load({
             params: {

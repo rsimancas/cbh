@@ -5,7 +5,7 @@ Ext.define('CBH.view.sales.FileQuoteConfirmationSubVendorInfo', {
     layout: {
         type: 'column'
     },
-    bodyPadding: 5,
+    //bodyPadding: 5,
     frameHeader: false,
     header: false,
     enableKeyEvents: true,
@@ -165,7 +165,7 @@ Ext.define('CBH.view.sales.FileQuoteConfirmationSubVendorInfo', {
         xtype: 'textareafield',
         fieldLabel: 'Instructions',
         columnWidth: 1,
-        name: 'FVQuotePOQuoteNotes',
+        name: 'FVQuotePONotes',
     }, {
         margin: '15 0 0 0',
         xtype: 'gridpanel',

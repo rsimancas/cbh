@@ -406,10 +406,10 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>10/07/2014 21:20:22</publishTime>
     </File>
     <File Include="bin/CBHBusiness.dll">
-      <publishTime>11/18/2017 23:20:44</publishTime>
+      <publishTime>11/26/2017 22:27:46</publishTime>
     </File>
     <File Include="bin/CBHWA.dll">
-      <publishTime>11/18/2017 23:20:48</publishTime>
+      <publishTime>11/26/2017 22:27:51</publishTime>
     </File>
     <File Include="bin/de/Microsoft.Data.Edm.resources.dll">
       <publishTime>04/11/2016 16:44:51</publishTime>
