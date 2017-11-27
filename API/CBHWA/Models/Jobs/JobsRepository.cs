@@ -5442,9 +5442,10 @@
             if (ds.Tables[0].Rows.Count > 0)
             {
                 IList<qryJobInvoiceToPeachtreeCharge> charges = EnumExtension.ToList<qryJobInvoiceToPeachtreeCharge>(ds.Tables[0]);
-                RecordCount = RecordCount + charges.Count;
+                //RecordCount = RecordCount + charges.Count;
                 foreach (var charge in charges)
                 {
+                    RecordCount += 1;
                     if (!string.IsNullOrEmpty(charge.ChargeMemo))
                     {
                         string[] Note = charge.ChargeMemo.Split(Environment.NewLine.ToCharArray());
