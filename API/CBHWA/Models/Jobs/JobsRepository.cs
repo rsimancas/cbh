@@ -5520,10 +5520,9 @@
 
         private string GetShipmentType(int ShipType, string LanguageCode, SqlConnection oConn)
         {
-            string sql = "SELECT ShipTypeLanguageCode, ShipTypeText FROM tsysShipmentTypes WHERE ShipTypeExpression = @ShipType and ShipTypeLanguageCode = @LanguageCode";
+            string sql = "SELECT ShipTypeLanguageCode, ShipTypeText FROM tsysShipmentTypes WHERE ShipTypeExpression = @ShipType";
             SqlDataAdapter da = new SqlDataAdapter(sql, oConn);
             da.SelectCommand.Parameters.Add("@ShipType", SqlDbType.Int).Value = ShipType;
-            da.SelectCommand.Parameters.Add("@LanguageCode", SqlDbType.NVarChar).Value = LanguageCode;
 
             DataSet ds = new DataSet();
 
@@ -5541,8 +5540,15 @@
 
             if (ds.Tables[0].Rows.Count > 0)
             {
-                ShipmentType ship = EnumExtension.ToList<ShipmentType>(ds.Tables[0]).FirstOrDefault();
-                ShipText = ship.ShipTypeText;
+                var ships = EnumExtension.ToList<ShipmentType>(ds.Tables[0]);
+                if (ships.Where(w => w.ShipTypeLanguageCode == LanguageCode).Any())
+                {
+                    ShipText = ships.Where(w => w.ShipTypeLanguageCode == LanguageCode).FirstOrDefault().ShipTypeText;
+                }
+                else if(ships.Where(w => w.ShipTypeLanguageCode == "en").Any())
+                {
+                    ShipText = ships.Where(w => w.ShipTypeLanguageCode == "en").FirstOrDefault().ShipTypeText;
+                }
             }
 
             return ShipText;
