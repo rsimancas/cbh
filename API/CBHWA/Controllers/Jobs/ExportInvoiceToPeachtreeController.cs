@@ -37,7 +37,8 @@ namespace CBHWA.Controllers
             }
             catch (Exception ex)
             {
-                LogManager.Write("ERROR:" + Environment.NewLine + "\tMETHOD = " + this.GetType().FullName + "." + MethodBase.GetCurrentMethod().Name + Environment.NewLine + "\tMESSAGE = " + ex.Message);
+
+                LogManager.Write(String.Format(Properties.Settings.Default.LogErrorTpl, this.GetType().FullName, MethodBase.GetCurrentMethod().Name, ex.Message));
                 throw;
             }
         }

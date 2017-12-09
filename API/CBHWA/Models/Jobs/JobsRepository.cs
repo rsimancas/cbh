@@ -26,17 +26,8 @@
 
         public IList<JobList> GetList(string query, Sort sort, int page, int start, int limit, ref int totalRecords)
         {
-            SqlConnection oConn = null;
+            SqlConnection oConn = ConnManager.OpenConn();
 
-            try
-            {
-                oConn = ConnManager.OpenConn();
-            }
-            catch (Exception ex)
-            {
-                LogManager.Write("ERROR:" + Environment.NewLine + "\tMETHOD = " + this.GetType().FullName + "." + MethodBase.GetCurrentMethod().Name + Environment.NewLine + "\tMESSAGE = " + ex.Message);
-                throw;
-            };
             string where = !string.IsNullOrEmpty(query) ? "" : "1=1";
 
             if (!string.IsNullOrEmpty(query))
@@ -112,17 +103,6 @@
 
         public JobList GetList(int id)
         {
-            SqlConnection oConn = null;
-
-            try
-            {
-                oConn = ConnManager.OpenConn();
-            }
-            catch (Exception ex)
-            {
-                LogManager.Write("ERROR:" + Environment.NewLine + "\tMETHOD = " + this.GetType().FullName + "." + MethodBase.GetCurrentMethod().Name + Environment.NewLine + "\tMESSAGE = " + ex.Message);
-                throw;
-            };
             string where = "a.JobKey=@JobKey";
 
             string sql = @"WITH qData 
@@ -143,22 +123,12 @@
 
             sql = String.Format(sql, where);
 
+            SqlConnection oConn = ConnManager.OpenConn();
             SqlDataAdapter da = new SqlDataAdapter(sql, oConn);
             da.SelectCommand.Parameters.Add("@JobKey", SqlDbType.Int).Value = id;
 
             DataSet ds = new DataSet();
-
-            try
-            {
-                da.Fill(ds);
-            }
-            catch (Exception ex)
-            {
-                ConnManager.CloseConn(oConn);
-                LogManager.Write("ERROR:" + Environment.NewLine + "\tMETHOD = " + this.GetType().FullName + "." + MethodBase.GetCurrentMethod().Name + Environment.NewLine + "\tMESSAGE = " + ex.Message);
-                throw;
-            }
-
+            da.Fill(ds);
             ConnManager.CloseConn(oConn);
 
             DataTable dt;
@@ -180,18 +150,6 @@
 
         public IList<qJobOverview> GetJobOverview(int jobKey)
         {
-            SqlConnection oConn = null;
-
-            try
-            {
-                oConn = ConnManager.OpenConn();
-            }
-            catch (Exception ex)
-            {
-                LogManager.Write("ERROR:" + Environment.NewLine + "\tMETHOD = " + this.GetType().FullName + "." + MethodBase.GetCurrentMethod().Name + Environment.NewLine + "\tMESSAGE = " + ex.Message);
-                throw;
-            };
-
             string sql = @"WITH qData
                             AS
                             (
@@ -216,8 +174,8 @@
 	                            ISNULL('Complete ' + CONVERT(VARCHAR(11),JobComplete,109) ,'') as x_Info
                             from qData a LEFT OUTER JOIN tlkpGenericLists ON ListKey = JobShipmentCarrier AND ListCategory = 2";
 
+            SqlConnection oConn = ConnManager.OpenConn();
             SqlDataAdapter da = new SqlDataAdapter(sql, oConn);
-
             da.SelectCommand.Parameters.Add("@jobKey", SqlDbType.Int).Value = Convert.ToInt32(jobKey);
 
             DataSet ds = new DataSet();
@@ -417,7 +375,7 @@
             if (jobCurrencyList == null)
             {
                 //'*** Record does not exist in the Currency Master, add it
-                var jobCurrency= new JobCurrencyMaster();
+                var jobCurrency = new JobCurrencyMaster();
                 jobCurrency.JobCurrencyCode = jobHeader.JobCustCurrencyCode;
                 jobCurrency.JobCurrencyRate = jobHeader.JobCustCurrencyRate;
                 jobCurrency.JobCurrencyJobKey = JobKey;
@@ -427,22 +385,26 @@
             else
             {
                 //'*** Look for record
-                var curCust = (from p in jobCurrencyList 
+                var curCust = (from p in jobCurrencyList
                                where p.JobCurrencyCode == jobHeader.JobCustCurrencyCode
                                select p).ToList().First();
 
-                if(curCust == null) {
-                    var jobCurrency= new JobCurrencyMaster();
+                if (curCust == null)
+                {
+                    var jobCurrency = new JobCurrencyMaster();
                     jobCurrency.JobCurrencyCode = jobHeader.JobCustCurrencyCode;
                     jobCurrency.JobCurrencyRate = jobHeader.JobCustCurrencyRate;
                     jobCurrency.JobCurrencyJobKey = JobKey;
 
                     jobCurrency = Add(jobCurrency);
-                } else {
+                }
+                else
+                {
                     //'*** Match found, verify rates match
-                    if(curCust.JobCurrencyRate != jobHeader.JobCustCurrencyRate) {
-                            jobHeader.JobCustCurrencyRate = curCust.JobCurrencyRate;
-                            jobHeader = Update(jobHeader);
+                    if (curCust.JobCurrencyRate != jobHeader.JobCustCurrencyRate)
+                    {
+                        jobHeader.JobCustCurrencyRate = curCust.JobCurrencyRate;
+                        jobHeader = Update(jobHeader);
                     }
                 }
             }
@@ -453,25 +415,34 @@
             //'*** Go through all PO Headers
             var jobDetails = GetJobPurchaseOrderByJob(JobKey);
 
-            foreach(var jobDetail in jobDetails) {
+            foreach (var jobDetail in jobDetails)
+            {
                 //'*** If currency matches the job header, no changes needed
-                if (jobDetail.POCurrencyCode == jobHeader.JobCustCurrencyCode) {
+                if (jobDetail.POCurrencyCode == jobHeader.JobCustCurrencyCode)
+                {
                     //'*** Verify that rate matches
-                    if (jobDetail.POCurrencyRate != jobHeader.JobCustCurrencyRate) {
+                    if (jobDetail.POCurrencyRate != jobHeader.JobCustCurrencyRate)
+                    {
                         jobDetail.POCurrencyRate = jobHeader.JobCustCurrencyRate;
                         Update(jobDetail);
                     }
-                } else {
+                }
+                else
+                {
                     //'*** PO Currency does not match Job currency, make sure it is in the master table
                     var jobCurrency = jobCurrencyList.Where(w => w.JobCurrencyCode == jobDetail.POCurrencyCode).First();
-                    if(jobCurrency == null) {
-                        jobCurrency= new JobCurrencyMaster();
+                    if (jobCurrency == null)
+                    {
+                        jobCurrency = new JobCurrencyMaster();
                         jobCurrency.JobCurrencyCode = jobDetail.POCurrencyCode;
                         jobCurrency.JobCurrencyRate = jobDetail.POCurrencyRate.GetValueOrDefault();
                         jobCurrency.JobCurrencyJobKey = JobKey;
-                    } else {
+                    }
+                    else
+                    {
                         //'*** Make sure the PO Rate matches the master rate
-                        if(jobDetail.POCurrencyRate != jobCurrency.JobCurrencyRate) {
+                        if (jobDetail.POCurrencyRate != jobCurrency.JobCurrencyRate)
+                        {
                             jobDetail.POCurrencyRate = jobCurrency.JobCurrencyRate;
                             Update(jobDetail);
                         }
@@ -481,7 +452,8 @@
                 //'*** Use the POKey to scan the PO Payments table
                 List<string> otherDetails = GetOtherDetails(JobKey, jobDetail.POKey, oConn);
                 //'*** Add this currency to the Currency Master
-                foreach(var currencyCode in otherDetails) {
+                foreach (var currencyCode in otherDetails)
+                {
                     //'*** Get the current rate for this currency
                     var curRate = curRatesRepo.Get(currencyCode);
                     var jobCurrency = new JobCurrencyMaster();
@@ -495,11 +467,13 @@
             //'*** Go through all Invoice Headers
             var invoices = GetListInvoicesByJob(JobKey, oConn);
 
-            foreach(var invoice in invoices) {
+            foreach (var invoice in invoices)
+            {
                 //'*** If currency matches the job header, no changes needed
-                if(invoice.InvoiceCurrencyCode == jobHeader.JobCustCurrencyCode) {
+                if (invoice.InvoiceCurrencyCode == jobHeader.JobCustCurrencyCode)
+                {
                     //'*** Verify that rate matches
-                    
+
                 }
             }
         }
@@ -5118,17 +5092,7 @@
         #region Export Invoice To Peachtree
         public string ExportInvoiceToPeachtree(int InvoiceKey, string currentUser)
         {
-            SqlConnection oConn = null;
-
-            try
-            {
-                oConn = ConnManager.OpenConn();
-            }
-            catch (Exception ex)
-            {
-                LogManager.Write("ERROR:" + Environment.NewLine + "\tMETHOD = " + this.GetType().FullName + "." + System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + "\tMESSAGE = " + ex.Message);
-                throw;
-            }
+            SqlConnection oConn = ConnManager.OpenConn();
 
             string sql = "SELECT * FROM qrptJobInvoice WHERE InvoiceKey = @InvoiceKey";
             SqlDataAdapter da = new SqlDataAdapter(sql, oConn);
@@ -5136,17 +5100,7 @@
             da.SelectCommand.Parameters.Add("@InvoiceKey", SqlDbType.Int).Value = InvoiceKey;
 
             DataSet ds = new DataSet();
-
-            try
-            {
-                da.Fill(ds);
-            }
-            catch (Exception ex)
-            {
-                LogManager.Write("ERROR:" + Environment.NewLine + "\tMETHOD = " + this.GetType().FullName + "." + System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + "\tMESSAGE = " + ex.Message);
-                throw;
-            }
-
+            da.Fill(ds);
             DataTable dt;
             dt = ds.Tables[0];
 
@@ -5159,7 +5113,7 @@
             else
             {
                 ConnManager.CloseConn(oConn);
-                return "";
+                return "Invoice was not found";
             }
 
             int RecordCount = 0;
@@ -5173,6 +5127,7 @@
 
             string[] strOutput = new string[51];
 
+            #region InitArray Values
             strOutput[0] = invoice.CustPeachtreeID ?? "";
             strOutput[1] = invoice.InvoiceNum;
             strOutput[2] = "";
@@ -5224,13 +5179,14 @@
             strOutput[48] = "";
             strOutput[49] = "";
             strOutput[50] = "";
+            #endregion Init Array Values
 
             ConnManager.CloseConn(oConn);
 
             string path = Path.Combine(HttpContext.Current.Request.MapPath("~/App_Data/Peachtree/"));
             string filename = Path.Combine(path, "SALES" + DateTime.Now.ToString("yyyyMMdd") + ".csv");
 
-            if(File.Exists(filename))
+            if (File.Exists(filename))
                 File.Delete(filename);
 
             using (StreamWriter ws = new StreamWriter(filename))
@@ -5254,7 +5210,7 @@
 
                         //'*** Process note, each CRLF or ~ has to be a separate line
                         strOutput[41] = "";
-                        string[] notes = item.ItemMemo.Split(Environment.NewLine.ToCharArray());
+                        string[] notes = item.ItemMemo.Trim().Split(Environment.NewLine.ToCharArray());
                         foreach (var note in notes)
                         {
                             strOutput[41] = String.Format("{0}{1}{0}", '"', note.Replace(@"""", "''"));
@@ -5304,7 +5260,7 @@
 
                         //'*** Process note, each CRLF or ~ has to be a separate line
                         strOutput[41] = "";
-                        string[] notes = item.ItemMemo.Split(Environment.NewLine.ToCharArray());
+                        string[] notes = item.ItemMemo.Trim().Split(Environment.NewLine.ToCharArray());
                         foreach (var note in notes)
                         {
                             strOutput[41] = String.Format("{0}{1}{0}", '"', note.Replace(@"""", "''"));
@@ -5333,19 +5289,27 @@
                     //'*** Process description
                     if (!String.IsNullOrWhiteSpace(charge.ChargeMemo))
                     {
-                        string[] notes = charge.ChargeMemo.Split(Environment.NewLine.ToCharArray());
+                        string[] notes = charge.ChargeMemo.Trim().Split(Environment.NewLine.ToCharArray());
                         foreach (var note in notes)
                         {
                             strOutput[41] = String.Format("{0}{1}{0}", '"', note.Replace(@"""", "''"));
                             ws.WriteLine(string.Join(",", strOutput));
+                            strOutput[37] = "";
+                            strOutput[39] = "";
                             strOutput[41] = "";
+                            strOutput[43] = "";
+                            strOutput[45] = "";
+                            strOutput[46] = "";
                             Counter += 1;
                             strOutput[34] = Counter.ToString();
                         }
                     }
-
-                    ws.WriteLine(string.Join(",", strOutput));
-                    Counter += 1;
+                    else
+                    {
+                        ws.WriteLine(string.Join(",", strOutput));
+                        Counter += 1;
+                        strOutput[34] = Counter.ToString();
+                    }
                 }
 
                 ws.Close();
@@ -5360,61 +5324,29 @@
             da.SelectCommand.Parameters.Add("@InvoiceKey", SqlDbType.Int).Value = InvoiceKey;
 
             DataSet ds = new DataSet();
+            da.Fill(ds);
 
-            try
+
+            if (ds.Tables[0].Rows.Count == 0)
             {
+                sql = "SELECT * FROM qryJobInvoiceToPeachtreeItems WHERE InvoiceKey = @InvoiceKey";
+                da.SelectCommand.CommandText = sql;
                 da.Fill(ds);
-            }
-            catch (Exception ex)
-            {
-                LogManager.Write("ERROR:" + Environment.NewLine + "\tMETHOD = " + this.GetType().FullName + "." + System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + "\tMESSAGE = " + ex.Message);
-                throw;
-            }
 
-
-            if (ds.Tables[0].Rows.Count > 0)
-            {
-                IList<qryJobInvoiceToPeachtreeItem> items = EnumExtension.ToList<qryJobInvoiceToPeachtreeItem>(ds.Tables[0]);
-                RecordCount = RecordCount + items.Count;
-                foreach (var item in items)
+                if (ds.Tables[0].Rows.Count > 0)
                 {
-                    if (!string.IsNullOrEmpty(item.ItemMemo))
+                    IList<qryJobInvoiceToPeachtreeItem> items = EnumExtension.ToList<qryJobInvoiceToPeachtreeItem>(ds.Tables[0]);
+                    foreach (var item in items)
                     {
-                        string[] Note = item.ItemMemo.Split(Environment.NewLine.ToCharArray());
-                        RecordCount += Note.Length;
+                        RecordCount = RecordCount + 1;
+                        if (!string.IsNullOrEmpty(item.ItemMemo))
+                        {
+                            string[] Note = item.ItemMemo.Trim().Split(Environment.NewLine.ToCharArray());
+                            RecordCount += Note.Length - 1;
+                        }
                     }
+                    return items;
                 }
-                return items;
-            }
-
-            sql = "SELECT * FROM qryJobInvoiceToPeachtreeItems WHERE InvoiceKey = @InvoiceKey";
-            da.SelectCommand.CommandText = sql;
-            //da.SelectCommand.Parameters.Add("@InvoiceKey", SqlDbType.Int).Value = InvoiceKey;
-
-            try
-            {
-                da.Fill(ds);
-            }
-            catch (Exception ex)
-            {
-                LogManager.Write("ERROR:" + Environment.NewLine + "\tMETHOD = " + this.GetType().FullName + "." + System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + "\tMESSAGE = " + ex.Message);
-                throw;
-            }
-
-
-            if (ds.Tables[0].Rows.Count > 0)
-            {
-                IList<qryJobInvoiceToPeachtreeItem> items = EnumExtension.ToList<qryJobInvoiceToPeachtreeItem>(ds.Tables[0]);
-                RecordCount = RecordCount + items.Count;
-                foreach (var item in items)
-                {
-                    if (!string.IsNullOrEmpty(item.ItemMemo))
-                    {
-                        string[] Note = item.ItemMemo.Split(Environment.NewLine.ToCharArray());
-                        RecordCount += Note.Length;
-                    }
-                }
-                return items;
             }
 
             return new List<qryJobInvoiceToPeachtreeItem>();
@@ -5427,29 +5359,19 @@
             da.SelectCommand.Parameters.Add("@InvoiceKey", SqlDbType.Int).Value = InvoiceKey;
 
             DataSet ds = new DataSet();
-
-            try
-            {
-                da.Fill(ds);
-            }
-            catch (Exception ex)
-            {
-                LogManager.Write("ERROR:" + Environment.NewLine + "\tMETHOD = " + this.GetType().FullName + "." + System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + "\tMESSAGE = " + ex.Message);
-                throw;
-            }
-
+            da.Fill(ds);
+            
 
             if (ds.Tables[0].Rows.Count > 0)
             {
                 IList<qryJobInvoiceToPeachtreeCharge> charges = EnumExtension.ToList<qryJobInvoiceToPeachtreeCharge>(ds.Tables[0]);
-                //RecordCount = RecordCount + charges.Count;
                 foreach (var charge in charges)
                 {
                     RecordCount += 1;
                     if (!string.IsNullOrEmpty(charge.ChargeMemo))
                     {
-                        string[] Note = charge.ChargeMemo.Split(Environment.NewLine.ToCharArray());
-                        RecordCount += Note.Length;
+                        string[] Note = charge.ChargeMemo.Trim().Split(Environment.NewLine.ToCharArray());
+                        RecordCount += Note.Length - 1;
                     }
                 }
                 return charges;
@@ -5545,7 +5467,7 @@
                 {
                     ShipText = ships.Where(w => w.ShipTypeLanguageCode == LanguageCode).FirstOrDefault().ShipTypeText;
                 }
-                else if(ships.Where(w => w.ShipTypeLanguageCode == "en").Any())
+                else if (ships.Where(w => w.ShipTypeLanguageCode == "en").Any())
                 {
                     ShipText = ships.Where(w => w.ShipTypeLanguageCode == "en").FirstOrDefault().ShipTypeText;
                 }
@@ -5624,12 +5546,12 @@
             strOutput[7] = "";
 
             // shipto
-            strOutput[8] = (POShipTo != null) ? String.Format("{0}{1}{0}", '"', POShipTo.ShipName): "";
-            strOutput[9] = (POShipTo != null) ? String.Format("{0}{1}{0}", '"', POShipTo.ShipAddress1): "";
+            strOutput[8] = (POShipTo != null) ? String.Format("{0}{1}{0}", '"', POShipTo.ShipName) : "";
+            strOutput[9] = (POShipTo != null) ? String.Format("{0}{1}{0}", '"', POShipTo.ShipAddress1) : "";
             strOutput[10] = (POShipTo != null) ? String.Format("{0}{1}{0}", '"', POShipTo.ShipAddress2) : "";
-            strOutput[11] = (POShipTo != null) ? String.Format("{0}{1}{0}", '"', POShipTo.ShipCity): "";
-            strOutput[12] = (POShipTo != null) ? String.Format("{0}{1}{0}", '"', POShipTo.ShipState): "";
-            strOutput[13] = (POShipTo != null) ? String.Format("{0}{1}{0}", '"', POShipTo.ShipZip): "";
+            strOutput[11] = (POShipTo != null) ? String.Format("{0}{1}{0}", '"', POShipTo.ShipCity) : "";
+            strOutput[12] = (POShipTo != null) ? String.Format("{0}{1}{0}", '"', POShipTo.ShipState) : "";
+            strOutput[13] = (POShipTo != null) ? String.Format("{0}{1}{0}", '"', POShipTo.ShipZip) : "";
             strOutput[14] = (POShipTo != null) ? String.Format("{0}{1}{0}", '"', POShipTo.ShipCountry) : "";
             // shipto
 
@@ -5649,7 +5571,7 @@
             strOutput[28] = "";
             strOutput[29] = "";
             strOutput[30] = "";
-            
+
             ConnManager.CloseConn(oConn);
 
             string path = Path.Combine(HttpContext.Current.Request.MapPath("~/App_Data/Peachtree/"));
@@ -5667,10 +5589,10 @@
                 foreach (var item in items)
                 {
                     Counter += 1;
-                    
+
                     strOutput[23] = Counter.ToString();
                     strOutput[24] = item.POItemsQty.ToString();
-                    strOutput[25] = String.Format("{0}{1}{0}", '"', purchaseOrder.VendorPeachtreeItemID); 
+                    strOutput[25] = String.Format("{0}{1}{0}", '"', purchaseOrder.VendorPeachtreeItemID);
                     strOutput[26] = String.Format("{0}{1}{0}", '"', item.DescriptionText);
                     strOutput[27] = "50100";
                     strOutput[28] = String.Format("{0:0.00}", item.ItemCost);
@@ -6088,7 +6010,8 @@
                 if (!String.IsNullOrEmpty(employee.EmployeeEmailCC)) msg.RecipientsTO.Add(employee.EmployeeEmailCC);
             }
 
-            foreach(var contact in vendorContacts) {
+            foreach (var contact in vendorContacts)
+            {
                 if (contact.ContactEmail != null) msg.RecipientsCC.Add(contact.ContactEmail);
             }
 
@@ -6096,13 +6019,15 @@
 
             msg.Body = "All printouts related to this job have been added to the print queue.  (The queue will auto-print when the database is started.  Otherwise, select 'Print Queue' from the Jobs Menu.";
             //'**** If the payment terms require warning...
-            if (terms.TermWarningFlag) {
+            if (terms.TermWarningFlag)
+            {
                 string strPaymentTerms = GetPaymentTerms(job.JobCustPaymentTerms, "en", oConn);
-                if (strPaymentTerms.Length < 75) {
+                if (strPaymentTerms.Length < 75)
+                {
                     strPaymentTerms = ' '.Repeat(Convert.ToInt32((75 - strPaymentTerms.Length) / 2)) + "(" + strPaymentTerms;
                     strPaymentTerms = strPaymentTerms + ")" + ' '.Repeat(75 - strPaymentTerms.Length);
                 }
-                
+
                 msg.Body = String.Format(@"
                          * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
                          *           PLEASE MAKE NOTE OF THIS JOB'S PAYMENT TERMS                      *

@@ -46,11 +46,9 @@
             }
 
             string text = "";
-            int i = 0;
             foreach (var arg in args)
             {
                 text += String.Format(" {0}", arg);
-                i++;
             }
 
             if (!String.IsNullOrEmpty(text))
@@ -59,7 +57,7 @@
                 text = String.Format(text, args);
             }
 
-            //ReplicacionService.WriteToLog(text);
+            text = text.Replace("\\n", Environment.NewLine).Replace("\\t", "\t");
             StreamWriter SW = File.AppendText(_filename);
             SW.WriteLine(DateTime.Now.ToLongTimeString() + ": " + text);
             SW.Close();
@@ -91,7 +89,6 @@
                 // throw
             }
 
-            //ReplicacionService.WriteToLog(text);
             StreamWriter SW = File.AppendText(_filename);
             SW.WriteLine(DateTime.Now.ToLongTimeString() + ": " + text);
             SW.Close();

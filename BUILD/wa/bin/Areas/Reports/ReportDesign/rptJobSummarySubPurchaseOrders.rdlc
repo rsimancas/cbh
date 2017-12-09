@@ -35,7 +35,7 @@
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>0.18in</Height>
+              <Height>0.1542in</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -71,8 +71,7 @@
                         </BottomBorder>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>1pt</PaddingTop>
                       </Style>
                     </Textbox>
                   </CellContents>
@@ -109,8 +108,7 @@
                         </BottomBorder>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>1pt</PaddingTop>
                       </Style>
                     </Textbox>
                   </CellContents>
@@ -150,8 +148,7 @@
                         </BottomBorder>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>1pt</PaddingTop>
                       </Style>
                     </Textbox>
                   </CellContents>
@@ -189,8 +186,7 @@
                         </BottomBorder>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>1pt</PaddingTop>
                       </Style>
                     </Textbox>
                   </CellContents>
@@ -228,8 +224,7 @@
                         </BottomBorder>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>1pt</PaddingTop>
                       </Style>
                     </Textbox>
                   </CellContents>
@@ -269,8 +264,7 @@
                         </BottomBorder>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>1pt</PaddingTop>
                       </Style>
                     </Textbox>
                   </CellContents>
@@ -310,8 +304,7 @@
                         </BottomBorder>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>1pt</PaddingTop>
                       </Style>
                     </Textbox>
                   </CellContents>
@@ -350,8 +343,6 @@
                         </BottomBorder>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
                   </CellContents>
@@ -391,8 +382,7 @@
                         <BackgroundColor>=IIf(CDate(Fields!POStatusDate.Value) &lt; DateTime.Now.AddDays(-14) And Fields!ParentIsClosed.Value = 0, "Yellow", "Transparent")</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>1pt</PaddingTop>
                       </Style>
                     </Textbox>
                   </CellContents>
@@ -422,8 +412,9 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>dsRptJobSummarySubPurchaseOrders</DataSetName>
+        <Top>0.0635cm</Top>
         <Left>1.016cm</Left>
-        <Height>0.18in</Height>
+        <Height>0.1542in</Height>
         <Width>9.69917in</Width>
         <Style>
           <Border>
@@ -438,7 +429,7 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>0.18in</Height>
+    <Height>0.20083in</Height>
     <Style />
   </Body>
   <Width>10.09917in</Width>

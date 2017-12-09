@@ -12,7 +12,7 @@ namespace CBHWA.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "12.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "14.0.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -110,6 +110,15 @@ namespace CBHWA.Properties {
         public bool LOG_ENABLED {
             get {
                 return ((bool)(this["LOG_ENABLED"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("ERROR:\\n\\tMETHOD = {0}.{1}\\n\\tMESSAGE = {2}")]
+        public string LogErrorTpl {
+            get {
+                return ((string)(this["LogErrorTpl"]));
             }
         }
     }
